@@ -2,13 +2,13 @@ Somos Ikaro's Phones. Un e-commerce online de Celulares de las principales marca
 
 Integrantes del proyecto:
 
-- Matias Sykuler: 20 yo, estudiante de actuario y profesor en Defy education
+- Matias Sykuler: 20 años, estudiante de actuario y profesor en Defy education
 
-- 
+- Vania Caballero Rojas: 19 años, estudiante
 
-- 
+- Fabian Silva:
 
-- 
+- Gael Vallejo:
 
 Sitios de referencia:
 
