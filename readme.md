@@ -6,7 +6,7 @@ Integrantes del proyecto:
 
 - Vania Caballero Rojas: 19 años, estudiante
 
-- Fabian Silva:
+- Fab ian Silva: 19 años, estuadiante en programacion.  
 
 - Gael Vallejo:
 
