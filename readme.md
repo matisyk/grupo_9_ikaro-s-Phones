@@ -8,7 +8,7 @@ Integrantes del proyecto:
 
 - Fab ian Silva: 19 años, estuadiante en programacion.  
 
-- Gael Vallejo:
+- Gael Vallejo: 18 años, estudiante de artes visuales y programacion
 
 Sitios de referencia:
 
