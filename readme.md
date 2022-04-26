@@ -21,3 +21,5 @@ https://www.fravega.com/l/celulares/
 https://www.naldo.com.ar/GENERAL/TECNOLOGIA/Telefonia/Celulares/c/120
 
 https://www.tiendaclic.com.ar/325-smartphones
+
+Link Trello: https://trello.com/b/IjMj0AES/e-commerce-to-do-list
