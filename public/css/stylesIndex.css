@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    padding-bottom: 20px;
+    background-color: #302e2e;
+}
+
+header div.logo{
+    padding: 10px;
+    width: 30%;
+}
+
+header nav{
+    font-size: 12px;
+}
+
+header .form .input{
+    color: #F5F5DC;
+}
+

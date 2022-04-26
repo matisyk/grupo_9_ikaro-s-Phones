@@ -19,6 +19,7 @@
   "homepage": "https://github.com/matisyk/grupo_9_ikaro-s-Phones#readme",
   "dependencies": {
     "express": "^4.18.0",
-    "moments": "^0.0.2"
+    "moments": "^0.0.2",
+    "nodemon": "^2.0.15"
   }
 }
