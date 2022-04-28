@@ -367,6 +367,11 @@ p.discount {
     height: 80px;
 }
 
+.fa-brands.fa-instagram{
+    border-radius: 50%;
+    border-style: solid;
+}
+
 /* FOOTER FIN */
 
 /* MEDIA QUERIES PRINCIPIO */
