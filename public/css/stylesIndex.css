@@ -23,17 +23,72 @@ Poppins by Indian Type Foundry Light 300.
 }
 
 header {
-    padding-bottom: 20px;
     background-color: #302e2e;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    font-size: 16px;
 }
 
-header div.logo{
-    padding: 10px;
+.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.icons-left{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
     width: 30%;
+    left: -50px;
 }
 
-header nav{
+.logo{
+    width: 20%;
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+.location{
+    display: flex;
+    position: absolute;
+    bottom: -20px;
+    color: #F5F5DC;
     font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.nav-top{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: #F5F5DC;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.icons-right{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 90px;
+    align-items: center;
+    color: #F5F5DC;
+}
+
+img.banner{
+    width: 100vwgit ;
 }
 
 header .form .input{
