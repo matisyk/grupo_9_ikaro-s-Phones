@@ -244,6 +244,22 @@ header .form .input{
 
 /* BANNER FIN */
 
+/*bottom var inicio*/
+
+div.bottom-var{
+    width: 100%;
+    background-color: rgb(161, 161, 161);
+    padding: 35px 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.var a{
+    color: black;
+    padding: 40px;
+}
+
 /* MAIN PRINCIPIO */
 
 body{
