@@ -351,6 +351,10 @@ p.discount {
     height: 80px;
 }
 
+/* FOOTER FIN */
+
+/* MEDIA QUERIES PRINCIPIO */
+
 @media (min-width: 480px){
     main section article .description{
         display: block;
@@ -375,3 +379,5 @@ p.discount {
     }
 
 }
+
+/* MEDIA QUERIES FIN */
