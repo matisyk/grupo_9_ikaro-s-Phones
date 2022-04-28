@@ -340,6 +340,17 @@ p.discount {
     margin-left: 8px;
 }
 
+/* MAIN FIN */
+
+/* FOOTER PRINCIPIO */
+
+.footer-top{
+    margin-top: 30px;
+    background-color: #302e2e;
+    width: 100%;
+    height: 80px;
+}
+
 @media (min-width: 480px){
     main section article .description{
         display: block;
@@ -364,5 +375,3 @@ p.discount {
     }
 
 }
-
-/* MAIN FIN */
