@@ -27,6 +27,7 @@ header {
     font-family: 'Poppins', sans-serif;
     padding: 20px;
     font-size: 16px;
+    width: 100%;
 }
 
 .top-header{
@@ -83,6 +84,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    display: none;
 }
 
 nav a{
@@ -101,7 +103,6 @@ nav ul{
     width: 30%;
     display: flex;
     justify-content: space-around;
-    padding: 0 90px;
     align-items: center;
     color: #F5F5DC;
 }
@@ -356,6 +357,10 @@ p.discount {
 @media (min-width: 769px){
     article{
         width: 22%;
+    }
+
+    .nav-top{
+        display: inline-flex;
     }
 
 }
