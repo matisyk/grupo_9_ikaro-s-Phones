@@ -40,8 +40,7 @@ header {
     display: flex;
     justify-content: space-around;
     position: relative;
-    width: 30%;
-    left: -50px;
+    width: 50%;
 }
 .searcher{
     position: absolute;
@@ -100,7 +99,7 @@ nav ul{
 }
 
 .icons-right{
-    width: 30%;
+    width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -247,18 +246,29 @@ header .form .input{
 
 /*bottom var inicio*/
 
-div.bottom-var{
+.bottom-var{
     width: 100%;
     background-color: rgb(161, 161, 161);
     padding: 35px 20px;
     display: flex;
     justify-content: space-around;
     margin: auto;
+    align-items: center;
+    text-align: center;
 }
 
 .var a{
     color: black;
-    padding: 40px;
+    padding: unset;
+}
+
+.var-no-mobile-1, .var-no-mobile-2, .var-no-mobile-3{
+    align-items: center;
+    text-align: center;
+}
+
+.var-no-mobile-1, .var-no-mobile-2{
+    display: none;
 }
 
 /* MAIN PRINCIPIO */
@@ -453,11 +463,23 @@ p.discount {
     .primera-columna, .tercera-columna, .segunda-columna, .cuarta-columna{
         width: 45%;
     }
+
+    .var-no-mobile-1{
+        display: block;
+    }
+
+    .var-no-mobile-1, .var-no-mobile-3{
+        width: 100%;
+    }
 }
 
 @media (min-width: 769px){
     article{
         width: 27%;
+    }
+
+    .icons-left, .icons-right{
+        width: 30%;
     }
 
     .nav-top{
@@ -466,6 +488,14 @@ p.discount {
 
     .primera-columna, .tercera-columna, .segunda-columna, .cuarta-columna{
         width: 22%;
+    }
+
+    .var-no-mobile-2{
+        display: block;
+    }
+
+    .var-no-mobile-1, .var-no-mobile-2, .var-no-mobile-3{
+        width: 100%;
     }
 
 }
