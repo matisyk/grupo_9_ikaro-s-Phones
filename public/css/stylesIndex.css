@@ -380,11 +380,12 @@ p.discount {
 
 .footer-middle{
     width: 100%;
-    height: 200px;
+    height: 180px;
     background-color: #ebebeb;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 30px;
 }
 
 .primera-columna p{
@@ -395,6 +396,36 @@ p.discount {
 .tercera-columna p, .segunda-columna p, .cuarta-columna p{
     margin: 22px;
     font-size: 15px;
+}
+
+.footer-bottom{
+    width: 100%;
+    height: 30px;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.footer-bottom p{
+    color: #302e2e;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 15px;
+}
+
+.footer-bottom img{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 20px;
+}
+
+.footer-img{
+    height: 80%;
+    width: 30px;
 }
 
 /* FOOTER FIN */
