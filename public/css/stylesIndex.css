@@ -386,6 +386,7 @@ p.discount {
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .primera-columna p{
@@ -396,6 +397,10 @@ p.discount {
 .tercera-columna p, .segunda-columna p, .cuarta-columna p{
     margin: 22px;
     font-size: 15px;
+}
+
+.primera-columna, .tercera-columna, .segunda-columna, .cuarta-columna{
+    width: 100%;
 }
 
 .footer-bottom{
@@ -444,6 +449,10 @@ p.discount {
     article {
         width: 45%;
     }
+
+    .primera-columna, .tercera-columna, .segunda-columna, .cuarta-columna{
+        width: 45%;
+    }
 }
 
 @media (min-width: 769px){
@@ -453,6 +462,10 @@ p.discount {
 
     .nav-top{
         display: inline-flex;
+    }
+
+    .primera-columna, .tercera-columna, .segunda-columna, .cuarta-columna{
+        width: 22%;
     }
 
 }
