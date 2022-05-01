@@ -22,6 +22,11 @@ Poppins by Indian Type Foundry Light 300.
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ebebeb !important;
+}
+
 header {
     background-color: #302e2e;
     font-family: 'Poppins', sans-serif;
@@ -272,11 +277,6 @@ header .form .input{
 }
 
 /* MAIN PRINCIPIO */
-
-body{
-    font-family: 'Poppins', sans-serif;
-    background-color: #ebebeb !important;
-}
 
 .price{
     font-size: 18px;
