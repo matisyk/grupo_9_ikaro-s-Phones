@@ -390,7 +390,7 @@ p.discount {
 
 .footer-middle{
     width: 100%;
-    height: 180px;
+    height: auto;
     background-color: #ebebeb;
     display: flex;
     flex-direction: row;
