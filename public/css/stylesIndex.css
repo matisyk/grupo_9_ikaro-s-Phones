@@ -44,7 +44,6 @@ header {
     left: -50px;
 }
 .searcher{
-    position: absolute;
     padding: 5px;
 }
 .searcher input{
