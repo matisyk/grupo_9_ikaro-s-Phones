@@ -26,26 +26,33 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #ebebeb !important;
 }
-
-header {
-    background-color: #302e2e;
-    font-family: 'Poppins', sans-serif;
-    padding: 20px;
-    font-size: 16px;
-    width: 100%;
-}
-
 .top-header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+    background-color: #302e2e;
+    padding: 10px 0 10px;
 }
 
 .icons-left{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
     width: 50%;
+}
+.logo {
+    width: 15%;
+}
+.location{
+    display: flex;
+    color: #F5F5DC;
+    font-size: 12px;
+    align-self: center;
+    margin-left: 10px;
 }
 .searcher{
     padding: 5px;
@@ -66,42 +73,22 @@ header {
 .searcher input:focus{
     width: 240px;
 }
-.logo{
-    width: 20%;
-    display: flex;
-    
-    flex-wrap: wrap;
-}
-
-.location{
-    display: flex;
-    position: absolute;
-    bottom: -20px;
-    color: #F5F5DC;
-    font-size: 12px;
-    margin-bottom: 15px;
-}
-
 .nav-top{
     width: 30%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    display: none;
 }
-
 nav a{
     text-decoration: none;
     color: #F5F5DC;
     padding: 10px 20px;
     font-size: 16px;
 }
-
 nav ul{
     display: flex;
     list-style: none;
 }
-
 .icons-right{
     width: 50%;
     display: flex;
@@ -109,26 +96,22 @@ nav ul{
     align-items: center;
     color: #F5F5DC;
 }
-
 .icons-right div a{
     color: #F5F5DC;
 }
-
 img.banner{
     width: 100vwgit ;
 }
-
 header .form .input{
     color: #F5F5DC;
 }
-
 /* HEADER FIN */
 
 /* BANNER PRINCIPIO */
-
 .slide {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 50px;
 }
 
 .slide-inner {
@@ -231,7 +214,6 @@ header .form .input{
       li:nth-child(3) .slide-circulo {
     color: #428bca;
 }
-
 #titulo {
     width: 100%;
     position: absolute;
@@ -245,38 +227,9 @@ header .form .input{
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
          -1px 0px 2px rgba(255, 255, 255, 0);
 }
-
 /* BANNER FIN */
 
-/*bottom var inicio*/
-
-.bottom-var{
-    width: 100%;
-    background-color: rgb(161, 161, 161);
-    padding: 35px 20px;
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-    align-items: center;
-    text-align: center;
-}
-
-.var a{
-    color: black;
-    padding: unset;
-}
-
-.var-no-mobile-1, .var-no-mobile-2, .var-no-mobile-3{
-    align-items: center;
-    text-align: center;
-}
-
-.var-no-mobile-1, .var-no-mobile-2{
-    display: none;
-}
-
 /* MAIN PRINCIPIO */
-
 .price{
     font-size: 18px;
 }
@@ -446,57 +399,151 @@ p.discount {
 
 /* MEDIA QUERIES PRINCIPIO */
 
-@media (min-width: 480px){
+@media (min-width: 360px){
+
+    /*INICIO HEADER*/
+    .bars{
+        display: block;
+        color:  #ebebeb;
+        padding: 8px 0 0;
+        text-align: center;
+    }
+    .icons-left{
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+    }
+    .logo {
+        width: 15%;
+        position: relative;
+        left: -5px;
+    }
+    .location{
+        display: none;
+    }
+    .nav-top{
+        display: none;
+    }
+    .icons-right{
+        display: none;
+    }
+    /*FIN HEADER*/
+
+    /*INICIO BOTTOM VAR*/
+    .bottom-var{
+        display: none;
+    }
+    /*FIN BOTTOM VAR*/
+
     main section article .description{
         display: block;
     }
-
     main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-
     article {
         width: 45%;
     }
-
     .primera-columna, .tercera-columna, .segunda-columna, .cuarta-columna{
         width: 45%;
     }
-
     .var-no-mobile-1{
         display: block;
     }
-
     .var-no-mobile-1, .var-no-mobile-3{
         width: 100%;
     }
 }
 
-@media (min-width: 769px){
-    article{
-        width: 27%;
+@media (min-width: 768px){
+    .bars{
+        display: none;
     }
-
+    /*header*/
+    .icons-left{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    .logo {
+        width: 12%;
+        position: relative;
+    }
+    .location{
+        display: flex;
+        font-size: 10px;
+    }
+    h4.texto{
+        margin-left: 5px;
+    }
+    .nav-top{
+        display: flex;
+    }
+    .nav-top a{
+        font-size: 14px;
+    }
+    .icons-right{
+        display: flex;
+        font-size: 14px;
+    }
+    
     .icons-left, .icons-right{
         width: 30%;
     }
+    /*fin header*/
 
-    .nav-top{
-        display: inline-flex;
+    /*BOTTOM var inicio*/
+    .bottom-var{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(161, 161, 161);
+        padding: 25px 15px;
+        margin: auto;
+        text-align: center;
     }
+    .var a{
+        color: black;
+        padding: unset;
+        font-size: 12px;
+    }
+    /*BOTTOM var fin*/
 
     .primera-columna, .tercera-columna, .segunda-columna, .cuarta-columna{
         width: 22%;
     }
-
     .var-no-mobile-2{
         display: block;
     }
-
     .var-no-mobile-1, .var-no-mobile-2, .var-no-mobile-3{
         width: 100%;
     }
+}
 
+@media(min-width: 1200px){
+    .logo {
+        width: 15%;
+    }
+    .location{
+        display: flex;
+        color: #F5F5DC;
+        font-size: 12px;
+        align-self: center;
+        margin-left: 10px;
+    }
+    .slide {
+        margin-top: 79px;
+    }
+    /*bottom var inicio*/
+    .var a{
+        font-size: 14px;
+        margin: 0 60px;
+    }
+    /*bottom var fin*/
+    article{
+        width: 27%;
+    }
 }
 
 /* MEDIA QUERIES FIN */
