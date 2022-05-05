@@ -10,10 +10,13 @@ app.use(express.static('views'));
 app.get('/', (req, res) => {
     res.sendFile(path.resolve('./views/index.html'));
 });
-
-app.get('/home', (req, res) => {
+app.post('/', (req, res) => {
     res.sendFile(path.resolve('./views/index.html'));
 });
+
+// app.get('/home', (req, res) => {
+//     res.sendFile(path.resolve('./views/index.html'));
+// });
 
 app.get('/login', (req, res) => {
     res.sendFile(path.resolve('./views/login.html'));

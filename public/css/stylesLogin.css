@@ -89,7 +89,9 @@ header .form .input{
 /* HEADER FIN */
 
 /*MAIN DE FORMULARIO*/
-
+.formulario{
+    margin-top: 500px;
+}
 .formulario{
     width: 500px;
     max-width: 100%;
