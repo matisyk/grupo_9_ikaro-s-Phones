@@ -76,6 +76,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    display: none;
 }
 nav a{
     text-decoration: none;
@@ -102,6 +103,15 @@ img.banner{
 }
 header .form .input{
     color: #F5F5DC;
+}
+.bars{
+    display: block;
+    color:  #ebebeb;
+    padding: 8px 0 0;
+    text-align: center;
+}
+.location{
+    display: none;
 }
 /* HEADER FIN */
 
@@ -403,12 +413,6 @@ footer{
 @media (min-width: 360px){
 
     /*INICIO HEADER*/
-    .bars{
-        display: block;
-        color:  #ebebeb;
-        padding: 8px 0 0;
-        text-align: center;
-    }
     .icons-left{
         display: flex;
         justify-content: flex-end;
@@ -423,9 +427,6 @@ footer{
         display: none;
     }
     .nav-top{
-        display: none;
-    }
-    .icons-right{
         display: none;
     }
     /*FIN HEADER*/
