@@ -126,7 +126,52 @@ header .form .input{
 
 /* HEADER FIN */
 
+/* MAIN PRINCIPIO */
+    .producto{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 5%;
+    }
+    .detalles-producto{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .telefono-producto{
+        font-size: large;
+    }
+    .nombre-producto{
+        border-bottom: 1px solid;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .precio-producto{
+        margin-bottom: 30px;
+    }
+    .promociones-producto{
+        margin-bottom: 30px;
+    }
+    .visa-producto{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+    .visa-producto p{
+        background-color: aqua;
+    }
+    .boton-comprar-producto{
+       text-align: center;
+       border-bottom: 1px solid;
+       margin-bottom: 30px;
+       padding-bottom: 30px;
+    }
 
+
+/* MAIN FIN */
 
 /* FOOTER PRINCIPIO */
 footer{
@@ -245,5 +290,12 @@ footer{
     .var-no-mobile-1, .var-no-mobile-2, .var-no-mobile-3{
         width: 100%;
     }
-
+    .producto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: 1px solid;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
 }
