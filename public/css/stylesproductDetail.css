@@ -169,7 +169,29 @@ header .form .input{
        margin-bottom: 30px;
        padding-bottom: 30px;
     }
-
+    .descripcion{
+        width: 90%;
+        margin: auto;
+    }
+    .especificaciones-producto{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .descripcion h3{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .descripcion article h4{
+        border-bottom:  5px solid;
+        margin-top: 10px;
+        margin-bottom: 4px;
+        padding-top: 30px;
+    }
+    .descripcion article div p{
+        margin-top: 20px;
+    }
 
 /* MAIN FIN */
 
