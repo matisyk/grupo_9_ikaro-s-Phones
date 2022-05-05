@@ -191,7 +191,9 @@ main h2{
 
 
 /* FOOTER PRINCIPIO */
-
+footer{
+    height: 100%;
+}
 .footer-top{
     margin-top: 30px;
     background-color: #302e2e;
