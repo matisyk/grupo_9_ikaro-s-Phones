@@ -25,18 +25,9 @@ app.use('/products',rutaProducts);
 app.use('/register',rutaRegister);
 
 // <<<<<<< HEAD
-app.use('/login', mainRoutes);
-
-app.use('/register', mainRoutes);
-
-app.use('/productCart', mainRoutes);
-
-app.use('/productDetail', mainRoutes);
-
 app.use('/editar', mainRoutes);
 //=======
 //=======
-app.get('/login', mainRoutes);
 //>>>>>>> 1157206a8821b8a8c05d030c8dcdf1b73a8f560d
 
 //>>>>>>> d7144dcf83eb9f45edffc8e77903df3d0da485fc
