@@ -2,7 +2,7 @@
   "name": "ikaros_phones",
   "version": "1.0.0",
   "description": "Somos Ikaro's Phones. Un e-commerce online de Celulares de las principales marcas como Apple, Samsung, Xiaomi y mucho mas. Ofrecemos el mejor servicio de compra desde nuestra pagina web con checkout integrado. Apuntamos al publico en general desde 12 años, vendiendo celulares accesibles hasta siendo de alta gama.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,8 +19,10 @@
   "homepage": "https://github.com/matisyk/grupo_9_ikaro-s-Phones#readme",
   "dependencies": {
     "bootstrap": "^5.2.0-beta1",
+    "ejs": "^3.1.8",
     "express": "^4.18.0",
     "moments": "^0.0.2",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7"
   }
 }
