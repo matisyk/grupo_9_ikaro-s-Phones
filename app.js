@@ -14,10 +14,6 @@ app.post('/', (req, res) => {
    res.sendFile(path.resolve('./views/index.html'));
 });
 
-// app.get('/home', (req, res) => {
-//     res.sendFile(path.resolve('./views/index.html'));
-// });
-
 app.get('/login', mainRoutes);
 
 app.get('/register', mainRoutes);
