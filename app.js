@@ -7,29 +7,21 @@ app.listen(3000, );
 app.use(express.static('public'));
 app.use(express.static('views'));
 
-app.get('/', (req, res) => {
-    res.sendFile(path.resolve('./views/index.html'));
-});
+const mainRoutes = require("./routers/routes")
+
+app.use('/', mainRoutes)
 app.post('/', (req, res) => {
-    res.sendFile(path.resolve('./views/index.html'));
+   res.sendFile(path.resolve('./views/index.html'));
 });
 
 // app.get('/home', (req, res) => {
 //     res.sendFile(path.resolve('./views/index.html'));
 // });
 
-app.get('/login', (req, res) => {
-    res.sendFile(path.resolve('./views/login.html'));
-});
+app.get('/login', mainRoutes);
 
-app.get('/register', (req, res) => {
-    res.sendFile(path.resolve('./views/register.html'));
-});
+app.get('/register', mainRoutes);
 
-app.get('/productCart', (req, res) => {
-    res.sendFile(path.resolve('./views/productCart.html'));
-});
+app.get('/productCart', mainRoutes);
 
-app.get('/productDetail', (req, res) => {
-    res.sendFile(path.resolve('./views/productDetail.html'));
-});
+app.get('/productDetail', mainRoutes);
