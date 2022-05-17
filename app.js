@@ -17,10 +17,14 @@ app.post('/', (req, res) => {
    res.sendFile(path.resolve('./views/index.html'));
 });
 
+<<<<<<< HEAD
 //routers
 app.use('/',rutaIndex);
 app.use('/login',rutaLogin);
 app.use('/products',rutaProducts);
 app.use('/register',rutaRegister);
 
+=======
+app.get('/login', mainRoutes);
+>>>>>>> 1157206a8821b8a8c05d030c8dcdf1b73a8f560d
 
