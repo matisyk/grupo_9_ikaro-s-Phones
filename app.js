@@ -27,3 +27,5 @@ app.get('/register', mainRoutes);
 app.get('/productCart', mainRoutes);
 
 app.get('/productDetail', mainRoutes);
+
+app.get('/editar', mainRoutes);
