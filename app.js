@@ -3,10 +3,11 @@ const app = express();
 const path = require('path');
 
 //routers
-const rutaIndex = require('./routers/index')
-const rutaLogin = require('./routers/login')
-const rutaProducts = require('./routers/Products')
-const rutaRegister = require('./routers/register')
+const rutaIndex = require('./routers/index');
+const rutaLogin = require('./routers/login');
+const rutaProducts = require('./routers/Products');
+const rutaRegister = require('./routers/register');
+const rutaEdicion = require('./routers/edicion');
 
 app.listen(3000, );
 app.set('view engine', 'ejs')
@@ -21,11 +22,12 @@ app.post('/', (req, res) => {
 //routers
 app.use('/',rutaIndex);
 app.use('/login',rutaLogin);
-app.use('/products',rutaProducts);
+app.use('/productCart',rutaProducts);
+app.use('/productDetail',rutaProducts);
 app.use('/register',rutaRegister);
 
 // <<<<<<< HEAD
-app.use('/editar', mainRoutes);
+app.use('/editar', rutaEdicion);
 //=======
 //=======
 //>>>>>>> 1157206a8821b8a8c05d030c8dcdf1b73a8f560d
