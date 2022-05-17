@@ -2,20 +2,19 @@ const path = require("path")
 
 const indexControllers ={
     index : (req, res) => {
-        res.sendFile(path.resolve('./views/index.html'));
+        res.render('index');
     },
     login: (req, res) => {
-        res.sendFile(path.resolve('./views/login.html'));
-    },
-    register:(req, res) => {
-        res.sendFile(path.resolve('./views/register.html'));
+        res.render('login');
     },
     productCart : (req, res) => {
-        res.sendFile(path.resolve('./views/productCart.html'));
+        res.render('productCart');
     },
     productDetail : (req, res) => {
-        res.sendFile(path.resolve('./views/productDetail.html'));
-    }
-
+        res.render('productDetail');
+    },
+    register:(req, res) => {
+        res.render('register');
+    },
 }
 module.exports = indexControllers
