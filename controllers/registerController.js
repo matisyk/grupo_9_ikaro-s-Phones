@@ -4,4 +4,4 @@ const registerController ={
     },
 }
 
-module.exports=registerController
+module.exports= registerController;

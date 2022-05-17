@@ -5,4 +5,4 @@ const indexController={
         res.render('index');
     },
 }
-module.exports = indexController
+module.exports = indexController;
