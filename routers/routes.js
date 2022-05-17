@@ -5,4 +5,5 @@ const indexControllers = require("../controllers/indexControllers")
 router.get("/", indexControllers.index)
 router.get("/login", indexControllers.login)
 router.get("/register", indexControllers.register )
+
 module.exports = router
