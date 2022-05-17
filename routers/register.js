@@ -2,6 +2,6 @@ const express = require("express");
 const router = express.Router();
 const indexControllers = require("../controllers/registerController")
 
-router.get("/", controllers.register)
+router.get("/", indexControllers.register)
 
 module.exports = router
