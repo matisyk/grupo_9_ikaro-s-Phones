@@ -21,35 +21,38 @@ Poppins by Indian Type Foundry Light 300.
     padding: 0px;
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #ebebeb !important;
 }
-
-header {
-    background-color: #302e2e;
-    font-family: 'Poppins', sans-serif;
-    padding: 20px;
-    font-size: 16px;
-    width: 100%;
-}
-
 .top-header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+    background-color: #302e2e;
+    padding: 10px 0 10px;
 }
-
 .icons-left{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
-    width: 30%;
-    left: -50px;
+    width: 50%;
+}
+.logo {
+    width: 15%;
+}
+.location{
+    display: flex;
+    color: #F5F5DC;
+    font-size: 12px;
+    align-self: center;
+    margin-left: 10px;
 }
 .searcher{
-    position: absolute;
     padding: 5px;
 }
 .searcher input{
@@ -68,22 +71,6 @@ header {
 .searcher input:focus{
     width: 240px;
 }
-.logo{
-    width: 20%;
-    display: flex;
-    
-    flex-wrap: wrap;
-}
-
-.location{
-    display: flex;
-    position: absolute;
-    bottom: -20px;
-    color: #F5F5DC;
-    font-size: 12px;
-    margin-bottom: 15px;
-}
-
 .nav-top{
     width: 30%;
     display: flex;
@@ -91,39 +78,41 @@ header {
     align-items: center;
     display: none;
 }
-
 nav a{
     text-decoration: none;
     color: #F5F5DC;
     padding: 10px 20px;
     font-size: 16px;
 }
-
 nav ul{
     display: flex;
     list-style: none;
 }
-
 .icons-right{
-    width: 30%;
+    width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: #F5F5DC;
 }
-
 .icons-right div a{
     color: #F5F5DC;
 }
-
 img.banner{
     width: 100vwgit ;
 }
-
 header .form .input{
     color: #F5F5DC;
 }
-
+.bars{
+    display: block;
+    color:  #ebebeb;
+    padding: 8px 0 0;
+    text-align: center;
+}
+.location{
+    display: none;
+}
 /* HEADER FIN */
 
 /*MAIN CARRITO*/
@@ -272,7 +261,10 @@ footer{
 
 }
 
-@media (min-width: 769px){
+@media (min-width: 768px){
+    .bars{
+        display: none;
+    }
 
     .icons-left, .icons-right{
         width: 30%;
