@@ -13,39 +13,7 @@
         <script src="https://kit.fontawesome.com/5309449a51.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <div class="top-header">
-
-                <div class="icons-left">
-                    <img class="logo" src="images/LogoIkarosPhonesenbaja.png" alt="Logo de Ikaro's Phones">
-                    <div class="location">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <h4>Estás en Capital Federal</h4>
-                    </div>
-                </div>
-
-                <div class="nav-top">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Promociones</a></li>
-                            <li><a href="#">Catalogo</a></li>
-                            <li><a href="#">Ayuda</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <div class="icons-right">
-                    <div class="searcher">
-                        <input type="text" placeholder="Buscar">
-                        <i class="fa fa-search"></i>
-                    </div>
-                    <div><a href="./login.html"><i class="fa-regular fa-user"></i></a></div>
-                    <div><a href="./productCart.html"><i class="fa-solid fa-bag-shopping"></i></a></div>           
-                </div>
-
-            </div>
-        </header>
-
+        <%- include('../partials/header'); %>
         <main>
             <form action="" class="formulario">
                 <h2> Crear una cuenta </h2>
@@ -72,48 +40,7 @@
         </main>
 
         <footer>
-
-            <div class="footer-top">
-                <div class="footer-icons">
-                    <nav>
-                        <ul>
-                            <li class="footer-media"><a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li class="footer-media"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
-                            <li class="footer-media"><a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="footer-middle">
-                <div class="primera-columna">
-                    <p>Beneficios</p>
-                    <p>Términos y condiciones</p>
-                    <p>Política de privacidad</p>
-                </div>
-                <div class="segunda-columna">
-                    <p><strong>Contacto</strong></p>
-                    <p>Teléfono</p>
-                    <p>Mail</p>
-                    <p>Dirección</p>
-                </div>
-                <div class="tercera-columna">
-                    <p><strong>Marcas</strong></p>
-                    <p>Samsung</p>
-                    <p>Apple</p>
-                    <p>Xiaomi</p>
-                </div>
-                <div class="cuarta-columna">
-                    <p><strong>Información</strong></p>
-                    <p>Como comprar</p>
-                    <p>Pago y envio</p>
-                    <p>FAQS</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <img src="images/LogoIkarosPhonesenbaja.png" alt="Titulo phone Titulo" class="footer-img">
-                <p>Argentina 2022 Ikaro'sPhone - Todos los derechos reservados</p>
-            </div>
-
+            <%- include ("../partials/footer")  %> 
         </footer>
     </body>
 </html>

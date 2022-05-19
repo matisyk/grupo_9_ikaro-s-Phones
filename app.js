@@ -14,9 +14,9 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'));
 app.use(express.static('views'));
 
-app.post('/', (req, res) => {
-   res.render(path.resolve('./views/products/index'));
-});
+//app.post('/', (req, res) => {
+//   res.sendFile(path.resolve('./views/index.html'));
+//});
 
 // <<<<<<< HEAD
 //routers
