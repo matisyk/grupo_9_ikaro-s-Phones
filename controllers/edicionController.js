@@ -1,8 +1,11 @@
 const path = require("path");
 
 const edicionController={
-    edicion : (req, res) => {
-        res.render('products/creacionYEdicion');
-    },
+    //Edicion de producto
+	edicion: (req, res) => {
+		let id = req.params.id;
+		let product = products.find(product => product.id == id)
+        res.render("edicion", {product})
+	},
 }
 module.exports = edicionController;

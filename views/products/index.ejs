@@ -68,6 +68,7 @@
             <section class="last-visit">
                 <h3>Smartphones</h3>
                 <div class="products">
+                    <% visitado.forEach( product => { %>
                     <article>
                         <a href="./productDetail"><h4 class="description">Titulo phone Titulo</h4>
                         <img src="images/LogoIkarosPhonesenbaja.png" alt="Titulo phone Titulo" class="product_img">
@@ -77,29 +78,12 @@
                             <p class="discount">40% off</p>
                         </div></a>
                     </article>
-                    <article>
-                        <h4 class="description">Titulo phone Titulo</h4>
-                        <img src="images/LogoIkarosPhonesenbaja.png" alt="Titulo phone Titulo" class="product_img">
-                        <div class="main-article">
-                            <i class="fas fa-truck"></i>
-                            <p class="price">$230.000</p>
-                            <p class="discount">20% off</p>
-                        </div>
-                    </article>
-                    <article>
-                        <h4 class="description">Titulo phone Titulo</h4>
-                        <img src="images/LogoIkarosPhonesenbaja.png" alt="Titulo phone Titulo" class="product_img">
-                        <div class="main-article">
-                            <i class="fas fa-truck"></i>
-                            <p class="price">$70.500</p>
-                            <p class="discount">10% off</p>
-                        </div>
-                    </article>
-                </div>
+                    <% }) %>
             </section>
             <section class="offers">
                 <h3>Promociones</h3>
                 <div class="products">
+                    <% enOferta.forEach(product => { %>
                     <article>
                         <h4 class="description">Titulo phone Titulo</h4>
                         <img src="images/LogoIkarosPhonesenbaja.png" alt="Titulo phone Titulo" class="product_img">
@@ -109,24 +93,7 @@
                             <p class="discount">40% off</p>
                         </div>
                     </article>
-                    <article>
-                        <h4 class="description">Titulo phone Titulo</h4>
-                        <img src="images/LogoIkarosPhonesenbaja.png" alt="Titulo phone Titulo" class="product_img">
-                        <div class="main-article">
-                            <i class="fas fa-truck"></i>
-                            <p class="price">$230.000</p>
-                            <p class="discount">20% off</p>
-                        </div>
-                    </article>
-                    <article>
-                        <h4 class="description">Titulo phone Titulo</h4>
-                        <img src="images/LogoIkarosPhonesenbaja.png" alt="Titulo phone Titulo" class="product_img">
-                        <div class="main-article">
-                            <i class="fas fa-truck"></i>
-                            <p class="price">$70.500</p>
-                            <p class="discount">10% off</p>
-                        </div>
-                    </article>
+                    <% }) %>
                 </div>  
             </section>
 
