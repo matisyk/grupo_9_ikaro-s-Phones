@@ -188,31 +188,26 @@ header .form .input{
 #slide-3:checked ~ .control-3 {
     display: block;
 }
-
 .slide-indicador {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     list-style: none;
-    margin: 0;
-    padding: 0;
     position: absolute;
-    bottom: 2%;
-    left: 0;
-    right: 0;
+    bottom: 0%;
     text-align: center;
     z-index: 10;
 }
-
 .slide-indicador li {
     display: inline-block;
     margin: 0 5px;
 }
-
 .slide-circulo {
     color: #828282;
     cursor: pointer;
     display: block;
     font-size: 35px;
 }
-
 .slide-circulo:hover {
     color: #aaaaaa;
 }
@@ -501,7 +496,7 @@ footer{
         margin: auto;
         text-align: center;
     }
-    li{
+    .var li{
         width: 30%;
     }
     .var a{
@@ -513,9 +508,6 @@ footer{
         justify-content: center;
         list-style: none;
     }
-
-
-
     /*BOTTOM var fin*/
 
     .primera-columna, .tercera-columna, .segunda-columna, .cuarta-columna{
