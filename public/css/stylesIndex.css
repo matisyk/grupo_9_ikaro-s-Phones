@@ -99,6 +99,7 @@ nav a{
 }
 nav ul{
     display: flex;
+    justify-content: space-around;
     list-style: none;
 }
 img.banner{
@@ -451,12 +452,6 @@ footer{
     .primera-columna, .tercera-columna, .segunda-columna, .cuarta-columna{
         width: 45%;
     }
-    .var-no-mobile-1{
-        display: block;
-    }
-    .var-no-mobile-1, .var-no-mobile-3{
-        width: 100%;
-    }
 }
 
 @media (min-width: 768px){
@@ -504,14 +499,23 @@ footer{
         background-color: rgb(161, 161, 161);
         padding: 25px 15px;
         margin: auto;
-        
+        text-align: center;
+    }
+    li{
+        width: 30%;
     }
     .var a{
         color: black;
-        padding: unset;
         font-size: 12px;
-        text-align: center;
     }
+    .var{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+
+
     /*BOTTOM var fin*/
 
     .primera-columna, .tercera-columna, .segunda-columna, .cuarta-columna{
