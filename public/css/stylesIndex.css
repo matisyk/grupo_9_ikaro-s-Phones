@@ -42,6 +42,16 @@ body{
     position: relative;
     width: 50%;
 }
+.icons-right{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #F5F5DC;
+}
+.icons-right div a{
+    color: #F5F5DC;
+}
 .logo {
     width: 15%;
 }
@@ -51,6 +61,9 @@ body{
     font-size: 12px;
     align-self: center;
     margin-left: 10px;
+}
+.location{
+    display: none;
 }
 .searcher{
     padding: 5px;
@@ -88,19 +101,10 @@ nav ul{
     display: flex;
     list-style: none;
 }
-.icons-right{
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #F5F5DC;
-}
-.icons-right div a{
-    color: #F5F5DC;
-}
 img.banner{
     width: 100vwgit ;
 }
+
 header .form .input{
     color: #F5F5DC;
 }
@@ -110,9 +114,7 @@ header .form .input{
     padding: 8px 0 0;
     text-align: center;
 }
-.location{
-    display: none;
-}
+
 /* HEADER FIN */
 
 /* BANNER PRINCIPIO */
@@ -488,7 +490,6 @@ footer{
         display: flex;
         font-size: 14px;
     }
-    
     .icons-left, .icons-right{
         width: 30%;
     }
@@ -503,23 +504,18 @@ footer{
         background-color: rgb(161, 161, 161);
         padding: 25px 15px;
         margin: auto;
-        text-align: center;
+        
     }
     .var a{
         color: black;
         padding: unset;
         font-size: 12px;
+        text-align: center;
     }
     /*BOTTOM var fin*/
 
     .primera-columna, .tercera-columna, .segunda-columna, .cuarta-columna{
         width: 22%;
-    }
-    .var-no-mobile-2{
-        display: block;
-    }
-    .var-no-mobile-1, .var-no-mobile-2, .var-no-mobile-3{
-        width: 100%;
     }
 }
 
