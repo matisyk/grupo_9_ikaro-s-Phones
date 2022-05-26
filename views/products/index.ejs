@@ -65,10 +65,10 @@
         </div>
 
         <main>
-            <section class="last-visit">
+            <section>
                 <h3>Smartphones</h3>
                 <div class="products">
-                    <% visitado.forEach( product => { %>
+                    <% smartphones.forEach( product => { %>
                     <article>
                         <a href="./productDetail"><h4 class="description">Titulo phone Titulo</h4>
                         <img src="images/LogoIkarosPhonesenbaja.png" alt="Titulo phone Titulo" class="product_img">
@@ -80,7 +80,7 @@
                     </article>
                     <% }) %>
             </section>
-            <section class="offers">
+            <section>
                 <h3>Promociones</h3>
                 <div class="products">
                     <% enOferta.forEach(product => { %>
@@ -89,7 +89,7 @@
                         <img src="images/LogoIkarosPhonesenbaja.png" alt="Titulo phone Titulo" class="product_img">
                         <div class="main-article">
                             <i class="fas fa-truck"></i>
-                            <p class="price">$6.770</p>
+                            <p class="price"><%= product.price %> </p>
                             <p class="discount">40% off</p>
                         </div>
                     </article>
