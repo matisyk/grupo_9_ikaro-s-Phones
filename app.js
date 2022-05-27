@@ -11,8 +11,8 @@ const rutaEdicion = require('./routers/edicion');
 
 app.listen(3000, );
 app.set('view engine', 'ejs')
-app.use(express.static('public'));
-app.use(express.static('views'));
+app.use(express.static(path.resolve ('public')));
+app.use(express.static(path.resolve ('views')));
 
 //app.post('/', (req, res) => {
 //   res.sendFile(path.resolve('./views/index.html'));
