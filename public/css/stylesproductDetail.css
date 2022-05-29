@@ -127,6 +127,10 @@ header .form .input{
         justify-content: space-around;
         margin-top: 5%;
     }
+    .product-img{
+        width: 40vw;
+        height: 100vh;
+    }
     .detalles-producto{
         margin-top: auto;
         margin-bottom: auto;

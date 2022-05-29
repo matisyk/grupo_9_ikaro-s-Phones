@@ -8,7 +8,7 @@
         <enlace href="https: //fonts.googleapis.com/css2? family= Poppins:wght@300 & family= Roboto:wght@300 & display=swap" rel="hoja de estilo"></enlace>
     
         <script src="https://kit.fontawesome.com/5309449a51.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/stylesIndex.css">
+        <link rel="stylesheet" href="/css/stylesIndex.css">
     </head>
 
     <body>
@@ -70,7 +70,7 @@
 
                     <% smartphones.forEach( product => { %>
                     <article>
-                    <a href="./productDetail/<%= product.id %> " class="main">
+                    <a href="/detail/<%=product.id %> " class="main">
                         <h4 class="name"><%= product.name %></h4>
                         <img src="/images/products/<%= product.image %>" class="product_img">
                         <div class="main-article">
@@ -89,7 +89,7 @@
 
                     <% inSale.forEach(product => { %>
                     <article>
-                    <a href="./productDetail/<%= product.id %> " class="main">
+                    <a href="/detail/<%= product.id %> " class="main">
                         <h4 class="name"><%= product.name %> </h4>
                         <img src="/images/products/<%= product.image %>" class="product_img">
                         <div class="main-article">
