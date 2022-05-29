@@ -1,130 +1,130 @@
 [
- {
-  "id": 1,
-  "name": "Samsung galaxy S22",
-  "price": 160.000,
-  "discount": 20,
-  "category": "en-oferta",
-  "image": ""
- },
- {
-  "id": 2,
-  "name": "",
-  "price": 500,
-  "discount": 3,
-  "category": "en-oferta",
-  "image": ""
- },
- {
-  "id": 3,
-  "name": "",
-  "price": 72999,
-  "discount": 25,
-  "category": "en-oferta",
-  "image": ""
- },
- {
-  "id": 4,
-  "name": "",
-  "price": 47900,
-  "discount": 10,
-  "image": "",
-  "category": "en-oferta"
- },
- {
-  "id": 5,
-  "name": "",
-  "price": 53000,
-  "discount": 20,
-  "image": "",
-  "category": "en-oferta"
- },
- {
-  "id": 6,
-  "name": "",
-  "price": 20999,
-  "discount": 12,
-  "image": "",
-  "category": "en-oferta"
- },
- {
-  "id": 7,
-  "name": "",
-  "price": 36700,
-  "discount": 5,
-  "image": "",
-  "category": "en-oferta"
- },
- {
-  "id": 8,
-  "name": "",
-  "price": 148000,
-  "discount": 2,
-  "image": "",
-  "category": "en-oferta"
- },
- {
-  "id": 9,
-  "name": "",
-  "price": 11399,
-  "discount": 0,
-  "image": "",
-  "category": "smartphone"
- },
- {
-  "id": 10,
-  "name": "",
-  "price": 1200,
-  "discount": 10,
-  "image": "",
-  "category": "smartphone"
- },
- {
-  "id": 11,
-  "name": "",
-  "price": 29990,
-  "discount": 12,
-  "image": "",
-  "category": "smartphone"
- },
- {
-  "id": 12,
-  "name": "",
-  "price": 32990,
-  "discount": 0,
-  "image": "",
-  "category": "smartphone"
- },
- {
-  "id": 13,
-  "name": "",
-  "price": 34990,
-  "discount": 0,
-  "image": "",
-  "category": "smartphone"
- },
- {
-  "id": 14,
-  "name": "",
-  "price": 10999,
-  "discount": 5,
-  "image": "",
-  "category": "smartphone"
- },
- {
-  "id": 15,
-  "name": "",
-  "price": 15979,
-  "discount": 12,
-  "image": "",
-  "category": "smartphone"
- },
- {
-  "id": 16,
-  "name": "",
-  "price": 4699,
-  "discount": 5,
-  "category": "en-oferta",
-  "image": ""
- }
-]
+    {
+     "id": "1",
+     "name": "ZTEbladeA51",
+     "price": "27.000",
+     "discount": "0",
+     "category": "smartphone",
+     "image": ""
+    },
+    {
+     "id": "2",
+     "name": "XiaomiRedmi9A",
+     "price": "32.000",
+     "discount": "15",
+     "category": "inSale",
+     "image": ""
+    },
+    {
+     "id": "3",
+     "name": "Xiaomi11Lite",
+     "price": "100.000",
+     "discount": "0",
+     "category": "smartphone",
+     "image": ""
+    },
+    {
+     "id": "4",
+     "name": "iPhoneX",
+     "price": "120.000",
+     "discount": "20",
+     "image": "",
+     "category": "inSale"
+    },
+    {
+     "id": "5",
+     "name": "MotorolaG22",
+     "price": "38.000",
+     "discount": "10",
+     "image": "",
+     "category":"inSale"
+    },
+    {
+     "id": "6",
+     "name": "MotorolaG200",
+     "price": "100.000",
+     "discount": "0",
+     "image": "",
+     "category":"smartphone"
+    },
+    {
+     "id": "7",
+     "name": "iPhone13Pro",
+     "price": "450.000",
+     "discount": "0",
+     "image": "",
+     "category": "smartphone"
+    },
+    {
+     "id": "8",
+     "name": "iPhone12",
+     "price": "190.000",
+     "discount": "15",
+     "image": "",
+     "category": "inSale"
+    },
+    {
+     "id": "9",
+     "name": "SamsungGalaxyZ-Fold3",
+     "price": "250.000",
+     "discount": "0",
+     "image": "",
+     "category": "smartphone"
+    },
+    {
+     "id": "10",
+     "name": "SamsungGalaxy-A33",
+     "price": "75.000",
+     "discount": "20",
+     "image": "",
+     "category": "inSale"
+    },
+    {
+     "id": "11",
+     "name": "SamsungS22+",
+     "price": "200.000",
+     "discount": "0",
+     "image": "",
+     "category": "smartphone"
+    },
+    {
+     "id": "12",
+     "name": "",
+     "price": "",
+     "discount": "0",
+     "image": "",
+     "category": "smartphone"
+    },
+    {
+     "id": "13",
+     "name": "",
+     "price": "0",
+     "discount": "0",
+     "image": "",
+     "category": "smartphone"
+    },
+    {
+     "id": "14",
+     "name": "",
+     "price": "0",
+     "discount": "0",
+     "image": "",
+     "category": "smartphone"
+    },
+    {
+     "id": "15",
+     "name": "",
+     "price": "0",
+     "discount": "0",
+     "image": "",
+     "category": "smartphone"
+    },
+    {
+     "id": "16",
+     "name": "",
+     "price": "0",
+     "discount": "0",
+     "category": "smartphone",
+     "image": ""
+    }
+   ]
