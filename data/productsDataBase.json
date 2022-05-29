@@ -1,98 +1,110 @@
 [
     {
      "id": "1",
-     "name": "ZTEbladeA51",
+     "name": "ZTE-Blade-A51",
      "price": "27.000",
      "discount": "0",
-     "category": "smartphone",
-     "image": ""
+     "image": "ZTE-BladeA51.png",
+     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
+     "category": "smartphone"
     },
     {
      "id": "2",
-     "name": "XiaomiRedmi9A",
+     "name": "Xiaomi-Redmi-9A",
      "price": "32.000",
      "discount": "15",
-     "category": "inSale",
-     "image": ""
+     "image": "XiaomiRedmi9A.png",
+     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
+     "category": "inSale"
     },
     {
      "id": "3",
-     "name": "Xiaomi11Lite",
+     "name": "Xiaomi-11-lite",
      "price": "100.000",
      "discount": "0",
-     "category": "smartphone",
-     "image": ""
+     "image": "Xiaomi11Lite.png",
+     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
+     "category": "smartphone"
     },
     {
      "id": "4",
-     "name": "iPhoneX",
+     "name": "iPhone-X",
      "price": "120.000",
-     "discount": "20",
-     "image": "",
+     "discount": "14",
+     "image": "iPhoneX.png",
+     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
      "category": "inSale"
     },
     {
      "id": "5",
-     "name": "MotorolaG22",
+     "name": "Moto-G22",
      "price": "38.000",
-     "discount": "10",
-     "image": "",
+     "discount": "20",
+     "image": "MotoG22.png",
+     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
      "category":"inSale"
     },
     {
      "id": "6",
-     "name": "MotorolaG200",
+     "name": "Motorola-G200",
      "price": "100.000",
      "discount": "0",
-     "image": "",
+     "image": "MotorolaG200.png",
+     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
      "category":"smartphone"
     },
     {
      "id": "7",
-     "name": "iPhone13Pro",
+     "name": "iPhone-13-Pro",
      "price": "450.000",
      "discount": "0",
-     "image": "",
+     "image": "iPhone13Pro.png",
+     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
      "category": "smartphone"
     },
     {
      "id": "8",
-     "name": "iPhone12",
+     "name": "iPhone-12",
      "price": "190.000",
-     "discount": "15",
-     "image": "",
+     "discount": "0",
+     "image": "iPhone12.png",
+     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
      "category": "inSale"
     },
     {
      "id": "9",
-     "name": "SamsungGalaxyZ-Fold3",
+     "name": "Samsung-Galaxy-Z-Fold3",
      "price": "250.000",
      "discount": "0",
-     "image": "",
+     "image": "SamsungGalaxyZ-Fold3.png",
+     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
      "category": "smartphone"
     },
     {
      "id": "10",
-     "name": "SamsungGalaxy-A33",
+     "name": "Samsung-Galaxy-A33",
      "price": "75.000",
-     "discount": "20",
-     "image": "",
+     "discount": "25",
+     "image": "SamsungGalaxyA33.png",
+     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
      "category": "inSale"
     },
     {
      "id": "11",
-     "name": "SamsungS22+",
+     "name": "Samsung-Galaxy-S22+",
      "price": "200.000",
      "discount": "0",
-     "image": "",
+     "image": "SamsungGalaxyS22+.png",
+     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
      "category": "smartphone"
     },
     {
      "id": "12",
      "name": "",
-     "price": "",
+     "price": "0",
      "discount": "0",
      "image": "",
+     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
      "category": "smartphone"
     },
     {
@@ -101,14 +113,16 @@
      "price": "0",
      "discount": "0",
      "image": "",
+     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
      "category": "smartphone"
     },
     {
      "id": "14",
      "name": "",
      "price": "0",
-     "discount": "0",
+     "discount": "5",
      "image": "",
+     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
      "category": "smartphone"
     },
     {
@@ -117,6 +131,7 @@
      "price": "0",
      "discount": "0",
      "image": "",
+     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
      "category": "smartphone"
     },
     {
@@ -125,6 +140,7 @@
      "price": "0",
      "discount": "0",
      "category": "smartphone",
+     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
      "image": ""
     }
    ]
