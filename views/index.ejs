@@ -70,8 +70,8 @@
 
                     <% smartphones.forEach( product => { %>
                     <article>
-                    <a href="./productDetail.ejs/<%= product.id %> " class="main">
-                        <h4 class="description"><%= product.name %></h4>
+                    <a href="./productDetail/<%= product.id %> " class="main">
+                        <h4 class="name"><%= product.name %></h4>
                         <img src="/images/products/<%= product.image %>" class="product_img">
                         <div class="main-article">
                             <i class="fas fa-truck"></i>
@@ -90,7 +90,7 @@
                     <% inSale.forEach(product => { %>
                     <article>
                     <a href="./productDetail/<%= product.id %> " class="main">
-                        <h4 class="description"><%= product.name %> </h4>
+                        <h4 class="name"><%= product.name %> </h4>
                         <img src="/images/products/<%= product.image %>" class="product_img">
                         <div class="main-article">
                             <i class="fas fa-truck"></i>

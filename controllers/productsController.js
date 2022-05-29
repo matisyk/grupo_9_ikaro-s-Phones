@@ -1,18 +1,18 @@
 const fs = require('fs');
 const path = require('path');
 
-const smartphonesFilePath = path.join(__dirname, '../data/productsDataBase.json');
-const smartphones = JSON.parse(fs.readFileSync(smartphonesFilePath, 'utf-8'));
+const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const productController ={
     productCart : (req, res) => {
         res.render('productCart');
     },
-    productDetail : (req, res) => {
-		let id = req.params.id;
-		let smartphone = smartphones.find(product => product.id == id)
+    detail : (req, res) => {
+        let id = req.params.id
+		let product = products.find(product => product.id == id)
 
-		res.render("productDetail", {smartphone})
+		res.render('productDetail',{product, products})
 	},
   
 }

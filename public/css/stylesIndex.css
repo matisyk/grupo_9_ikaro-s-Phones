@@ -239,59 +239,47 @@ header .form .input{
 .price{
     font-size: 18px;
 }
-
 p{
     font-size: 12px;
 }
-
 h3{
     font-size: 24px;
-}
-
-h3,
-.description{
     color: #666;
 }
-
-.description{
-    display: none;
-    margin-top: 20px;
+.name{
+    margin-top: 25px;
+    margin-bottom: 10px;
     text-align: center;
+    color: #666;
+    font-size: 18px;
 }
 a.main{
     text-decoration: none;
 }
-
 main{
     width: 90%;
     margin: 0 auto;
 }
-
 .products {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 main section article{
     background-color: #fff;    
     margin: 10px 0px;
 }
-
 main section article img{
     width: 100%;
 }
-
 .main-article {
     position: relative;
 }
-
 main section article i,
 .discount{
     color: #ff4621;
 }
-
 main section article i{
     display: block;
     font-size: 16px;
@@ -305,29 +293,24 @@ main section article i{
     right: 20px;
     top: -15px;
 }
-
 main section h3{
     margin: 20px 0px;
 }
-
 article div.main-article{
     width: 100%;
     border-top: 1px solid #ebebeb;
     padding: 25px;
 }
-
 p.price {
     font-size: 18px;
     display: inline-block;
     margin-left: 12px;
 }
-
 p.discount {
     font-size: 16px;
     display: inline-block;
     margin-left: 8px;
 }
-
 /* MAIN FIN */
 
 /* FOOTER PRINCIPIO */
@@ -344,14 +327,12 @@ footer{
     justify-content: space-around;
     align-items: end;
 }
-
 .fa-brands.fa-instagram, .fa-brands.fa-facebook, .fa-brands.fa-twitter{
     border-radius: 100%;
     border: 1px solid;
     outline: none;
     padding: 5px;
 }
-
 .footer-middle{
     width: 100%;
     height: auto;
@@ -362,7 +343,6 @@ footer{
     margin-bottom: 30px;
     flex-wrap: wrap;
 }
-
 .primera-columna p{
     margin: 30px;
     font-size: 15px;
