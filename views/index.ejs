@@ -9,12 +9,11 @@
     
         <script src="https://kit.fontawesome.com/5309449a51.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/stylesIndex.css">
-
     </head>
 
     <body>
 
-            <%- include('../partials/header'); %>
+            <%- include('./partials/header'); %>
         
         <div class="slide">
 			<div class="slide-inner">
@@ -68,31 +67,37 @@
             <section>
                 <h3>Smartphones</h3>
                 <div class="products">
+
                     <% smartphones.forEach( product => { %>
                     <article>
-                        <a href="./productDetail/<%= product.id %> "><h4 class="description"><%= product.name %></h4>
-                        <img src="images/LogoIkarosPhonesenbaja.png" alt="Titulo phone Titulo" class="product_img">
+                    <a href="./productDetail.ejs/<%= product.id %> " class="main">
+                        <h4 class="description"><%= product.name %></h4>
+                        <img src="/images/products/<%= product.image %>" class="product_img">
                         <div class="main-article">
                             <i class="fas fa-truck"></i>
-                            <p class="price">$<%= product.price %></p>
-                            <p class="discount"><%= product.discount %> %off</p>
-                        </div></a>
+                            <p class="price">$ <%= product.price %></p>
+                            <p class="discount"><%= product.discount %> % OFF</p>
+                        </div>
+                    </a>
                     </article>
                     <% }) %>
             </section>
+
             <section>
-                <h3>Promociones</h3>
+                <h3>Ofertas</h3>
                 <div class="products">
+
                     <% inSale.forEach(product => { %>
                     <article>
-                        <a href="./productDetail/<%= product.id %> ">
+                    <a href="./productDetail/<%= product.id %> " class="main">
                         <h4 class="description"><%= product.name %> </h4>
-                        <img src="images/LogoIkarosPhonesenbaja.png" alt="Titulo phone Titulo" class="product_img">
+                        <img src="/images/products/<%= product.image %>" class="product_img">
                         <div class="main-article">
                             <i class="fas fa-truck"></i>
-                            <p class="price"> $<%= product.price %> </p>
-                            <p class="discount"><%= product.discount %> %off</p>
+                            <p class="price">$ <%= product.price %> </p>
+                            <p class="discount"><%= product.discount %> % OFF</p>
                         </div>
+                    </a>
                     </article>
                     <% }) %>
                 </div>  
@@ -102,7 +107,7 @@
 
         <footer>
 
-            <%- include ("../partials/footer"); %> 
+            <%- include ("./partials/footer"); %> 
 
         </footer>
     </body>

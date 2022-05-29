@@ -6,13 +6,13 @@ const smartphones = JSON.parse(fs.readFileSync(smartphonesFilePath, 'utf-8'));
 
 const productController ={
     productCart : (req, res) => {
-        res.render('products/productCart');
+        res.render('productCart');
     },
     productDetail : (req, res) => {
 		let id = req.params.id;
 		let smartphone = smartphones.find(product => product.id == id)
 
-		res.render("products/productDetail", {smartphone})
+		res.render("productDetail", {smartphone})
 	},
   
 }

@@ -256,6 +256,10 @@ h3,
 .description{
     display: none;
     margin-top: 20px;
+    text-align: center;
+}
+a.main{
+    text-decoration: none;
 }
 
 main{

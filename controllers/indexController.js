@@ -9,7 +9,7 @@ const inSale = products.filter(product => product.category == "inSale")
 
 const indexController={
     index : (req, res) => {
-        res.render('products/index', {smartphones,inSale});
+        res.render('index', {smartphones,inSale});
     },
 }
 module.exports = indexController;
