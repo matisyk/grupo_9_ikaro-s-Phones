@@ -127,11 +127,16 @@ header .form .input{
         justify-content: space-around;
         margin-top: 5%;
     }
+    .product-img-container{
+        position: relative;
+        text-align: center;
+    }
     .product-img{
-        width: 40vw;
-        height: 100vh;
+        margin-top: 70px;
+        height: 72vh;
     }
     .detalles-producto{
+        position: relative;
         margin-top: auto;
         margin-bottom: auto;
     }
@@ -318,6 +323,11 @@ footer{
         border-bottom: 1px solid;
         margin-bottom: 30px;
         padding-bottom: 30px;
+    }
+    .product-img{
+        margin-top: auto;
+        width: 23vmax;
+        height: 30vmax;
     }
 }
 /* */
