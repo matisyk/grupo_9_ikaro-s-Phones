@@ -18,6 +18,10 @@ app.use('',rutaProducts);
 app.use('',rutaRegister);
 app.use('', rutaEdicion);
 
+//para capturar lo que llegue del form en un obj lit. 
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
+
 
 app.set('view engine', 'ejs')//configuracion EJS
 app.use(express.static(path.resolve ('public')));
