@@ -4,8 +4,8 @@ const registerController ={
     register:(req, res) => {
         res.render('register');
     },
-    guardar: (req, res) =>{
-        
+    saveUser: (req, res) =>{
+        res.redirect('register')
     }
 }
 

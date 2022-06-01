@@ -10,7 +10,7 @@ const rutaRegister = require('./routers/register');
 const rutaEdicion = require('./routers/edicion');
 
 
-//uso de rutad
+//uso de rutas
 app.use('',rutaIndex);
 app.use('',rutaLogin);
 app.use('',rutaProducts);
