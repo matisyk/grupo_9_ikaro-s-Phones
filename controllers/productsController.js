@@ -14,6 +14,9 @@ const productController ={
 
 		res.render('productDetail',{product})
 	},
+    store: (req, res) => {
+        res.render('products', {products})
+    }
   
 }
 

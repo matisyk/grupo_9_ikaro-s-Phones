@@ -1,7 +1,7 @@
 [
     {
      "id": "1",
-     "name": "ZTE-Blade-A51",
+     "name": "ZTE blade A51",
      "price": "27.000",
      "discount": "0",
      "image": "ZTE-BladeA51.png",
@@ -10,7 +10,7 @@
     },
     {
      "id": "2",
-     "name": "Xiaomi-Redmi-9A",
+     "name": "Xiaomi Redmi 9A",
      "price": "32.000",
      "discount": "15",
      "image": "XiaomiRedmi9A.png",
@@ -39,7 +39,7 @@
     },
     {
      "id": "4",
-     "name": "iPhone-X",
+     "name": "iPhone X",
      "price": "120.000",
      "discount": "14",
      "image": "iPhoneX.png",
@@ -48,7 +48,7 @@
     },
     {
      "id": "5",
-     "name": "Moto-G22",
+     "name": "Moto G22",
      "price": "38.000",
      "discount": "20",
      "image": "MotoG22.png",
@@ -57,7 +57,7 @@
     },
     {
      "id": "6",
-     "name": "Motorola-G200",
+     "name": "Motorola G200",
      "price": "100.000",
      "discount": "0",
      "image": "MotorolaG200.png",
@@ -66,7 +66,7 @@
     },
     {
      "id": "7",
-     "name": "iPhone-13-Pro",
+     "name": "iPhone 13 Pro",
      "price": "450.000",
      "discount": "0",
      "image": "iPhone13Pro.png",
@@ -75,7 +75,7 @@
     },
     {
      "id": "8",
-     "name": "iPhone-12",
+     "name": "iPhone 12",
      "price": "190.000",
      "discount": "0",
      "image": "iPhone12.png",
@@ -84,7 +84,7 @@
     },
     {
      "id": "9",
-     "name": "Samsung-Galaxy-Z-Fold3",
+     "name": "Samsung Galaxy Z Fold3",
      "price": "250.000",
      "discount": "0",
      "image": "SamsungGalaxyZ-Fold3.png",
@@ -93,7 +93,7 @@
     },
     {
      "id": "10",
-     "name": "Samsung-Galaxy-A33",
+     "name": "Samsung Galaxy A33",
      "price": "75.000",
      "discount": "25",
      "image": "SamsungGalaxyA33.png",
@@ -102,7 +102,7 @@
     },
     {
      "id": "11",
-     "name": "Samsung-Galaxy-S22+",
+     "name": "Samsung Galaxy S22+",
      "price": "200.000",
      "discount": "0",
      "image": "SamsungGalaxyS22+.png",

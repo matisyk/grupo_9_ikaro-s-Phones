@@ -10,13 +10,17 @@ const rutaRegister = require('./routers/register');
 const rutaEdicion = require('./routers/edicion');
 
 
-//uso de rutad
+//uso de rutas
 app.use('',rutaIndex);
 app.use('',rutaLogin);
 app.use('',rutaProducts);
 app.use('',rutaProducts);
 app.use('',rutaRegister);
 app.use('', rutaEdicion);
+
+//para capturar lo que llegue del form en un obj lit. 
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
 
 
 app.set('view engine', 'ejs')//configuracion EJS
