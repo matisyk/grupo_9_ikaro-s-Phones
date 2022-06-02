@@ -6,7 +6,17 @@
      "discount": "0",
      "image": "ZTE-BladeA51.png",
      "description": "Pantalla 6.52” Full Display HD+ con waterdrop y resolución 720x1600 para una visual más amplia y clara. Elegante diseño geométrico en la contratapa, con textura en forma de arco, que brinda mayor confort en tus manos.",
-     "category": "smartphone"
+     "category": "smartphone",
+     "screen": "9.5",
+     "resolution": "1080x2400",
+     "system": "Android",
+     "rom": "128GB",
+     "ram": "6GB",
+     "externalMemory":"trajeta microSD ejem 1TB",
+     "camera": "12 MP + 8 MP + 12 MP",
+     "frontalCamera": "32MP",
+     "recorder": "1080",
+     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
     },
     {
      "id": "2",
@@ -15,7 +25,17 @@
      "discount": "15",
      "image": "XiaomiRedmi9A.png",
      "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
-     "category": "inSale"
+     "category": "inSale",
+     "screen": "9.5",
+     "resolution": "1080x2400",
+     "system": "Android",
+     "rom": "128GB",
+     "ram": "6GB",
+     "externalMemory":"trajeta microSD ejem 1TB",
+     "camera": "12 MP + 8 MP + 12 MP",
+     "frontalCamera": "32MP",
+     "recorder": "1080",
+     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
     },
     {
      "id": "3",
@@ -25,16 +45,15 @@
      "image": "Xiaomi11Lite.png",
      "description": "Telefono super veloz y con gran capacidad",
      "category": "smartphone",
-     "quality": 1080,
-     "quality2": 1920,
-     "inches": 9.5,
-     "type": "Oled",
-     "rom": 128,
-     "ram": 16,
-     "maxsd": 1000,
-     "qualitycam": 40,
-     "qualitycamf": 12,
-     "recorder": 1080,
+     "screen": "9.5",
+     "resolution": "1080x2400",
+     "system": "Android",
+     "rom": "128GB",
+     "ram": "6GB",
+     "externalMemory":"trajeta microSD ejem 1TB",
+     "camera": "12 MP + 8 MP + 12 MP",
+     "frontalCamera": "32MP",
+     "recorder": "1080",
      "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
     },
     {
@@ -44,7 +63,17 @@
      "discount": "14",
      "image": "iPhoneX.png",
      "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
-     "category": "inSale"
+     "category": "inSale",
+     "screen": "9.5",
+     "resolution": "1080x2400",
+     "system": "Android",
+     "rom": "128GB",
+     "ram": "6GB",
+     "externalMemory":"trajeta microSD ejem 1TB",
+     "camera": "12 MP + 8 MP + 12 MP",
+     "frontalCamera": "32MP",
+     "recorder": "1080",
+     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
     },
     {
      "id": "5",
@@ -53,7 +82,17 @@
      "discount": "20",
      "image": "MotoG22.png",
      "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
-     "category":"inSale"
+     "category":"inSale",
+     "screen": "9.5",
+     "resolution": "1080x2400",
+     "system": "Android",
+     "rom": "128GB",
+     "ram": "6GB",
+     "externalMemory":"trajeta microSD ejem 1TB",
+     "camera": "12 MP + 8 MP + 12 MP",
+     "frontalCamera": "32MP",
+     "recorder": "1080",
+     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
     },
     {
      "id": "6",
@@ -62,7 +101,17 @@
      "discount": "0",
      "image": "MotorolaG200.png",
      "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
-     "category":"smartphone"
+     "category":"smartphone",
+     "screen": "9.5",
+     "resolution": "1080x2400",
+     "system": "Android",
+     "rom": "128GB",
+     "ram": "6GB",
+     "externalMemory":"trajeta microSD ejem 1TB",
+     "camera": "12 MP + 8 MP + 12 MP",
+     "frontalCamera": "32MP",
+     "recorder": "1080",
+     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
     },
     {
      "id": "7",
@@ -71,7 +120,17 @@
      "discount": "0",
      "image": "iPhone13Pro.png",
      "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
-     "category": "smartphone"
+     "category": "smartphone",
+     "screen": "9.5",
+     "resolution": "1080x2400",
+     "system": "Android",
+     "rom": "128GB",
+     "ram": "6GB",
+     "externalMemory":"trajeta microSD ejem 1TB",
+     "camera": "12 MP + 8 MP + 12 MP",
+     "frontalCamera": "32MP",
+     "recorder": "1080",
+     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
     },
     {
      "id": "8",
@@ -80,7 +139,17 @@
      "discount": "0",
      "image": "iPhone12.png",
      "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
-     "category": "inSale"
+     "category": "inSale",
+     "screen": "9.5",
+     "resolution": "1080x2400",
+     "system": "Android",
+     "rom": "128GB",
+     "ram": "6GB",
+     "externalMemory":"trajeta microSD ejem 1TB",
+     "camera": "12 MP + 8 MP + 12 MP",
+     "frontalCamera": "32MP",
+     "recorder": "1080",
+     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
     },
     {
      "id": "9",
@@ -89,7 +158,17 @@
      "discount": "0",
      "image": "SamsungGalaxyZ-Fold3.png",
      "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
-     "category": "smartphone"
+     "category": "smartphone",
+     "screen": "9.5",
+     "resolution": "1080x2400",
+     "system": "Android",
+     "rom": "128GB",
+     "ram": "6GB",
+     "externalMemory":"trajeta microSD ejem 1TB",
+     "camera": "12 MP + 8 MP + 12 MP",
+     "frontalCamera": "32MP",
+     "recorder": "1080",
+     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
     },
     {
      "id": "10",
@@ -98,7 +177,17 @@
      "discount": "25",
      "image": "SamsungGalaxyA33.png",
      "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
-     "category": "inSale"
+     "category": "inSale",
+     "screen": "9.5",
+     "resolution": "1080x2400",
+     "system": "Android",
+     "rom": "128GB",
+     "ram": "6GB",
+     "externalMemory":"trajeta microSD ejem 1TB",
+     "camera": "12 MP + 8 MP + 12 MP",
+     "frontalCamera": "32MP",
+     "recorder": "1080",
+     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
     },
     {
      "id": "11",
@@ -107,6 +196,16 @@
      "discount": "0",
      "image": "SamsungGalaxyS22+.png",
      "description": "Con un diseño de vanguardia, el celular Samsung Galaxy S22 Plus es un teléfono único que ofrece una pantalla Dynamic AMOLED 2x con una resolución Full HD+ sin Notch ni distracciones.",
-     "category": "smartphone"
+     "category": "smartphone",
+     "screen": "9.5",
+     "resolution": "1080x2400",
+     "system": "Android",
+     "rom": "128GB",
+     "ram": "6GB",
+     "externalMemory":"trajeta microSD ejem 1TB",
+     "camera": "12 MP + 8 MP + 12 MP",
+     "frontalCamera": "32MP",
+     "recorder": "1080",
+     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
     }
    ]
