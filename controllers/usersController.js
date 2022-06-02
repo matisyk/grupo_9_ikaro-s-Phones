@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require("path");
 
-const users = JSON.parse(fs.readFileSync(user, 'utf-8'));
 const usersFilePath = path.join(__dirname, '../data/users.json');
+const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
 const usersController ={
     register:(req, res) => {
@@ -17,19 +17,16 @@ const usersController ={
             confirm: req.body.confirm
         }
 
-        let archUsers = fs.readFileSync('users.json', {encoding:'utf-8'})
-        let users;
-        if(archUsers == "") {
-            users = [];
-        }else{
-            users = JSON.parse(archUsers);
+        let usuarios;
+        if(users == "") {
+            usuarios = [];
         }
-        
-        usersJSON = JSON.stringify(users)
+    
+        usuarios.push(user);
 
-        users.push(user)
+        let usuariosJSON = JSON.stringify(usuarios)
 
-        fs.writeFileSync(usersFilePath, JSON.stringify(users))
+        fs.writeFileSync(usersFilePath, usuariosJSON);
 	    
         res.redirect('/index',)
     },
