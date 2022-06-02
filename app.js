@@ -4,18 +4,15 @@ const path = require('path');
 
 //routers
 const rutaIndex = require('./routers/index');
-const rutaLogin = require('./routers/login');
 const rutaProducts = require('./routers/products');
-const rutaRegister = require('./routers/register');
+const rutaUsers = require('./routers/users');
 const rutaEdicion = require('./routers/edicion');
 
 
 //uso de rutas
 app.use('',rutaIndex);
-app.use('',rutaLogin);
 app.use('',rutaProducts);
-app.use('',rutaProducts);
-app.use('',rutaRegister);
+app.use('',rutaUsers);
 app.use('', rutaEdicion);
 
 //para capturar lo que llegue del form en un obj lit. 

@@ -11,5 +11,12 @@ const indexController={
     index : (req, res) => {
         res.render('index', {smartphones,inSale});
     },
+    inSale : (req, res) => {
+        let product=products
+        if(product.category == "inSale"){
+            res.send(inSale)
+        }
+    },
+    
 }
 module.exports = indexController;
