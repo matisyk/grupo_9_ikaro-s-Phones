@@ -17,6 +17,5 @@ const indexController={
             res.send(inSale)
         }
     },
-    
 }
 module.exports = indexController;

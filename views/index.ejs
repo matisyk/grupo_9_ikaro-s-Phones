@@ -57,26 +57,46 @@
             <nav>
                 <ul class="var">
                     <li><a href="#" class="a_1">Envios gratis a todo el país</a></li>
-                    <li><a href="#" class="a_2">Hasta en 16 cuotas sin interes en productos selecionados</a></li>
+                    <li><a href="#" class="a_2">Hasta en 10 cuotas sin interes en productos selecionados</a></li>
                     <li><a href="#" class="a_3">Compra protegido, tenes devoluciones gratis</a></li>
                 </ul>
             </nav>
         </div>
 
         <main>
+
+            <section>
+                <h3><i class="fa-solid fa-tag"></i>Ofertas</h3>
+                <div class="products">
+                    <% inSale.forEach(product => { %>
+                    <article>
+                    <a href="/detail/<%= product.id %> " class="href">
+                        <h4 class="name"><%= product.name %> </h4>
+                        <img src="/images/products/<%= product.image %>" class="product_img">
+                        <div class="box-description">
+                            <p class="price">$ <%= product.price %> </p>
+                            <p class="discount"><%= product.discount %> % OFF</p>
+                            <p class="description">en 10 cuotas de </p>
+                            
+                        </div>
+                    </a>
+                    </article>
+                    <% }) %>
+                </div>  
+            </section> 
+
             <section>
                 <h3>Smartphones</h3>
                 <div class="products">
-
                     <% smartphones.forEach( product => { %>
                     <article>
-                    <a href="/detail/<%=product.id %> " class="main">
+                    <a href="/detail/<%=product.id %> " class="href">
                         <h4 class="name"><%= product.name %></h4>
                         <img src="/images/products/<%= product.image %>" class="product_img">
-                        <div class="description">
-                            <i class="fas fa-truck"></i>
+                        <div class="box-description">
                             <p class="price">$ <%= product.price %></p>
                             <p class="discount"><%= product.discount %> % OFF</p>
+                            <p class="description">en 10 cuotas de </p>
                         </div>
                     </a>
                     </article>
@@ -84,25 +104,7 @@
                 </div>
             </section>
 
-            <section>
-                <h3>Ofertas</h3>
-                <div class="products">
-
-                    <% inSale.forEach(product => { %>
-                    <article>
-                    <a href="/detail/<%= product.id %> " class="main">
-                        <h4 class="name"><%= product.name %> </h4>
-                        <img src="/images/products/<%= product.image %>" class="product_img">
-                        <div class="main-article">
-                            <i class="fas fa-truck"></i>
-                            <p class="price">$ <%= product.price %> </p>
-                            <p class="discount"><%= product.discount %> % OFF</p>
-                        </div>
-                    </a>
-                    </article>
-                    <% }) %>
-                </div>  
-            </section>
+            
 
         </main>
 
