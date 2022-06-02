@@ -40,28 +40,27 @@
                     </div>
                 </div>
             </section>
-            <section class="descripcion">
-                <h3>Descripcion</h3>
-                <p><%= product.description %> </p>
-                <h4>PRINCIPALES ESPECIFICACIONES</h4>
-                <div class="especificaciones-producto">
-                        <div class="caracteristicas-pantalla">
+            <section class="specs">
+                <p class="text-detail"><%= product.description %> </p>
+                <h3 >Especificaciones</h3>
+                <div class="specs-product">
+                        <div class="pantalla">
                             <p><strong>Calidad </strong><%= product.quality %>x<%= product.quality2 %></p>
                             <p><strong>Pulgadas </strong><%= product.inches %> '</p>
                             <p><strong>Tipo </strong><%= product.type %> </p>
                         </div>                  
-                        <div class="caracteristicas-camara">
+                        <div class="camara">
                             <p><strong>Camara </strong> <%= product.qualitycam %> MP</p>
                             <p><strong>Frontal </strong> <%= product.qualitycamf %> MP </p>
                             <p><strong>Grabacion </strong> <%= product.recorder %> P </p>
                         </div>
-                        <div class="caracteristicas-almacenamiento">
+                        <div class="almacenamiento">
                             <p><strong>Rom </strong> <%= product.rom %> GB </p>
                             <p><strong>Ram </strong> <%= product.ram %> GB </p>
                             <p><strong>SD </strong> <%= product.maxsd %> GB </p>
                         </div>                  
                 </div>
-                <h4>Video referencia</h4>
+                <h4>Video referencial</h4>
                 <div class="video">
                 <iframe width="560" height="315" src="<%= product.url %> " title="YouTube video player" rameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
