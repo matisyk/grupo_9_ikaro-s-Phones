@@ -20,7 +20,7 @@
                
                 <div class="detalles-producto">
                     <div class="nombre-producto">
-                        <p class="telefono-producto"><strong></strong></p>
+                        <p class="telefono-producto"><strong><%= product.name %> </strong></p>
                         <p></p>
                     </div>
                     <div class="precio-producto">
@@ -44,25 +44,29 @@
             </section>
             <section class="descripcion">
                 <h3>Descripcion</h3>
-                <h3>Especificaciones Tecnicas</h3>
+                <p><%= product.description %> </p>
+                <h4>PRINCIPALES ESPECIFICACIONES</h4>
                 <div class="especificaciones-producto">
-                    <article class="pantalla-producto">
-                        <h4>PANTALLA</h4>
-                        <div class="caracteristicas-pantalla-producto">
-                            <p>PANTALLA TACTIL</p>
-                            <p>PULGADAS</p>
-                            <p>TECNOLOGIA DE PANTALLA</p>
+                        <div class="caracteristicas-pantalla">
+                            <p><strong>Calidad </strong><%= product.quality %>x<%= product.quality2 %></p>
+                            <p><strong>Pulgadas </strong><%= product.inches %> '</p>
+                            <p><strong>Tipo </strong><%= product.type %> </p>
+                        </div>                  
+                        <div class="caracteristicas-camara">
+                            <p><strong>Camara </strong> <%= product.qualitycam %> MP</p>
+                            <p><strong>Frontal </strong> <%= product.qualitycamf %> MP </p>
+                            <p><strong>Grabacion </strong> <%= product.recorder %> P </p>
                         </div>
-                    </article>
-                    <article class="memoria-producto">
-                        <h4>MEMORIA</h4>
-                        <div class="caracteristicas-memoria-producto">
-                            <p>TAMAÑO MAXIMO DE TARJETA</p>
-                            <p>TARJETA DE MEMORIA SOPORTADA</p>
-                            <p>MEMORIA INTERNA</p>
-                            <p>MEMORIA RAM</p>
-                        </div>
-                    </article>
+                        <div class="caracteristicas-almacenamiento">
+                            <p><strong>Rom </strong> <%= product.rom %> GB </p>
+                            <p><strong>Ram </strong> <%= product.ram %> GB </p>
+                            <p><strong>SD </strong> <%= product.maxsd %> GB </p>
+                        </div>                  
+                </div>
+                <h4>Video referencia</h4>
+                <div class="video">
+                <iframe width="560" height="315" src="<%= product.url %> " title="YouTube video player" rameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </section>
         </main>

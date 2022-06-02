@@ -126,6 +126,7 @@ header .form .input{
         flex-direction: column;
         justify-content: space-around;
         margin-top: 5%;
+        
     }
     .product-img-container{
         position: relative;
@@ -144,6 +145,7 @@ header .form .input{
         font-size: large;
     }
     .nombre-producto{
+        margin-top: 30px;
         border-bottom: 1px solid;
         margin-bottom: 30px;
         padding-bottom: 30px;
@@ -176,7 +178,6 @@ header .form .input{
     }
     .especificaciones-producto{
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
     }
@@ -184,14 +185,19 @@ header .form .input{
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    .descripcion article h4{
+    .descripcion h4{
         border-bottom:  5px solid;
         margin-top: 10px;
         margin-bottom: 4px;
-        padding-top: 30px;
+        padding-top: 10px;
+        text-align: center;
     }
-    .descripcion article div p{
-        margin-top: 20px;
+    .descripcion div p{
+        flex-wrap: wrap;
+    }
+    .video{
+        text-align: center;
+        margin-top: 30px;
     }
 
 /* MAIN FIN */
@@ -328,6 +334,9 @@ footer{
         margin-top: auto;
         width: 23vmax;
         height: 30vmax;
+    }
+    .nombre-producto{
+        margin-top: auto;
     }
 }
 /* */

@@ -23,8 +23,19 @@
      "price": "100.000",
      "discount": "0",
      "image": "Xiaomi11Lite.png",
-     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
-     "category": "smartphone"
+     "description": "Telefono super veloz y con gran capacidad",
+     "category": "smartphone",
+     "quality": 1080,
+     "quality2": 1920,
+     "inches": 9.5,
+     "type": "Oled",
+     "rom": 128,
+     "ram": 16,
+     "maxsd": 1000,
+     "qualitycam": 40,
+     "qualitycamf": 12,
+     "recorder": 1080,
+     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
     },
     {
      "id": "4",
@@ -97,50 +108,5 @@
      "image": "SamsungGalaxyS22+.png",
      "description": "Con un diseño de vanguardia, el celular Samsung Galaxy S22 Plus es un teléfono único que ofrece una pantalla Dynamic AMOLED 2x con una resolución Full HD+ sin Notch ni distracciones.",
      "category": "smartphone"
-    },
-    {
-     "id": "12",
-     "name": "",
-     "price": "0",
-     "discount": "0",
-     "image": "",
-     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
-     "category": "smartphone"
-    },
-    {
-     "id": "13",
-     "name": "",
-     "price": "0",
-     "discount": "0",
-     "image": "",
-     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
-     "category": "smartphone"
-    },
-    {
-     "id": "14",
-     "name": "",
-     "price": "0",
-     "discount": "5",
-     "image": "",
-     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
-     "category": "smartphone"
-    },
-    {
-     "id": "15",
-     "name": "",
-     "price": "0",
-     "discount": "0",
-     "image": "",
-     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
-     "category": "smartphone"
-    },
-    {
-     "id": "16",
-     "name": "",
-     "price": "0",
-     "discount": "0",
-     "category": "smartphone",
-     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
-     "image": ""
     }
    ]
