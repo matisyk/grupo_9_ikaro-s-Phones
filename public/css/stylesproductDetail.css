@@ -120,57 +120,69 @@ header .form .input{
         padding-top: 5%;
     }
     .producto{
-        width: 100%;
-        height: auto;
+        width: 90%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin-top: 5%;
-        
+        justify-content: center;
+        margin: auto;
+        margin-top: 3%;
+        background-color: white;
+        border-radius: 15px;
+        align-items: center;
     }
     .product-img-container{
-        position: relative;
+        margin-top: 3%;
+        margin-left: 3%;
         text-align: center;
-    }
-    .product-img{
-        margin-top: 70px;
-        height: 72vh;
+        width: 30%;
+        padding: 10px;
     }
     .detalles-producto{
-        position: relative;
-        margin-top: auto;
-        margin-bottom: auto;
+        padding: 5%;
+        margin: 47px 20px 10px 5px;
+        color: #302e2e
     }
     .telefono-producto{
-        font-size: large;
+        font-size: 30px;
+        margin-bottom: 7px;
+        color: #f84525;
+    }
+    .price{
+        font-size: 25px;
+        margin-bottom: 10px;
+        color: #2b15d1;
     }
     .nombre-producto{
         margin-top: 30px;
-        border-bottom: 1px solid;
-        margin-bottom: 30px;
+        border-bottom: 1px solid #302e2e;
+        margin-bottom: 20px;
         padding-bottom: 30px;
     }
-    .precio-producto{
+    .detalle-producto{
         margin-bottom: 30px;
     }
-    .promociones-producto{
-        margin-bottom: 30px;
-    }
-    .visa-producto{
+    .detalle{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
-    .visa-producto p{
-        background-color: aqua;
+    .fa-solid.fa-gear,
+    .fa-solid.fa-sd-card,
+    .fa-solid.fa-mobile-screen{
+        background-color: #1868d9;
+        color: white;
+        border-radius: 20px;
+        padding: 8px 10px;
+        margin-right: 7px;
     }
     .boton-comprar-producto{
        text-align: center;
-       border-bottom: 1px solid;
-       margin-bottom: 30px;
-       padding-bottom: 30px;
+       color: white;
+       background-color: #f84525;
+       padding: 8px 0px;
+       margin: 0 30%;
+       border-radius: 20px;
     }
     .descripcion{
         width: 90%;
