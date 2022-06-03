@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-
+const methodOverride = require('method-override')
 //routers
 const rutaIndex = require('./routers/index');
 const rutaProducts = require('./routers/products');
@@ -24,8 +24,7 @@ app.set('view engine', 'ejs')//configuracion EJS
 app.use(express.static(path.resolve ('public')));
 app.use(express.static(path.resolve ('views')));
 
-
-
+app.use(methodOverride("_method"));
 
 app.listen(3000,()=> console.log('servidor corriendo'));
 
