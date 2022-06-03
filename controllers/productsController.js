@@ -16,7 +16,15 @@ const productController ={
 	},
     store: (req, res) => {
         res.render('products', {products})
-    }
+    },
+    edit: (req, res) => {
+        res.render('productEdit', {products})
+    },
+    edited: (req, res) => {
+		let id = req.params.id;
+		let product = products.find(product => product.id == id)
+        res.redirect('/index', {product})
+	},
   
 }
 
