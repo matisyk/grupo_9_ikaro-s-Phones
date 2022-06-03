@@ -2,39 +2,41 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Ikaro's Phones</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="css/stylesproductCart.css">
+        <enlace href="https: //fonts.googleapis.com/css2? family= Poppins:wght@300 & family= Roboto:wght@300 & display=swap" rel="hoja de estilo"></enlace>
         <script src="https://kit.fontawesome.com/5309449a51.js" crossorigin="anonymous"></script>
+        <!-- linkeamos CSS -->
+        <link rel="stylesheet" href="/css/stylesIndex.css">
     </head>
     <body>
+
         <%- include('./partials/header'); %>
 
         <main>
              
-            <h1> TU CARRITO</h1>
+            <h1> Carrito de compras</h1>
 
-            <div class="product">
-                <img width="10%" src="images/LogoIkarosPhonesenbaja.png" alt="Titulo phone Titulo" class="product_img">
-                <p class="product-name">nombre del producto</p>
-                <p class="price"> $$$$$$ </p>
-                <div class="cant">
-                <i class="fa-solid fa-angle-left"></i>
-                <p>1</p>
-                <i class="fa-solid fa-angle-right"></i>
-                </div>
+            <div class="form">
+                <form action="/products/productCart" method="GET">
+                    <div>
+                        <i>productos</i>
+                        <i>precio</i>
+                        <i>cantidad</i>
+                        <i>subtotal</i>
+                    </div>
+                    <div>
+                        
+                    </div>
+                    <div></div>
+                </form>
             </div>
-            <div class="total">
-            <p class="amount"> Monto total </p>
-            <p class="total-price"> $$$$$$ </p>
-            <button type="submit" class="pay">Pagar</button>
-            </div>
+            
         </main>
 
         <footer>
              <%- include ("./partials/footer")  %> 
         </footer>
+
     </body>
 </html>

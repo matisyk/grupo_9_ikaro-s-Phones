@@ -25,6 +25,13 @@ body{
     position: relative;
     width: 50%;
 }
+.icons-right{
+    display: none;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    color: #F5F5DC;
+}
 .logo {
     width: 15%;
 }

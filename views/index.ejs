@@ -63,24 +63,29 @@
             </nav>
         </div>
 
+        <div class="bannerCel">
+            <img src="./images/bannerCel.png" class="imgCel">
+        </div>
+
         <main>
 
             <section>
-                <h3><i class="fa-solid fa-tag"></i>Ofertas</h3>
+                <h3>Descubre todas las ofertas que tenemos para voz</h3>
                 <div class="products">
                     <% inSale.forEach(product => { %>
-                    <article>
-                    <a href="/detail/<%= product.id %> " class="href">
-                        <h4 class="name"><%= product.name %> </h4>
-                        <img src="/images/products/<%= product.image %>" class="product_img">
-                        <div class="box-description">
-                            <p class="price">$ <%= product.price %> </p>
-                            <p class="discount"><%= product.discount %> % OFF</p>
-                            <p class="description">en 10 cuotas de </p>
-                            
+                        <div class="article">
+                            <article>
+                                <a href="/detail/<%= product.id %> " class="href">
+                                    <h4 class="name"><%= product.name %> </h4>
+                                    <img src="/images/products/<%= product.image %>" class="product_img">
+                                    <div class="box-description">
+                                        <p class="price">$ <%= product.price %> </p>
+                                        <p class="discount"><%= product.discount %> % OFF</p>
+                                        <p class="description">en 10 cuotas de </p>
+                                    </div>
+                                </a>
+                            </article>
                         </div>
-                    </a>
-                    </article>
                     <% }) %>
                 </div>  
             </section> 
@@ -89,17 +94,19 @@
                 <h3>Smartphones</h3>
                 <div class="products">
                     <% smartphones.forEach( product => { %>
-                    <article>
-                    <a href="/detail/<%=product.id %> " class="href">
-                        <h4 class="name"><%= product.name %></h4>
-                        <img src="/images/products/<%= product.image %>" class="product_img">
-                        <div class="box-description">
-                            <p class="price">$ <%= product.price %></p>
-                            <p class="discount"><%= product.discount %> % OFF</p>
-                            <p class="description">en 10 cuotas de </p>
+                        <div class="article">
+                            <article>
+                                <a href="/detail/<%=product.id %> " class="href">
+                                    <h4 class="name"><%= product.name %></h4>
+                                    <img src="/images/products/<%= product.image %>" class="product_img">
+                                    <div class="box-description">
+                                        <p class="price">$ <%= product.price %></p>
+                                        <p class="discount"><%= product.discount %> % OFF</p>
+                                        <p class="description">en 10 cuotas de </p>
+                                    </div>
+                                </a>
+                            </article>
                         </div>
-                    </a>
-                    </article>
                     <% }) %>
                 </div>
             </section>

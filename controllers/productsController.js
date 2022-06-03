@@ -17,9 +17,11 @@ const productController ={
     store: (req, res) => {
         res.render('products', {products})
     },
+    //ruta get
     edit: (req, res) => {
         res.render('productEdit', {products})
     },
+    //ruta put
     edited: (req, res) => {
 		let id = req.params.id;
 		let product = products.find(product => product.id == id)
