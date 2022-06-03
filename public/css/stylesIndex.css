@@ -39,14 +39,11 @@ body{
     width: 15%;
 }
 .location{
-    display: flex;
+    display: none;
     color: #F5F5DC;
     font-size: 12px;
     align-self: center;
     margin-left: 10px;
-}
-.location{
-    display: none;
 }
 .searcher{
     padding: 5px;
@@ -69,7 +66,6 @@ body{
 }
 .nav-top{
     width: 30%;
-    display: flex;
     justify-content: space-around;
     align-items: center;
     display: none;
@@ -226,6 +222,7 @@ header .form .input{
 /* BANNER FIN */
 
 /* MAIN PRINCIPIO */
+
 main{
     width: 90%;
     margin: 0 auto;
@@ -314,7 +311,9 @@ footer{
     justify-content: space-around;
     align-items: end;
 }
-.fa-brands.fa-instagram, .fa-brands.fa-facebook, .fa-brands.fa-twitter{
+.fa-brands.fa-instagram, 
+.fa-brands.fa-facebook, 
+.fa-brands.fa-twitter{
     border-radius: 100%;
     border: 1px solid;
     outline: none;
@@ -395,17 +394,14 @@ footer{
     }
     /*FIN HEADER*/
 
-    /*INICIO BOTTOM VAR*/
     .bottom-var{
         display: none;
     }
-    /*FIN BOTTOM VAR*/
 
     main section article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
-
 @media(min-width: 760px){
     .bars{
         display: none;
@@ -414,6 +410,7 @@ footer{
         font-size: 25px;
     }
     /*fin header*/
+    
     .slide{
         display: block;
     }
