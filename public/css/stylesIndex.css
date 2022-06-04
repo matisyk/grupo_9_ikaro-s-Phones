@@ -99,6 +99,9 @@ div.bars-icon label i{
     color:  #ebebeb;
     text-align: center;
 }
+div.bars-icon:hover .menu-side{
+    visibility: visible;
+}
 .menu-side{
     width: 100%;
     height: 70%;
@@ -107,6 +110,7 @@ div.bars-icon label i{
     position: absolute;
     z-index: 2000;
     background: rgba(0, 0, 0, 0.8);
+    visibility:hidden;
 }
 .options-menu{
     padding: 20px 30px;
@@ -423,7 +427,7 @@ footer{
     }
 }
 @media(min-width: 760px){
-    .bars{
+    .bars-icon{
         display: none;
     }
     /*fin header*/
