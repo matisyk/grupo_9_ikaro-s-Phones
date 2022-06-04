@@ -3,19 +3,22 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
+
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #dcdcdc  !important;
 }
 .top-header{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 100%;
     position: fixed;
-    top:0;
     z-index: 1000;
+    top: 0;
     background-color: #302e2e;
     padding: 10px 0 10px;
 }
@@ -71,7 +74,6 @@ body{
     display: none;
 }
 nav a{
-    text-decoration: none;
     color: #F5F5DC;
     padding: 10px 20px;
     font-size: 16px;
@@ -79,22 +81,51 @@ nav a{
 nav ul{
     display: flex;
     justify-content: space-around;
-    list-style: none;
 }
 img.banner{
     width: 100vwgit ;
 }
-
 header .form .input{
     color: #F5F5DC;
 }
-.bars{
-    display: block;
+/* barra desplegable movile */
+div.bars-icon label i{
+    font-size: 23px;
+}
+.bars-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color:  #ebebeb;
-    padding: 8px 0 0;
     text-align: center;
 }
+.menu-side{
+    width: 100%;
+    height: 70%;
+    left: 0;
+    font-size: 20px;
+    position: absolute;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.8);
+}
+.options-menu{
+    padding: 20px 30px;
+    position: relative;
+}
+.options-menu a{
+    color: #aaaaaa;
+    display: block;
+    padding: 20px;
+    position: relative;
+}
+.options-menu.option{
+    position: relative;
+}
+h4{
+    font-weight: 400;
+}
 
+/* barra desplegable movile */
 /* HEADER FIN */
 
 /* BANNER PRINCIPIO */
@@ -110,26 +141,22 @@ header .form .input{
     overflow: hidden;
     width: 100%;
 }
-
 .slide-open:checked + .slide-item {
     position: static;
     opacity: 100;
 }
-
 .slide-item {
     position: absolute;
     opacity: 0;
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
 }
-
 .slide-item img {
     display: block;
     height: auto;
     max-width: 100%;
     width: 100%;
 }
-
 .slide-control {
     background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
@@ -149,7 +176,6 @@ header .form .input{
     width: 40px;
     z-index: 10;
 }
-
 .slide-control.prev {
     left: 2%;
 }
@@ -239,9 +265,6 @@ h3{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-a.href{
-    text-decoration: none;
-}
 div.article{
     background-color: white;   
     margin-bottom: 10px;
@@ -275,23 +298,20 @@ div.box-description{
     right: -130px;
     top: 40px;
 }
-p{
-    margin: 10px 0;
-}
 p.price {
     font-size: 20px;
     display: inline-block;
-    margin-left: 12px;
+    margin: 17px 0 7px 10px;
     color: #302e2e;
 }
 p.discount {
     display: inline-block;
-    margin-left: 8px;
+    margin: 0px 0 7px 10px;
     color: #ff4621;
     font-size: 10px;
 }
 p.description{
-    margin-left: 8px;
+    margin: 0px 0 7px 10px;
     color: #302e2e;
     font-size: 12px;
 }
@@ -405,9 +425,6 @@ footer{
 @media(min-width: 760px){
     .bars{
         display: none;
-    }
-    a.bars i{
-        font-size: 25px;
     }
     /*fin header*/
     
