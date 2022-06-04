@@ -3,6 +3,10 @@ const app = express();
 const path = require('path');
 const methodOverride = require('method-override')
 
+
+// usar en el arch de rutas donde necesitemos multer (subida de archivos)
+// const multer = require('multer');
+
 //routers
 const rutaIndex = require('./routers/index');
 const rutaProducts = require('./routers/products');
