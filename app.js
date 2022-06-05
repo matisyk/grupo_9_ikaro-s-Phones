@@ -3,12 +3,10 @@ const app = express();
 const path = require('path');
 const methodOverride = require('method-override')
 
-
 //routers
 const rutaIndex = require('./routers/index');
 const rutaProducts = require('./routers/products');
 const rutaUsers = require('./routers/users');
-const { status } = require('express/lib/response');
 
 //uso de rutas
 app.use('',rutaIndex);
@@ -29,9 +27,7 @@ app.use(express.static(path.resolve ('views')));
 
 app.listen(3000,()=> console.log('servidor corriendo'));
 
-//error 404 ruta no encontrada
 app.use((req, res, next)=>{
     res.status(404).render('404-page');
     next();
 })
-
