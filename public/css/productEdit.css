@@ -8,7 +8,8 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/backgound.png)
+    background-color: #dcdcdc  !important;
+    /* #ff4621; */
 }
 .top-header{
     width: 100%;
@@ -145,10 +146,10 @@ div.title{
 h2.product-title{
     font-size: 18px;
     font-weight: 400;
-    color: white;
+    color: #302e2e;
 }
 div.formProductEdit{
-    background-color: rgba(36, 36, 36, 0.8);
+    background-color:white;
     position: relative;
     top: 30px;
     display: flex;
@@ -163,7 +164,7 @@ div.formProductEdit{
     flex-direction: column;
     padding: 10px 0;
     font-size: 15px;
-    color: white;
+    color: #302e2e;
 }
 label.form-label{
     padding-bottom: 5px;
@@ -197,7 +198,7 @@ footer{
 .footer-middle{
     width: 100%;
     height: auto;
-    background-color: #ebebeb;
+    background-color: #dcdcdc ;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -209,12 +210,17 @@ footer{
     font-size: 15px;
 }
 
-.tercera-columna p, .segunda-columna p, .cuarta-columna p{
+.tercera-columna p, 
+.segunda-columna p, 
+.cuarta-columna p{
     margin: 22px;
     font-size: 15px;
 }
 
-.primera-columna, .tercera-columna, .segunda-columna, .cuarta-columna{
+.primera-columna, 
+.tercera-columna, 
+.segunda-columna, 
+.cuarta-columna{
     width: 100%;
 }
 
@@ -314,61 +320,43 @@ footer{
     }
     /*BOTTOM var fin*/
     
-    div.article{
-        background-color:#dcdcdc; 
-        margin-bottom: 0px;
-        width: 50%;
-    }
-    main section article{
-        background-color: white;    
-        margin: 10px 10px 10px 10px;
-        width: 80%;
-    }
-    main section article img{
-        width: 100%;
-    }
-    .name{
-        display: block;
-        padding: 0px;
-        margin-top: 10px;
-        position: relative;
-        left: 0px;
-        margin-bottom: 15px;
-        text-align: center;
-        color: #666;
-        font-size: 20px;
-        font-weight: 400;
-    }
-    div.box-description{
-        display: block;
-        position: relative;
-        border-top: 1px solid #ebebeb;
-        padding: 20px 25px;
-        right: 0px;
-        top: 0px;
-    }
-    p{
-        margin: 0;
-    }
-    p.price {
-        font-size: 18px;
-    }
-    p.discount {
-        font-size: 13px;
-    }
-    p.description{
-        margin-left: 0px;
-        text-align: center;
-        font-size: 14px;
-    }
-
-    h3{
-        font-size: 24px;
-        color: #666;
-        margin: 20px 0px;
-        text-align: center;
-    }
-    .primera-columna, .tercera-columna, .segunda-columna, .cuarta-columna{
+    /* MAIN PRINCIPIO */
+div.title{
+    margin-top: 20%;
+}
+h2.product-title{
+    font-size: 18px;
+}
+div.formProductEdit{
+    background-color:white;
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.product-box{
+    padding: 20px;
+}
+.product-box div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #302e2e;
+}
+label.form-label{
+    padding-bottom: 5px;
+}
+.menu-side{
+    display: none;
+}
+/* MAIN FIN */
+    
+    .primera-columna, 
+    .tercera-columna, 
+    .segunda-columna, 
+    .cuarta-columna{
         width: 22%;
     }
 }
@@ -411,17 +399,37 @@ footer{
         margin: 0 60px;
     }
     /*bottom var fin*/
-    div.article{
-        display: contents;
-        background-color:#dcdcdc; 
-        margin-bottom: 0px;
-        width: 100%;
-    }
-    main section article {
-        display: flex;
-        margin: 10px 10px 10px 10px;
-        width: 25%;
-    }
+      
+    /* MAIN PRINCIPIO */
+div.title{
+    margin-top: 10%;
+}
+h2.product-title{
+    font-size: 18px;
+}
+div.formProductEdit{
+    background-color:white;
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.product-box{
+    padding: 20px;
+}
+.product-box div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #302e2e;
+}
+label.form-label{
+    padding-bottom: 5px;
+}
+/* MAIN FIN */
+    
 }
 
 /* MEDIA QUERIES FIN */
