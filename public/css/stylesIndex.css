@@ -521,9 +521,8 @@ footer{
         font-size: 14px;
     }
     h3{
-        font-size: 24px;
+        font-size: 16px;
         color: #666;
-        margin: 20px 0px;
         text-align: center;
     }
     .primera-columna, 
@@ -606,12 +605,26 @@ footer{
 /* FOOTER FIN */
 }
 @media(min-width: 1200px){
-    
+    .logo {
+        width: 20%;
+        left: 8%;
+    }
+    .icons-left-text{
+        bottom: 35%;
+        right: 81%;
+    }
+    .location{
+        font-size: 10px
+    }
+    .location-2{
+        font-size: 14px;
+    }
     .nav-top{
-        display: flex;
+        padding-left: 60px;
     }
     .nav-top a{
         font-size: 14px;
+        padding-right: 60px;
     }
     .icons-left, .icons-right{
         width: 30%;
@@ -628,6 +641,10 @@ footer{
     .var a{
         font-size: 14px;
         margin: 0 60px;
+    }
+    h3{
+        font-size: 20px;
+        padding: 10px;
     }
     /*bottom var fin*/
     div.article{
