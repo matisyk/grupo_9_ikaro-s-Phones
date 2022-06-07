@@ -13,11 +13,7 @@
         <%- include('./partials/header'); %>
         <main>
             <section class="producto">
-
-                    <div class="product-img-container">
-                        <img src="/images/products/<%= product.image %> " class="product-img">
-                    </div>
-               
+                <img src="/images/products/<%= product.image %> " class="product-img">
                 <div class="detalles-producto">
                     <div class="nombre-producto">
                         <p class="telefono-producto"><strong><%= product.name %> </strong></p>
@@ -63,8 +59,10 @@
                 </div>
                 <h4>Video referencial</h4>
                 <div class="video">
-                <iframe width="560" height="315" src="<%= product.url %> " title="YouTube video player" rameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     <iframe width="560" height="315" src="<%= product.url %> " 
+                        title="YouTube video player" 
+                        rameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                     encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </section>
         </main>
