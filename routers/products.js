@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const path = require("path")
 //requerir multer par subir archivos
 const multer = require('multer');
 
@@ -30,8 +31,8 @@ router.get('/productCart', productsControllers.productCart);
 router.get('/Detail/:id/', productsControllers.detail);
 
 //Creacion de producto
-router.post('/create', productsControllers.create);
-router.post('/create', fileUpload.single('image') , productsControllers.created);
+router.get('/create', productsControllers.create);
+router.post('/create', fileUpload.any() , productsControllers.created);
 
 //edicion
 router.get('/edit/:id', productsControllers.edit);
