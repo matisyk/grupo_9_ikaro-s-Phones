@@ -7,31 +7,27 @@
         <enlace href="https: //fonts.googleapis.com/css2? family= Poppins:wght@300 & family= Roboto:wght@300 & display=swap" rel="hoja de estilo"></enlace>
         <script src="https://kit.fontawesome.com/5309449a51.js" crossorigin="anonymous"></script>
         <!-- linkeamos CSS -->
-        <link rel="stylesheet" href="/css/stylesIndex.css">
+        <link rel="stylesheet" href="/css/stylesproductCart.css">
     </head>
     <body>
 
         <%- include('./partials/header'); %>
 
         <main>
-             
-            <h1> Carrito de compras</h1>
-
-            <div class="form">
-                <form action="/products/productCart" method="GET">
-                    <div>
-                        <i>productos</i>
-                        <i>precio</i>
-                        <i>cantidad</i>
-                        <i>subtotal</i>
-                    </div>
-                    <div>
-                        
-                    </div>
-                    <div></div>
-                </form>
-            </div>
-            
+             <div class="main-car">
+                <h1 class="title"> Carrito de compras</h1>
+                <h4>Añadiste un celular a tu lista de compras</h4>
+                <div class="form">
+                    <form action="/products/productCart" method="GET">
+                        <div>
+                            <i>productos</i>
+                            <i>precio</i>
+                            <i>cantidad</i>
+                            <i>subtotal</i>
+                        </div>
+                    </form>
+                </div>
+             </div>
         </main>
 
         <footer>
