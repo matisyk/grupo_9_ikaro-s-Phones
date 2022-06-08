@@ -20,10 +20,10 @@ body{
     z-index: 1000;
     top: 0;
     background-color: #302e2e;
-    padding: 10px 0 10px;
 }
 .logo {
-    width: 25%;
+    width: 35%;
+    height: auto;
     position: relative;
     right: -40%;
 }
@@ -65,80 +65,164 @@ body{
 }
 
 /* barra desplegable movile */
-div.bars-icon label i{
-    font-size: 23px;
-}
-.bars-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:  #ebebeb;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 400;
-}
-div.bars-icon:hover .menu-side{
-    visibility: visible;
-}
-.menu-side{
-    width: 100%;
-    height: 70%;
-    left: 0;
-    font-size: 20px;
-    position: absolute;
-    z-index: 2000;
-    background: rgba(0, 0, 0, 0.8);
-    visibility:hidden;
-}
-.options-menu{
-    padding: 20px 30px;
-    position: relative;
-}
-.options-menu a{
-    color: #aaaaaa;
+.nav-main{
     display: block;
-    padding: 20px;
     position: relative;
 }
-.options-menu.option{
+.nav-main a{
+    color: white;
+}
+.btn-bars-icon{
+    position: relative;
+    --size: 25px;
+    width: var(--size);
+    height: var(--size);
+    padding: 0px 40px;
+    transition: transform 5s;
+}
+.icon{
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: white;
+    margin: 6px;
+    transition: transform 0.5s;
+}
+.btn-bars:checked + .btn-bars-icon .icon.one{
+    transform: translateY(0.5em) rotate(45deg);
+}
+.btn-bars:checked + .btn-bars-icon .icon.two{
+    transform: scale(0);
+}
+.btn-bars:checked + .btn-bars-icon .icon.three{
+    transform: translateY(-0.5em) rotate(-45deg);
+}
+.btn-bars{
+    display: none;
+}
+.btn-nav-main{
     position: relative;
 }
-h4{
-    font-weight: 400;
+.btn-bars:checked ~ .btn-bars-icon  {
+    right: -350%;
+    top: -20%;
+    z-index: 10;
 }
+.nav-main-menu{
+    position: absolute;
+    left: -87%;
+    top: -15%;
+    padding: 20px 110px 80px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ff4621be;
+    transform: scaleY(0);
+    transition: transform 0.5s;
+    transform-origin: top;
+}
+.btn-bars:checked:checked ~ .nav-main-menu{
+    transform: scaleY(1);
+}
+.nav-main-menu a{
+    padding-bottom: 30px;
+    color: white;
+    font-size: 20px;
+}
+
 /* fin barra desplegable movile */
 /* HEADER FIN */
 
 /*MAIN CARRITO*/
 main{
-    width: 94%;
+    width: 100%;
     margin: 25% auto;
-
+    position: relative;
 }
 h1{
     font-size: 30px;
     text-align: start;
     margin-bottom: 20px;
     font-weight: 400;
+    color: #424242;
+    padding: 0 10px;
+}
+.add-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #1868d98e;
+    padding: 10px 10px;
+}
+.fa-solid.fa-circle-check{
+    color: #302e2e;
+    padding-right: 10px;
 }
 h4.add{
     font-size: 12px;
-    margin-bottom: 20px;
+}
+.items{
+    display: none;
 }
 .cart-detail{
     display: flex;
+    margin: 10px;
     background-color: white;
     border-radius: 5px;
     padding: 10px;
+    position: relative;
 }
 img{
     width: 25%;
 }
+.name{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #302e2e;
+}
+.detail{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 45%;
+    left: 30%;
+    color: #302e2e;
+}
+.price, .cant{
+    font-size: 12px;
+    padding-bottom: 10px;
+}
 .cart-sumary{
+    margin: 10px;
+    padding: 10px;
     background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
 }
 .sumary-title{
-    color: orangered;
+    color:  #ff4621;
+    padding: 10px;
+    border-bottom: 1px solid #B6B6B6;
+}
+.subtotal{
+    padding: 10px;
+}
+.tax{
+    padding: 10px;
+}
+.total{
+    padding: 10px 10px 0px 10px;
+    border-top: 1px solid #B6B6B6;
+}
+.btn{
+    margin: 20px 70px;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    background-color:#1868d9;
+    border: #1868d9;
 }
 /*FIN MAIN CARRITO*/
 
@@ -157,7 +241,9 @@ footer{
     justify-content: space-around;
     align-items: end;
 }
-.fa-brands.fa-instagram, .fa-brands.fa-facebook, .fa-brands.fa-twitter{
+.fa-brands.fa-instagram, 
+.fa-brands.fa-facebook, 
+.fa-brands.fa-twitter{
     border-radius: 100%;
     border: 1px solid;
     outline: none;
@@ -221,6 +307,9 @@ footer{
 
 /* MEDIA QUERIES PRINCIPIO */
 @media (min-width: 760px){
+    .nav-main{
+        display: none;
+    }
     .logo {
         width: 30%;
         position: relative;

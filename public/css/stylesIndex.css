@@ -19,10 +19,10 @@ body{
     z-index: 1000;
     top: 0;
     background-color: #302e2e;
-    padding: 10px 0 10px;
 }
 .logo {
-    width: 25%;
+    width: 35%;
+    height: auto;
     position: relative;
     right: -40%;
 }
@@ -65,6 +65,7 @@ body{
 
 /* barra desplegable movile */
 .nav-main{
+    display: block;
     position: relative;
 }
 .nav-main a{
@@ -84,9 +85,8 @@ body{
     height: 2px;
     background-color: white;
     margin: 6px;
-    transition: transform 0.3s;
+    transition: transform 0.5s;
 }
-
 .btn-bars:checked + .btn-bars-icon .icon.one{
     transform: translateY(0.5em) rotate(45deg);
 }
@@ -99,17 +99,25 @@ body{
 .btn-bars{
     display: none;
 }
-
+.btn-nav-main{
+    position: relative;
+}
+.btn-bars:checked ~ .btn-bars-icon  {
+    right: -350%;
+    top: -20%;
+    z-index: 10;
+}
 .nav-main-menu{
     position: absolute;
-    left: -130%;
-    top: -30%;
-    padding: 20px 110px 0px 10px;
+    left: -87%;
+    top: -15%;
+    padding: 20px 110px 80px 10px;
     display: flex;
     flex-direction: column;
     background-color: #ff4621be;
     transform: scaleY(0);
-    transition: transf;
+    transition: transform 0.5s;
+    transform-origin: top;
 }
 .btn-bars:checked:checked ~ .nav-main-menu{
     transform: scaleY(1);
@@ -395,6 +403,9 @@ footer{
 
 /* MEDIA QUERIES PRINCIPIO */
 @media(min-width: 760px){
+    .nav-main{
+        display: none;
+    }
     .logo {
         width: 30%;
         position: relative;
