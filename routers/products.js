@@ -4,10 +4,11 @@ const path = require("path")
 //requerir multer par subir archivos
 const multer = require('multer');
 
+const productsControllers = require("../controllers/productsController")
 //configuracion multer 
 let storage = multer.diskStorage({
     destination: (req, file, callback) => {
-        let folder = path.join(__dirname, '../public/products')
+        let folder = path.join(__dirname, '../public/images/products')
         callback(null, folder);
     },
     filename: (req, file, callback) => {
@@ -16,10 +17,9 @@ let storage = multer.diskStorage({
     }
 })
 // guardamos en una variable la confg
-let fileUpload = multer({storage});
+let fileUpload = multer({storage:storage});
 
 //require controller
-const productsControllers = require("../controllers/productsController")
 
 //todos los productos
 router.get('/products', productsControllers.store)
