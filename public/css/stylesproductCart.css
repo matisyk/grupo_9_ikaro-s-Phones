@@ -112,13 +112,14 @@ h4{
 /*MAIN CARRITO*/
 main{
     width: 90%;
-    margin: 0 auto;
+    margin: 25% auto;
+
 }
 h1{
-
-    text-align: center;
-    margin: 15px;
-
+    font-size: 30px;
+    text-align: start;
+    margin-bottom: 20px;
+    font-weight: 400;
 }
 .product{
     max-width: 100%;
@@ -176,14 +177,12 @@ footer{
     justify-content: space-around;
     align-items: end;
 }
-
 .fa-brands.fa-instagram, .fa-brands.fa-facebook, .fa-brands.fa-twitter{
     border-radius: 100%;
     border: 1px solid;
     outline: none;
     padding: 5px;
 }
-
 .footer-middle{
     width: 100%;
     height: auto;
@@ -194,7 +193,6 @@ footer{
     margin-bottom: 30px;
     flex-wrap: wrap;
 }
-
 .primera-columna p{
     margin: 30px;
     font-size: 15px;
