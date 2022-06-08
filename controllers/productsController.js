@@ -20,7 +20,8 @@ const productController ={
     create: (req, res) => {  //ruta GET crear producto
         res.render('productCreate', {products})
     },
-    created: (req, res, next) => {  //ruta POST guardar product
+    created: (req, res) => {  //ruta POST guardar product
+        console.log("entre")
 
         let image 
         if(req.files[0] != undefined){
@@ -37,8 +38,8 @@ const productController ={
         }
         products.push(newProduct)
         fs.writeFileSync(productsFilePath, JSON.stringify(products));
-        res.redirect("./products")
-
+        res.redirect("/products")
+        
     },
     edit: (req, res) => {  //ruta GET editar el product
         res.render('productEdit', {products})

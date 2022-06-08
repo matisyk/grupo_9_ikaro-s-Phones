@@ -9,9 +9,9 @@ const rutaProducts = require('./routers/products');
 const rutaUsers = require('./routers/users');
 
 //uso de rutas
-app.use('',rutaIndex);
-app.use('',rutaProducts);
-app.use('',rutaUsers);
+app.use('/',rutaIndex);
+app.use('/',rutaProducts);
+app.use('/',rutaUsers);
 
 
 //para capturar lo que llegue del form en un obj lit. 
