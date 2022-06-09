@@ -42,12 +42,26 @@ const productController ={
         
     },
     edit: (req, res) => {  //ruta GET editar el product
-        res.render('productEdit', {products})
+        let id = req.params.id;
+		let product = products.find(product => product.id == id)
+        res.render('productEdit', {product})
     },
     edited: (req, res) => {  //ruta PUT guardar la edicion
 		let id = req.params.id;
-		let product = products.find(product => product.id == id)
-        res.redirect('products', {products})
+		let productToEdit = products.find(product => product.id == id)
+        productToEdit = {
+            id: productToEdit.id,
+            ...req.body,
+            image: productToEdit.image
+        };
+        let productEdited = products.map(product => {
+            if(product.id == productToEdit.id){
+                return product = {...productToEdit};
+            }
+            return product
+        })
+        fs.writeFileSync(productsFilePath, JSON.stringify(productEdited))
+        res.redirect('products')
 	},
     delete: (req, res) => {
 		let id = req.params.id;
