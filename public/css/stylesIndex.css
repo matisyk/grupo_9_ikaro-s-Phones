@@ -625,17 +625,15 @@ footer{
     .slide {
         margin-top: 79px;
     }
-    /*bottom var inicio*/
-    
     .var a{
         font-size: 14px;
         margin: 0 60px;
     }
+
     h3{
         font-size: 20px;
         padding: 10px;
     }
-    /*bottom var fin*/
 
     .products{
             display: flex;
@@ -657,8 +655,6 @@ footer{
         margin: 10px 10px 10px 10px;
         width: 22%;
     }
-
-
     a.href{
         width: 80%;
     }

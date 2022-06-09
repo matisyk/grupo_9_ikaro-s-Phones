@@ -16,25 +16,35 @@
         <%- include('./partials/header'); %>
 
         <main>
-            <form  action="/" method="POST" class="formulario">
-                <h2> Ingresar con mi cuenta </h2>
-                <input type="email" placeholder="example@gmail.com" class="email" required>  </input>
-                <div class="contenedor">
-                    <input type="password" placeholder="Contraseña" class="contraseña" required> </input>
-                    <img src="/images/Show.png" alt="" class="icon" id="Eye">
+            <form  action="/" method="POST" class="form-login">
+
+                <h4 class="form-title"> Ingresar con mi cuenta </h4>
+
+                <div class="container">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
                 </div>
-                <a href=""> Olvidé mi contraseña </a>
-                <button type="submit" class="boton" >I n g r e s a r</button>
+
+                <div class="conteiner">
+                    <label for="password"></label>
+                    <input type="password" name="password" id="password" placeholder="ingresa tu contraseña" required>
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+        
+                <button type="submit" class="btn-login">INGRESAR</button>
+
+                <div class="register">
+                    <a href="./register">¿No tiene una cuenta? Regístrese</a>
+                </div>
+
             </form>
-            <div class="login-foot">
-                <p>¿No tiene una cuenta?</p>
-                <a href="./register">Registrarse</a>
-            </div>
-            <div class="footer-main">
-                <a href=""> Condiciones de uso </a>
-                <a href=""> Aviso de privacidad </a>
+
+            <div class="legales">
+                <a href=""> Terminos y condiciones </a>
+                <a href=""> Uso de datos personales </a>
                 <a href=""> Ayuda </a>
             </div>
+
         </main>
 
         <footer>

@@ -1,40 +1,47 @@
 /* HEADER PRINCIPIO */
-
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #dcdcdc  !important;
 }
 .top-header{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 100%;
     position: fixed;
-    top:0;
     z-index: 1000;
+    top: 0;
     background-color: #302e2e;
-    padding: 10px 0 10px;
+}
+.logo {
+    width: 35%;
+    height: auto;
+    position: relative;
+    right: -40%;
 }
 .icons-left{
     display: flex;
     justify-content: center;
-    position: relative;
     width: 50%;
 }
-.logo {
-    width: 15%;
+.icons-left-text{
+    display: none;
 }
-.location{
-    display: flex;
-    color: #F5F5DC;
-    font-size: 12px;
-    align-self: center;
-    margin-left: 10px;
+.nav-top{
+    display: none;
+}
+.icons-right{
+    display: none;
+}
+.bottom-var{
+    display: none;
 }
 .searcher{
     padding: 5px;
@@ -55,138 +62,130 @@ body{
 .searcher input:focus{
     width: 240px;
 }
-.nav-top{
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    display: none;
-}
-nav a{
-    text-decoration: none;
-    color: #F5F5DC;
-    padding: 10px 20px;
-    font-size: 16px;
-}
-nav ul{
-    display: flex;
-    list-style: none;
-}
-.icons-right{
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #F5F5DC;
-}
-.icons-right div a{
-    color: #F5F5DC;
-}
-img.banner{
-    width: 100vwgit ;
-}
-header .form .input{
-    color: #F5F5DC;
-}
-.bars{
-    display: block;
-    color:  #ebebeb;
-    padding: 8px 0 0;
-    text-align: center;
-}
-.location{
-    display: none;
-}
-/* HEADER FIN */
 
-/*MAIN DE FORMULARIO*/
-.formulario{
-    width: 500px;
-    max-width: 100%;
-    margin: auto;
-    margin-top: 30%;
-    padding: 20px;
-    position:relative;
-    border-bottom: 1px solid;
-}
-main a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-main h2{
-    text-align: center;
-    margin-bottom: 5%;
-}
-.formulario input{
+/* barra desplegable movile */
+.nav-main{
     display: block;
-    width: 100%;
-    text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    padding: 8px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    position: relative;
 }
-.contenedor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position:relative
+.nav-main a{
+    color: white;
 }
-.contraseña{
-    outline: none;
-    width: 100%;
-    background-color: white;
-    color: #121212;
-    border: none;
-    top: 8px;
-    left: 0;
-    right: 0;
-    bottom: 8px;
-    padding-left: .5rem;
+.btn-bars-icon{
+    position: relative;
+    --size: 25px;
+    width: var(--size);
+    height: var(--size);
+    padding: 0px 40px;
+    transition: transform 5s;
 }
 .icon{
-    position: absolute;
-    height: 60%;
-    right: 8px;
-
-}
-.boton{
     display: block;
-    text-align: center;
-    width: 100%;
-    border-radius: 30px;
-    padding: 5px;
-    margin-top: 15px;
-    background-color: #7C7979;
-    font-family: 'Koulen', cursive;
-    font-size: 20px;
-    border: 0px none ;
+    width: 60%;
+    height: 2px;
+    background-color: white;
+    margin: 6px;
+    transition: transform 0.5s;
 }
-.boton:hover{
-    cursor: pointer;
-    background-color: #302e2e;
-    transition: all 0.8s;
+.btn-bars:checked + .btn-bars-icon .icon.one{
+    transform: translateY(0.5em) rotate(45deg);
 }
-.login-foot{
-    text-align: center;
-    padding: 10px;
+.btn-bars:checked + .btn-bars-icon .icon.two{
+    transform: scale(0);
 }
-.footer-main {
+.btn-bars:checked + .btn-bars-icon .icon.three{
+    transform: translateY(-0.5em) rotate(-45deg);
+}
+.btn-bars{
+    display: none;
+}
+.btn-nav-main{
+    position: relative;
+}
+.btn-bars:checked ~ .btn-bars-icon  {
+    right: -350%;
+    top: -20%;
+    z-index: 10;
+}
+.nav-main-menu{
+    position: absolute;
+    left: -87%;
+    top: -15%;
+    padding: 20px 110px 80px 10px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-top: 150px;
-    max-width: 100%;
-    justify-content: space-around;
+    background-color: #ff4621be;
+    transform: scaleY(0);
+    transition: transform 0.5s;
+    transform-origin: top;
 }
-.footer-main a{
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 20px;
+.btn-bars:checked:checked ~ .nav-main-menu{
+    transform: scaleY(1);
 }
-/*FIN MAIN DE FORMULARIO*/
+.nav-main-menu a{
+    padding-bottom: 30px;
+    color: white;
+    font-size: 20px;
+}
+/* fin barra desplegable movile */
+/* HEADER FIN */
+
+/* MAIN INICIO */
+.form-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    margin: 25% 5% 8% 5%;
+    padding: 10px;
+}
+.form-title{
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px 12px 20px;
+}
+.conteiner{
+    margin: 20px;
+    position: relative;
+}
+.fa-solid.fa-eye{
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    font-size: 13px;
+    color: #302e2e;
+}
+#email, #password{
+    padding: 10px;
+}
+.btn-login{
+    padding: 10px 30px;
+    background-color: #ff4621;
+    border: #ff4621;
+    border-radius: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+.register{
+    margin: 10px;
+}
+.register a{
+    color: #302e2e;
+}
+.legales{
+    margin: 40px;
+    border-top: 1px solid #302e2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.legales a{
+    padding: 10px;
+    font-size: 14px;
+    color: #302e2e;
+}
+/* MAIN FIN */
 
 /* FOOTER PRINCIPIO */
 footer{
@@ -200,7 +199,6 @@ footer{
     margin: 10px 0 30px 10px;
 }
 .footer-top{
-    margin-top: 30px;
     background-color: #302e2e;
 }
 .footer-top nav ul{
@@ -225,143 +223,83 @@ footer{
 .footer-middle{
     margin: 25px 20px 0 20px;
     background-color: white ;
-    display: flex;
+    display: none;
     flex-direction: column;
-}
-.general, .left-column, .final-group
-{
-    font-size: 15px;
-    color: #666;
-    margin-bottom: 20px;
-}
-.general a{
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-    border-bottom: 1px solid #B6B6B6;
-}
-.left-column p{
-    display: flex;
-    justify-content: flex-start;
-    padding: 20px 0;
-}
-.final-group{
-    border-top: 1px solid #B6B6B6;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.final-group p{
-    font-size: 14px;
-    padding: 10px;
 }
 .footer-bottom{
-    display: flex;
+    display: none;
     align-items: center;
     background-color: #B6B6B6;
     padding: 20px 0px;
 }
-.footer-bottom p{
-    color: #302e2e;
-    margin-left: 10px;
-    font-size: 12px;
-}
-.footer-img{
-    margin-left: 20px;
-    height: 80%;
-    width: 30px;
-}
 /* FOOTER FIN */
 
-@media (min-width: 360px){
 
-    /*INICIO HEADER*/
-    .bars{
-        display: block;
-        color:  #ebebeb;
-        padding: 8px 0 0;
-        text-align: center;
-    }
-    .icons-left{
-        display: flex;
-        justify-content: flex-end;
-        width: 50%;
+@media (min-width: 760px){
+    .nav-main{
+        display: none;
     }
     .logo {
-        width: 15%;
+        width: 30%;
         position: relative;
-        left: -5px;
+        right: 25%;
     }
-    .location{
-        display: none;
-    }
-    .nav-top{
-        display: none;
-    }
-    .icons-right{
-        display: none;
-    }
-    /*FIN HEADER*/
-
-    /*INICIO BOTTOM VAR*/
-    .bottom-var{
-        display: none;
-    }
-    /*FIN BOTTOM VAR*/
-    .primera-columna, .tercera-columna, .segunda-columna, .cuarta-columna{
-        width: 45%;
-    }
-    .var-no-mobile-1{
+    .icons-left-text{
         display: block;
-    }
-    .var-no-mobile-1, .var-no-mobile-3{
-        width: 100%;
-    }
-
-    .formulario{
-        margin-top: 20%;
-    }
-}
-
-@media (min-width: 768px){
-    .bars{
-        display: none;
-    }
-    /*header*/
-    .icons-left{
-        display: flex;
-        justify-content: center;
-        width: 50%;
-    }
-    .logo {
-        width: 12%;
-        position: relative;
+        position: absolute;
+        bottom: 35%;
+        right: 75%;
     }
     .location{
         display: flex;
-        font-size: 10px;
+        color: #fbfbfb;
+        align-self: center;
+        font-size: 6px
     }
-    h4.texto{
-        margin-left: 5px;
+    .location-2{
+        display: flex;
+        font-size: 12px;
+        color: #fbfbfb;
     }
     .nav-top{
         display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 30%;
     }
     .nav-top a{
-        font-size: 14px;
+        font-size: 12px;
+    }
+    header nav a{
+        color: #F5F5DC;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
     }
     .icons-right{
         display: flex;
-        font-size: 14px;
+        justify-content: space-around;
+        align-items: center;
+        color: #fbfbfb;
+        font-size: 12px;
+        width: 50%;
     }
     .icons-left, .icons-right{
-        width: 30%;
+        width: 25%;
+    }
+    .icons-right div a{
+        color: #fbfbfb;
+    }
+    .bars-icon{
+        display: none;
     }
     /*fin header*/
 
-    /*BOTTOM var inicio*/
-    .bottom-var{
+     /*BOTTOM var inicio*/
+     .bottom-var{
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -371,10 +309,17 @@ footer{
         margin: auto;
         text-align: center;
     }
+    .var li{
+        width: 30%;
+    }
     .var a{
         color: black;
-        padding: unset;
         font-size: 12px;
+    }
+    .var{
+        display: flex;
+        justify-content: center;
+        list-style: none;
     }
     /*BOTTOM var fin*/
 
@@ -393,32 +338,81 @@ footer{
     .formulario{
         margin-top: 15%;
     }
+    /* FOOTER PRINCIPIO */
+/* .footer-title{
+    font-size: 25px;
+} 
+
+.general, .left-column, .final-group
+{
+    font-size: 18px;
+}
+.general{
+    padding: 0 50px;
+}
+.left-column p{
+    padding: 20px 10px;
+}
+.final-group{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.final-group p{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
+.footer-bottom p{
+    color: #302e2e;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.footer-img{
+    height: 50%;
+    width: 4%;
+} */
+/* FOOTER FIN */
 
 }
 
 @media(min-width: 1200px){
     .logo {
-        width: 15%;
+        width: 20%;
+        left: 8%;
+    }
+    .icons-left-text{
+        bottom: 35%;
+        right: 81%;
     }
     .location{
-        display: flex;
-        color: #F5F5DC;
-        font-size: 12px;
-        align-self: center;
-        margin-left: 10px;
+        font-size: 10px
+    }
+    .location-2{
+        font-size: 14px;
+    }
+    .nav-top{
+        padding-left: 60px;
+    }
+    .nav-top a{
+        font-size: 14px;
+        padding-right: 60px;
+    }
+    .icons-left, .icons-right{
+        width: 30%;
+    }
+    .icons-left{
+        margin-left: -12%;
+        margin-right: 8%;
     }
     .slide {
         margin-top: 79px;
     }
-    /*bottom var inicio*/
     .var a{
         font-size: 14px;
         margin: 0 60px;
     }
-    /*bottom var fin*/
-    article{
-        width: 27%;
-    }
+    /* main */
     .formulario{
         margin-top: 10%;
     }
@@ -428,6 +422,14 @@ footer{
         margin-left: 10%;
         margin-right: 10%;
     }
+    /* fin main */
+
+    /* FOOTER PRINCIPIO */
+    /* .footer-img{
+        height: 40%;
+        width: 3%;
+    } */
+    /* FOOTER FIN */
 
 }
 
