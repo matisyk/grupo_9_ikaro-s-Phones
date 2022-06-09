@@ -17,7 +17,7 @@
         </div>
 
         <div class="formProductEdit">
-			<form action="/products/edit/   ''''''    ?_method=PUT" method="POST" enctype="multipart/form-data">
+			<form action="/edit/<%= products.id %> ?_method=PUT" method="POST" enctype="multipart/form-data">
 				<div class="product-box">
 					<div class="col-12 col-md-6">
 						<label for="name" class="form-label">Nombre del producto:</label>
@@ -35,8 +35,8 @@
 						<label for="category" class="form-label">Categoría:</label>
 						<select name="category" id="category" class="form-input">
 							<option value="" disabled> Selecionar categoría </option>
-							<!-- <option value="in-sale"     product.category === 'in-sale' ? 'selected' : '' %> >En oferta</option>
-							<option value="visited"     product.category === 'visited' ? 'selected' : '' %> >Últimos visitados</option> -->
+							<option value="in-sale"    <%= products.category === 'in-sale' ? 'selected' : '' %> >En oferta</option>
+							<option value="visited"    <%= products.category === 'visited' ? 'selected' : '' %> >Últimos visitados</option> -->
 						</select>
 					</div>
 					<div class="col-12">
@@ -48,8 +48,11 @@
 						<input type="file" name="image" class="form-input">
 					</div>
 					<div class="col-12">
-						<button type="submit" class="buy-now-button">Guardar producto</button>
+						<button type="submit" class="buy-now-button">Guardar cambios</button>
 					</div>
+					<form action="/delete/<%= products.id %>?_method=DELETE" method="POST">
+						<button type="submit" class="action-button delete">ELIMINAR</button>
+					</form>
 				</div>
 			</form>
 		</div>

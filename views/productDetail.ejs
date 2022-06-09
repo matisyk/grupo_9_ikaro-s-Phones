@@ -12,6 +12,7 @@
     <body>
         <%- include('./partials/header'); %>
         <main>
+            <a href="/edit/<%= product.id %> " class="action-button edit">EDITAR PRODUCTO</a>
             <section class="producto">
                 <img src="/images/products/<%= product.image %> " class="product-img">
                 <div class="detalles-producto">
