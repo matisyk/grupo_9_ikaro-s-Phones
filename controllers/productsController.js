@@ -47,8 +47,16 @@ const productController ={
     edited: (req, res) => {  //ruta PUT guardar la edicion
 		let id = req.params.id;
 		let product = products.find(product => product.id == id)
-        res.redirect('/index', {product})
+        res.redirect('products', {products})
 	},
+    delete: (req, res) => {
+		let id = req.params.id;
+		let productToDeleted = products.filter(product => product.id != id)
+	    
+		fs.writeFileSync(productsFilePath,JSON.stringify(productToDeleted));
+         res.redirect("products")
+	
+	}
 }
 
 module.exports= productController;

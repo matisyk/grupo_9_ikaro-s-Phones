@@ -40,6 +40,6 @@ router.put('/edit/:id/', productsControllers.edited);
 
 
 // //borrar
-// router.delete('/delete/:id/', productsControllers.delete);
+router.delete('/delete/:id', productsControllers.delete);
 
 module.exports = router;
