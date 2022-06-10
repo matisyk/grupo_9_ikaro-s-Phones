@@ -47,6 +47,7 @@ const productController ={
         res.render('productEdit', {product})
     },
     edited: (req, res) => {  //ruta PUT guardar la edicion
+        console.log(req.body)
 		let id = req.params.id;
 		let productToEdit = products.find(product => product.id == id)
         productToEdit = {
@@ -60,17 +61,23 @@ const productController ={
             }
             return product
         })
+
         fs.writeFileSync(productsFilePath, JSON.stringify(productEdited))
-        res.redirect('products')
+        res.redirect('/products')
 	},
     delete: (req, res) => {
 		let id = req.params.id;
 		let productToDeleted = products.filter(product => product.id != id)
 	    
 		fs.writeFileSync(productsFilePath,JSON.stringify(productToDeleted));
-         res.redirect("products")
+        console.log('delete')
+         res.redirect("/products")
 	
-	}
+	
+    },
+  
 }
+
+
 
 module.exports= productController;

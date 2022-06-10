@@ -4,7 +4,7 @@
   "description": "Somos Ikaro's Phones. Un e-commerce online de Celulares de las principales marcas como Apple, Samsung, Xiaomi y mucho mas. Ofrecemos el mejor servicio de compra desde nuestra pagina web con checkout integrado. Apuntamos al publico en general desde 12 años, vendiendo celulares accesibles hasta siendo de alta gama.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",

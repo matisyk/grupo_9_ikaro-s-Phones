@@ -34,11 +34,13 @@ router.get('/Detail/:id/', productsControllers.detail);
 router.get('/create', productsControllers.create);
 router.post('/create', fileUpload.any() , productsControllers.created);
 
-//edicion
-router.get('/edit/:id', productsControllers.edit);
-router.put('/edit/:id/', productsControllers.edited);
+//borrar un producto
+router.delete('/delete/:id/', productsControllers.delete);
 
-// //borrar un producto
-router.delete('/delete/:id', productsControllers.delete);
+//edicion
+router.get('/edit/:id/', productsControllers.edit);
+router.patch('/edit/:id/', productsControllers.edited);
+
+
 
 module.exports = router;
