@@ -17,6 +17,18 @@
     "recorder": "1080",
     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
 }, {
+    "id": "2",
+    "name": "Xiaomi Redmi 9A",
+    "price": "32.000",
+    "discount": "15",
+    "category": "in-sale",
+    "screen": "9.5",
+    "resolution": "1080x2400",
+    "rom": "128GB",
+    "ram": "6GB",
+    "description": "  asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj  ",
+    "image": "XiaomiRedmi9A.png"
+}, {
     "id": "3",
     "name": "Xiaomi 11 lite",
     "price": "100.000",

@@ -17,7 +17,7 @@
         </div>
 
         <div class="formProductEdit">
-			<form action="/edit/<%= product.id %>?_method=PATCH" method="POST" >
+			<form action="/edit/<%= product.id %>?_method=PATCH" method="POST" enctype="multipart/form-data">
 				<div class="product-box">
 					<div>
 						<label for="name" class="form-label">Nombre del producto:</label>
@@ -63,15 +63,13 @@
 					</div>
 					<div>
 						<label for="image" class="form-label">Imagen</label>
-						<input type="file" name="image" class="form-input" value="<%= product.image %>">
+						<input type="file" name="image" class="form-input">
 					</div>
 					<div class="buttons">
 						<div>
 							<button type="submit" class="btn-save">GUARDAR CAMBIOS</button>
 						</div>
-						
 					</div>
-					
 				</div>
 			</form>
 			<div>

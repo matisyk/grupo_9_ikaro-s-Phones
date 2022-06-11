@@ -1,10 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const path = require("path")
-//requerir multer par subir archivos
+
 const multer = require('multer');
 
 const productsControllers = require("../controllers/productsController")
+
 //configuracion multer 
 let storage = multer.diskStorage({
     destination: (req, file, callback) => {

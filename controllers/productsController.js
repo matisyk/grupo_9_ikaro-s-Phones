@@ -21,8 +21,6 @@ const productController ={
         res.render('productCreate', {products})
     },
     created: (req, res) => {  //ruta POST guardar product
-        console.log("entre")
-
         let image 
         if(req.files[0] != undefined){
             image = req.files[0].filename
@@ -47,14 +45,23 @@ const productController ={
         res.render('productEdit', {product})
     },
     edited: (req, res) => {  //ruta PUT guardar la edicion
-        console.log(req.body)
+       
 		let id = req.params.id;
 		let productToEdit = products.find(product => product.id == id)
+
+        let image
+        if(req.files[0] != undefined){
+            image = req.files[0].filename
+        }else{
+            image = productToEdit.image
+        }
+
         productToEdit = {
             id: productToEdit.id,
             ...req.body,
-            image: productToEdit.image
-        };
+            image: image,
+        }
+      
         let productEdited = products.map(product => {
             if(product.id == productToEdit.id){
                 return product = {...productToEdit};
