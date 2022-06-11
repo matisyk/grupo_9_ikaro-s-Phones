@@ -17,22 +17,55 @@
         <main>
             <form method="POST" action="/register" class="formulario">
                 <h2> Crear una cuenta </h2>
-                <label for="firstName">Nombre</label>
-                <input type="text" placeholder="ejem.: Juan" name="name">
-
-                <label for="lastName">Apellido</label>
-                <input type="text" placeholder="ejem.: Ramirez" name="name">
+                <div>
+                    <label for="full-name">Nombre y Apellido</label>
+                <input 
+                    type="text" 
+                    placeholder="ejem.: Juan Ramirez" 
+                    name="fullName"
+                    class="form-control <%= locals.errors && errors.fullName ? 'is-invalid' : null %>"   
+                    value="<%= locals.oldData ? oldData.fullName : null %>"
+                >
+                <% if (locals.errors && errors.fullName) { %>
+                    <div class="text-danger">
+                        <%= errors.fullName.msg %> 
+                    </div>
+                <% } %>
+                </div>
 
                 <label for="email"> Ingresa tu email</label>
-                <input type="email" placeholder="ejem.: example@gmail.com" name="email">
+                <input 
+                    type="email" 
+                    placeholder="ejem.: example@gmail.com" 
+                    name="email"
+                    class="form-control <%= locals.errors && errors.email ? 'is-invalid' : null %>"
+					value="<%= locals.oldData ? oldData.email : null %>"
+                >
+                <% if (locals.errors && errors.email) { %>
+                    <div class="text-danger">
+                        <%= errors.email.msg %>
+                    </div>
+                <% } %>
 
                 <label for="password"> Ingresa tu contraseña </label>
-                <input type="password" placeholder="Escribir contraseña" minlength="6" name="password">
+                <input 
+                    type="password" 
+                    placeholder="Escribir contraseña" 
+                    minlength="6" 
+                    name="password"
+                    class="form-control <%= locals.errors && errors.password ? 'is-invalid' : null %>"
+                >
+                <% if (locals.errors && errors.password) { %>
+                    <div class="text-danger">
+                        <%= errors.password.msg %>
+                    </div>
+                <% } %>
 
                 <label for="confirm"> Confirme su contraseña </label>
                 <input type="password" placeholder="Confirmar contraseña" name="confirm">
             
                 <button type="submit" class="boton" >C o n t i n u a r</button>
+
             </form>
             <div class="login-foot">
                 <p>¿Ya tiene cuenta?</p>

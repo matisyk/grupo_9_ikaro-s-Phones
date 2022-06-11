@@ -1,9 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const path = require("path")
-
 const multer = require('multer');
-
+const path = require("path")
 const productsControllers = require("../controllers/productsController")
 
 //configuracion multer 
@@ -19,8 +17,6 @@ let storage = multer.diskStorage({
 })
 // guardamos en una variable la confg
 let fileUpload = multer({storage:storage});
-
-//require controller
 
 //todos los productos
 router.get('/products', productsControllers.store)
@@ -38,9 +34,9 @@ router.post('/create', fileUpload.any() , productsControllers.created);
 //borrar un producto
 router.delete('/delete/:id/', productsControllers.delete);
 
-//edicion
+//editar un producto
 router.get('/edit/:id/', productsControllers.edit);
-router.patch('/edit/:id/', productsControllers.edited);
+router.patch('/edit/:id/', fileUpload.any(), productsControllers.edited);
 
 
 

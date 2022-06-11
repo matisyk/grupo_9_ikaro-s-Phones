@@ -53,7 +53,7 @@
     "discount": "14",
     "image": "iPhoneX.png",
     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
-    "category": "inSale",
+    "category": "in-sale",
     "screen": "9.5",
     "resolution": "1080x2400",
     "system": "Android",
@@ -71,7 +71,7 @@
     "discount": "20",
     "image": "MotoG22.png",
     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
-    "category": "inSale",
+    "category": "in-sale",
     "screen": "9.5",
     "resolution": "1080x2400",
     "system": "Android",
@@ -116,20 +116,14 @@
     "id": "8",
     "name": "iPhone 12",
     "price": "190.000",
-    "discount": "0",
-    "image": "iPhone12.png",
-    "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
-    "category": "inSale",
+    "discount": "15",
+    "category": "in-sale",
     "screen": "9.5",
     "resolution": "1080x2400",
-    "system": "Android",
     "rom": "128GB",
     "ram": "6GB",
-    "externalMemory": "trajeta microSD ejem 1TB",
-    "camera": "12 MP + 8 MP + 12 MP",
-    "frontalCamera": "32MP",
-    "recorder": "1080",
-    "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
+    "description": " Descripcion del equipo iPhone12  ",
+    "image": "iPhone12.png"
 }, {
     "id": "9",
     "name": "Samsung Galaxy Z Fold3",
@@ -155,7 +149,7 @@
     "discount": "25",
     "image": "SamsungGalaxyA33.png",
     "description": "asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj",
-    "category": "inSale",
+    "category": "in-sale",
     "screen": "9.5",
     "resolution": "1080x2400",
     "system": "Android",
@@ -185,7 +179,7 @@
     "recorder": "1080",
     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
 }, {
-    "id": "111",
+    "id": "12",
     "name": "",
     "price": "500",
     "discount": "20",
@@ -193,19 +187,19 @@
     "description": "buhuhhuuhoo",
     "image": "default-image.png"
 }, {
-    "id": "1111",
+    "id": "13",
     "name": "",
     "price": "500",
     "discount": "20",
-    "category": "visited",
+    "category": "smartphone",
     "description": "fdsfadff",
     "image": "default-image.png"
 }, {
-    "id": "11111",
+    "id": "14",
     "name": "",
     "price": "",
     "discount": "",
-    "category": "",
+    "category": "in-sale",
     "description": "",
     "image": "1654650889137.jpg"
 }]
