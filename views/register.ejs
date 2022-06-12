@@ -15,7 +15,7 @@
         <%- include('./partials/header'); %>
 
         <main>
-            <form method="POST" action="/register" class="form-register">
+            <form method="POST" action="/register" class="form-register" enctype="multipart/form-data">
 
                 <h4 class="form-title"> Crear una cuenta </h4>
                 
@@ -37,7 +37,25 @@
                         >
                         <div style="color:#ff3c00"> <%= (locals.errors && errors.email ? errors.email.msg : null) %> </div>
                     </div>
+
+                    <div class="container">
+                        <label for="avatar"> Selecciona una imagen de perfil </label>
+                        <input type="file" name="avatar"
+                        class="form-control <%= locals.errors && errors.avatar? 'is-invalid' : null %>"
+                        value="<%= locals.oldData ? oldData.avatar : null %>"
+                        >
+                        <div style="color:#ff3c00"> <%= (locals.errors && errors.email ? errors.email.msg : null) %> </div>
+                    </div>
                     
+                    <div class="container">
+                        <label for="tel"> Telefono </label>
+                        <input type="tel" placeholder="ejem.: 11 12345678" name="tel"
+                        class="form-control <%= locals.errors && errors.tel ? 'is-invalid' : null %>"
+                        value="<%= locals.oldData ? oldData.tel : null %>"
+                        >
+                        <div style="color:#ff3c00"> <%= (locals.errors && errors.email ? errors.email.msg : null) %> </div>
+                    </div>
+
                     <div class="container">
                         <label for="password"> Ingresa tu contraseña </label>
                         <input type="password" placeholder="Escribir contraseña" name="password"

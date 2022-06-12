@@ -18,7 +18,7 @@ const productController ={
 		res.render('productDetail',{product})
 	},
     create: (req, res) => {  //ruta GET crear producto
-        res.render('productCreate', {products})
+        res.render('productCreate')
     },
     created: (req, res) => {  //ruta POST guardar product
         let image 
