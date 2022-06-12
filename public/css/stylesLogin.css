@@ -145,8 +145,8 @@ body{
     font-weight: 400;
     padding: 10px 12px 20px;
 }
-.conteiner{
-    margin: 20px;
+.container{
+    margin: 10px;
     position: relative;
 }
 .fa-solid.fa-eye{
@@ -165,7 +165,7 @@ body{
     border: #ff4621;
     border-radius: 30px;
     color: white;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 .register{
     margin: 10px;
@@ -179,6 +179,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 20px;
 }
 .legales a{
     padding: 10px;
@@ -297,83 +298,37 @@ footer{
         display: none;
     }
     /*fin header*/
-
-     /*BOTTOM var inicio*/
-     .bottom-var{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        background-color: rgb(161, 161, 161);
-        padding: 25px 15px;
-        margin: auto;
-        text-align: center;
-    }
-    .var li{
-        width: 30%;
-    }
-    .var a{
-        color: black;
-        font-size: 12px;
-    }
-    .var{
-        display: flex;
-        justify-content: center;
-        list-style: none;
-    }
-    /*BOTTOM var fin*/
-
-    .primera-columna, .tercera-columna, .segunda-columna, .cuarta-columna{
-        width: 22%;
-    }
-
-    .var-no-mobile-2{
-        display: block;
-    }
-
-    .var-no-mobile-1, .var-no-mobile-2, .var-no-mobile-3{
-        width: 100%;
-    }
-
-    .formulario{
-        margin-top: 15%;
-    }
-    /* FOOTER PRINCIPIO */
-/* .footer-title{
-    font-size: 25px;
-} 
-
-.general, .left-column, .final-group
-{
-    font-size: 18px;
+    /*INICIO FORMULARIO DE REGISTRO*/
+.form-login{
+    margin: 12% 25% 8% 25%;
 }
-.general{
-    padding: 0 50px;
+.form-title{
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px 12px;
 }
-.left-column p{
-    padding: 20px 10px;
+.container{
+    margin: 10px;
 }
-.final-group{
+.btn-login{
+    padding: 10px 40px;
+}
+.register{
+    margin: 10px 10px 20px;
+}
+.register a{
+    color: #302e2e;
+}
+.legales{
     flex-direction: row;
     justify-content: center;
-    align-items: center;
 }
-.final-group p{
-    text-align: center;
-    font-size: 15px;
-    padding: 10px;
-}
-.footer-bottom p{
+.legales a{
+    padding: 20px;
+    font-size: 14px;
     color: #302e2e;
-    margin-left: 10px;
-    font-size: 15px;
 }
-.footer-img{
-    height: 50%;
-    width: 4%;
-} */
-/* FOOTER FIN */
-
+/*FIN FORMULARIO DE REGISTRO*/
 }
 
 @media(min-width: 1200px){
@@ -423,13 +378,25 @@ footer{
         margin-right: 10%;
     }
     /* fin main */
-
-    /* FOOTER PRINCIPIO */
-    /* .footer-img{
-        height: 40%;
-        width: 3%;
-    } */
-    /* FOOTER FIN */
+    
+     /*INICIO FORMULARIO DE REGISTRO*/
+.form-login{
+    margin: 8% 35% 5% 35%;
+}
+.form-title{
+    font-size: 28px;
+    padding: 15px 12px;
+}
+.btn-login{
+    padding: 10px 50px;
+}
+.btn-login:hover{
+    background-color: #ff4621dd;
+}
+.legales a{
+    font-size: 16px;
+}
+/*FIN FORMULARIO DE REGISTRO*/
 
 }
 

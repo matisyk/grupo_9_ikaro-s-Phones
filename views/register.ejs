@@ -13,68 +13,61 @@
     </head>
     <body>
         <%- include('./partials/header'); %>
+
         <main>
-            <form method="POST" action="/register" class="formulario">
-                <h2> Crear una cuenta </h2>
-                <div>
-                    <label for="full-name">Nombre y Apellido</label>
-                <input 
-                    type="text" 
-                    placeholder="ejem.: Juan Ramirez" 
-                    name="fullName"
-                    class="form-control <%= locals.errors && errors.fullName ? 'is-invalid' : null %>"   
-                    value="<%= locals.oldData ? oldData.fullName : null %>"
-                >
-                <% if (locals.errors && errors.fullName) { %>
-                    <div class="text-danger">
-                        <%= errors.fullName.msg %> 
+            <form method="POST" action="/register" class="form-register">
+
+                <h4 class="form-title"> Crear una cuenta </h4>
+                
+                <div class="form-container">
+                    <div class="container">
+                        <label for="full-name">Nombre y Apellido</label>
+                        <input type="text" placeholder="ejem.: Juan Ramirez" name="fullName"
+                        class="form-control <%= locals.errors && errors.fullName ? 'is-invalid' : null %>"   
+                        value="<%= locals.oldData ? oldData.fullName : null %>"
+                        >
+                        <div style="color:#ff3c00"> <%= (locals.errors && errors.fullName ? errors.fullName.msg : null) %> </div>
                     </div>
-                <% } %>
+                   
+                    <div class="container">
+                        <label for="email"> Ingresa tu email</label>
+                        <input type="text" placeholder="ejem.: example@gmail.com" name="email"
+                        class="form-control <%= locals.errors && errors.email ? 'is-invalid' : null %>"
+                        value="<%= locals.oldData ? oldData.email : null %>"
+                        >
+                        <div style="color:#ff3c00"> <%= (locals.errors && errors.email ? errors.email.msg : null) %> </div>
+                    </div>
+                    
+                    <div class="container">
+                        <label for="password"> Ingresa tu contraseña </label>
+                        <input type="password" placeholder="Escribir contraseña" name="password"
+                        class="form-control <%= locals.errors && errors.password ? 'is-invalid' : null %>"
+                        >
+                        <i class="fa-solid fa-eye"></i>
+                        <div style="color:#ff3c00"> <%= (locals.errors && errors.password ? errors.password.msg : null) %> </div>
+                    </div>
+                    
+                    <div class="container">
+                        <label for="confirm"> Confirme su contraseña </label>
+                        <input type="password" placeholder="Confirmar contraseña" name="confirm"
+                        >
+                    </div>
+                </div>
+            
+                <button type="submit" class="btn-register" >REGISTRAR</button>
+
+                <div class="login">
+                    <a href="./login">¿Ya tiene cuenta? Inicie Sesion</a>
                 </div>
 
-                <label for="email"> Ingresa tu email</label>
-                <input 
-                    type="email" 
-                    placeholder="ejem.: example@gmail.com" 
-                    name="email"
-                    class="form-control <%= locals.errors && errors.email ? 'is-invalid' : null %>"
-					value="<%= locals.oldData ? oldData.email : null %>"
-                >
-                <% if (locals.errors && errors.email) { %>
-                    <div class="text-danger">
-                        <%= errors.email.msg %>
-                    </div>
-                <% } %>
-
-                <label for="password"> Ingresa tu contraseña </label>
-                <input 
-                    type="password" 
-                    placeholder="Escribir contraseña" 
-                    minlength="6" 
-                    name="password"
-                    class="form-control <%= locals.errors && errors.password ? 'is-invalid' : null %>"
-                >
-                <% if (locals.errors && errors.password) { %>
-                    <div class="text-danger">
-                        <%= errors.password.msg %>
-                    </div>
-                <% } %>
-
-                <label for="confirm"> Confirme su contraseña </label>
-                <input type="password" placeholder="Confirmar contraseña" name="confirm">
-            
-                <button type="submit" class="boton" >C o n t i n u a r</button>
-
             </form>
-            <div class="login-foot">
-                <p>¿Ya tiene cuenta?</p>
-                <a href="./login">Iniciar Sesion</a>
-            </div>
-            <div class="footer-main">
-                <a href=""> Condiciones de uso </a>
-                <a href=""> Aviso de privacidad </a>
+
+            <div class="legales">
+                <a href=""> Terminos y condiciones </a>
+                <a href=""> Uso de datos personales </a>
                 <a href=""> Ayuda </a>
             </div>
+
         </main>
 
         <footer>
