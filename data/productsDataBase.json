@@ -1,5 +1,5 @@
 [{
-    "id": "1",
+    "id": 1,
     "name": "ZTE blade A51",
     "price": "27.000",
     "discount": "0",
@@ -17,7 +17,7 @@
     "recorder": "1080",
     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
 }, {
-    "id": "2",
+    "id": 2,
     "name": "Xiaomi Redmi 9A",
     "price": "32.000",
     "discount": "15",
@@ -29,7 +29,7 @@
     "description": "  asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj  ",
     "image": "XiaomiRedmi9A.png"
 }, {
-    "id": "3",
+    "id": 3,
     "name": "Xiaomi 11 lite",
     "price": "100.000",
     "discount": "0",
@@ -47,7 +47,7 @@
     "recorder": "1080",
     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
 }, {
-    "id": "4",
+    "id": 4,
     "name": "iPhone X",
     "price": "120.000",
     "discount": "14",
@@ -65,7 +65,7 @@
     "recorder": "1080",
     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
 }, {
-    "id": "5",
+    "id": 5,
     "name": "Moto G22",
     "price": "38.000",
     "discount": "20",
@@ -83,7 +83,7 @@
     "recorder": "1080",
     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
 }, {
-    "id": "6",
+    "id": 6,
     "name": "Motorola G200",
     "price": "100.000",
     "discount": "0",
@@ -101,7 +101,7 @@
     "recorder": "1080",
     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
 }, {
-    "id": "7",
+    "id": 7,
     "name": "iPhone 13 Pro",
     "price": "100003",
     "discount": "0",
@@ -113,7 +113,7 @@
     "description": "   asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj   ",
     "image": "iPhone13Pro.png"
 }, {
-    "id": "8",
+    "id": 8,
     "name": "iPhone 12",
     "price": "190.000",
     "discount": "15",
@@ -125,7 +125,7 @@
     "description": " Descripcion del equipo iPhone12  ",
     "image": "iPhone12.png"
 }, {
-    "id": "9",
+    "id": 9,
     "name": "Samsung Galaxy Z Fold3",
     "price": "250.000",
     "discount": "0",
@@ -143,7 +143,7 @@
     "recorder": "1080",
     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
 }, {
-    "id": "10",
+    "id": 10,
     "name": "Samsung Galaxy A33",
     "price": "75.000",
     "discount": "25",
@@ -161,7 +161,7 @@
     "recorder": "1080",
     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
 }, {
-    "id": "11",
+    "id": 11,
     "name": "Samsung Galaxy S22+",
     "price": "200.000",
     "discount": "0",
@@ -179,7 +179,7 @@
     "recorder": "1080",
     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
 }, {
-    "id": "12",
+    "id": 12,
     "name": "",
     "price": "500",
     "discount": "20",
@@ -187,7 +187,7 @@
     "description": "buhuhhuuhoo",
     "image": "default-image.png"
 }, {
-    "id": "13",
+    "id": 13,
     "name": "",
     "price": "500",
     "discount": "20",
@@ -195,7 +195,7 @@
     "description": "fdsfadff",
     "image": "default-image.png"
 }, {
-    "id": "14",
+    "id": 14,
     "name": "",
     "price": "",
     "discount": "",

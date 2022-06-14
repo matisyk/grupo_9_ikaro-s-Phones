@@ -29,7 +29,7 @@ const usersController ={
         else{
             avatar = "default-image.png" 
         }
-
+        
         let newUser = {
             id:users[users.length - 1].id + 1,
             ...req.body,

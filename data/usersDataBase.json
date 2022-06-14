@@ -1,23 +1,31 @@
 [{
-    "id": "1",
+    "id": 1,
     "fullName": "Vania Caballero",
     "email": "vaniacaballero5@gmail.com",
     "tel": "11 65037923",
     "password": "gatitos07",
     "avatar": "gatito.jpg"
 }, {
-    "id": "2",
+    "id": 2,
     "fullName": "Fabian Silva",
     "email": "fabisilva@gmail.com",
     "tel": "11 34567892",
     "password": "123456789",
     "avatar": "default-image.png"
 }, {
-    "id": "21",
-    "fullName": "Gael Vallejo",
-    "email": "gaelvallej0@gmail.com",
+    "id": 3,
+    "fullName": "pepito Cordova",
+    "email": "pepitoCordova@gmail.com",
     "tel": "11 12345678",
-    "password": "gaelvallej",
-    "confirm": "gaelvallej",
-    "avatar": "1655168079587.png"
+    "password": "pepito1234",
+    "confirm": "pepito1234",
+    "avatar": "1655169173571.png"
+}, {
+    "id": 4,
+    "fullName": "pepito Cordova",
+    "email": "pepitoCordova@gmail.com",
+    "tel": "11 12345678",
+    "password": "pepito1234",
+    "confirm": "pepito1234",
+    "avatar": "1655169306377.png"
 }]
