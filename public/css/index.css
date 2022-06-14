@@ -281,22 +281,20 @@ main section article img{
 }
 .name{
     display: flex;
-    width: 100%;
-    padding: 8px 10px 10px 10px;
+    width: 120%;
     position: absolute;
-    left: 140px;
+    left: 103%;
+    top: 15%;
     color: #666;
-    font-size: 15px;
     font-weight: 400;
 }
 div.box-description{
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 100%;
-    padding: 0 10px;
-    right: -130px;
-    top: 40px;
+    width: 140%;
+    right: -135%;
+    top: 30%;
 }
 p.price {
     font-size: 20px;

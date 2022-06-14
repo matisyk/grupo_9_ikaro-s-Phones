@@ -105,7 +105,7 @@
     "name": "iPhone 13 Pro",
     "price": "100003",
     "discount": "0",
-    "category": "in-sale",
+    "category": "smartphone",
     "screen": "9.5",
     "resolution": "1080x2400",
     "rom": "128GB",
@@ -191,8 +191,8 @@
     "name": "",
     "price": "500",
     "discount": "20",
-    "category": "smartphone",
-    "description": "fdsfadff",
+    "category": "in-sale",
+    "description": "Descripcion del producto 13",
     "image": "default-image.png"
 }, {
     "id": 14,

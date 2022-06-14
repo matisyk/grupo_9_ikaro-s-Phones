@@ -11,7 +11,7 @@ const usersController ={
         res.render('register');
     },
     saveUser: (req, res) =>{
-        //validaciones
+        //validaciones middleware
         const valiResult = validationResult(req);
 
         if(valiResult.errors.length > 0){
