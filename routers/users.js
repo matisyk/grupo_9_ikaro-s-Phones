@@ -20,9 +20,10 @@ let storage = multer.diskStorage({
 // guardamos en una variable la confg
 let fileUpload = multer({storage:storage});
 
+
 //formulario de registro
 router.get('/register', usersController.register)
-router.post('/register',fileUpload.single(), registerValidate, usersController.saveUser)
+router.post('/register', fileUpload.any(), registerValidate, usersController.saveUser)
 
 //formulario de login
 router.get('/login', usersController.login)

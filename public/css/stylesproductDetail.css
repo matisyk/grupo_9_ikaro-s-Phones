@@ -405,31 +405,6 @@ footer{
     }
     /*fin header*/
 
-     /*BOTTOM var inicio*/
-     .bottom-var{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        background-color: rgb(161, 161, 161);
-        padding: 25px 15px;
-        margin: auto;
-        text-align: center;
-    }
-    .var li{
-        width: 30%;
-    }
-    .var a{
-        color: black;
-        font-size: 12px;
-    }
-    .var{
-        display: flex;
-        justify-content: center;
-        list-style: none;
-    }
-    /*BOTTOM var fin*/
-
     /* MAIN PRINCIPIO */
     main{
         margin: 0 auto;
@@ -438,8 +413,8 @@ footer{
         width: 90%;
         display: flex;
         justify-content: center;
-        margin: auto;
-        margin-top: 14%;
+
+        margin-top: 10%;
         background-color: white;
         border-radius: 15px;
         align-items: center;
@@ -450,8 +425,8 @@ footer{
         padding: 10px;
     }
     .producto img{
-        margin-top: 3%;
-        margin-left: 3%;
+        margin-top: 0%;
+        margin-left: 2%;
         text-align: center;
         width: 40%;
         padding: 10px;
@@ -484,7 +459,6 @@ footer{
     .detalle{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-around;
         margin-bottom: 40px;
     }
@@ -591,26 +565,15 @@ footer{
         margin-left: -12%;
         margin-right: 8%;
     }
-    /*bottom var inicio*/
-    
-    .var a{
-        font-size: 14px;
-        margin: 0 60px;
-    }
-    h3{
-        font-size: 20px;
-        padding: 10px;
-    }
-    /*bottom var fin*/
+
+    /* main inicio */
     .producto{
-        margin-top: 12%;
+        margin-top: 8%;
         background-color: white;
         border-radius: 15px;
         align-items: center;
     }
     .producto img{
-        margin-top: 3%;
-        margin-left: 3%;
         text-align: center;
         width: 25%;
         padding: 10px;
