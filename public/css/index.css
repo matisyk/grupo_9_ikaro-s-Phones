@@ -261,11 +261,6 @@ h3{
     text-align: center;
     font-weight: 400;
 }
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
 div.article{
     background-color: white;   
     margin-bottom: 10px;
@@ -299,7 +294,7 @@ div.box-description{
 p.price {
     font-size: 20px;
     display: inline-block;
-    margin: 17px 0 7px 10px;
+    margin: 0px 0 7px 10px;
     color: #302e2e;
 }
 p.discount {
@@ -312,6 +307,15 @@ p.description{
     margin: 0px 0 7px 10px;
     color: #302e2e;
     font-size: 12px;
+}
+a.btn-detail{
+    font-size: 12px;
+    margin: 5% 20%;
+    padding: 8px 10px;
+    text-align: center;
+    background-color: #1868d9;
+    color: white;
+    border-radius: 25px;
 }
 /* MAIN FIN */
 
@@ -496,64 +500,83 @@ footer{
     }
     /*BOTTOM var fin*/
 
-    /* Main inicio */
-    div.article{
-        background-color:#dcdcdc; 
-        margin-bottom: 0px;
-        width: 50%;
-    }
-    main section article:hover{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    main section article{
-        background-color: white;
-        border-radius: 10px;
-        margin: 20px auto;
-        width: 80%;
-    }
-    main section article img{
-        width: 100%;
-    }
-    .name{
-        display: block;
-        padding: 0px;
-        margin-top: 10px;
-        position: relative;
-        left: 0px;
-        margin-bottom: 15px;
-        text-align: center;
-        color: #666;
-        font-size: 20px;
-        font-weight: 400;
-    }
-    div.box-description{
-        display: block;
-        position: relative;
-        border-top: 1px solid #ebebeb;
-        padding: 20px 25px;
-        right: 0px;
-        top: 0px;
-    }
-    p{
-        margin: 0;
-    }
-    p.price {
-        font-size: 18px;
-    }
-    p.discount {
-        font-size: 13px;
-    }
-    p.description{
-        margin-left: 0px;
-        text-align: center;
-        font-size: 14px;
-    }
-    h3{
-        font-size: 20px;
-        color: #666;
-        text-align: center;
-    }
-    /* main fin */
+    /* MAIN PRINCIPIO */
+
+main{
+    width: 95%;
+}
+h3{
+    font-size: 20px;
+    margin: 25px 0px;
+}
+.h3-2{
+    margin-top: 8%;
+}
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+div.article{
+    background-color: white;
+    margin: 15px 10px;
+    border-radius: 10px;
+    width: 30%;
+}
+main section article{
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+main section article img{
+    width: 100%;
+    margin: auto;
+}
+.name{
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 0%;
+    font-size: 18px;
+    margin: 5px 0 10px 0;
+}
+div.box-description{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    right: 0%;
+    margin: 10px 0;
+}
+p.price {
+    font-size: 20px;
+    display: inline-block;
+    margin: 5px;
+    color: #302e2e;
+}
+p.discount {
+    display: inline-block;
+    margin: 5px;
+    color: #ff4621;
+    font-size: 12px;
+}
+p.description{
+    margin: 5px;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+a.btn-detail{
+    font-size: 14px;
+    margin: 5% 0%;
+    padding: 8px 25px;
+}
+/* MAIN FIN */
+
 
     /* FOOTER PRINCIPIO */
 .footer-title{
@@ -628,43 +651,30 @@ footer{
         margin: 0 60px;
     }
 
-    h3{
-        font-size: 20px;
-        padding: 10px;
-    }
-
-    .products{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 20px 0;
-    }
-    div.article{
-        display: contents;
-        background-color:#dcdcdc; 
-        margin-bottom: 0px;
-        width: 100%;
-    }
-    /* main section article {
-        margin: 20px auto;
-        width: 30%;
-    } */
-    main section article {
-        margin: 10px 10px 10px 10px;
-        width: 22%;
-    }
-    a.href{
-        width: 80%;
-    }
-    p.price{
-        font-size: 25px
-    }
-    p.discount{
-        font-size: 16px;
-    }
-    p.description{
-        font-size: 18px;
-    }
+       /* MAIN PRINCIPIO */
+h3{
+    font-size: 24px;
+}
+div.article{
+    width: 23%;
+}
+.name{
+    font-size: 22px;
+}
+p.price {
+    font-size: 23px;
+}
+p.discount {
+    font-size: 15px;
+}
+p.description{
+    font-size: 16px;
+}
+a.btn-detail{
+    font-size: 16px;
+    padding: 8px 30px;
+}
+/* MAIN FIN */
 
     /* FOOTER PRINCIPIO */
     .footer-img{

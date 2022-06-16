@@ -5,7 +5,7 @@ const methodOverride = require('method-override')
 const app = express();
 
 
-app.use(express.urlencoded({extended:false}));//para capturar lo que llegue del form en un obj lit.
+app.use(express.urlencoded({extended:false}));//Para capturar lo que llegue del form en un obj lit.
 app.use(express.json());
 
 app.use(express.static(path.resolve ('public')));
