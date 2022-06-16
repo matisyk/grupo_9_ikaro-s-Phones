@@ -18,27 +18,24 @@
 
         <main>
 
-            <h3>Smartphones</h3>
+            <h3>Descubre las mejores promociones</h3>
             <section>
-                
-                <div class="products">
                     <% products.forEach(product => { %>
                         <div class="article">
                             <article>
-                                <a href="/detail/<%= product.id %> " class="href">
                                     <h4 class="name"><%= product.name %> </h4>
                                     <img src="/images/products/<%= product.image %>" class="product_img">
                                     <div class="box-description">
                                         <p class="price">$ <%= product.price %> </p>
                                         <p class="discount"><%= product.discount %> % OFF</p>
                                         <p class="description">en 10 cuotas de </p>
+                                        <a href="/detail/<%= product.id %> " class="btn-detail">Lo quiero</a>
                                     </div>
-                                </a>
                             </article>
                         </div>
                     <% }) %>
-                </div>  
             </section> 
+
         </main>
 
         <footer>

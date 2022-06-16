@@ -130,126 +130,7 @@ body{
 /* fin barra desplegable movile */
 /* HEADER FIN */
 
-/* BANNER PRINCIPIO */
-.slide {
-    display: none;
-    position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    margin-top: 50px;
-}
-
-.slide-inner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
-.slide-open:checked + .slide-item {
-    position: static;
-    opacity: 100;
-}
-.slide-item {
-    position: absolute;
-    opacity: 0;
-    -webkit-transition: opacity 0.6s ease-out;
-    transition: opacity 0.6s ease-out;
-}
-.slide-item img {
-    display: block;
-    height: auto;
-    max-width: 100%;
-    width: 100%;
-}
-.slide-control {
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-    font-size: 40px;
-    height: 40px;
-    line-height: 35px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    cursor: pointer;
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    text-align: center;
-    width: 40px;
-    z-index: 10;
-}
-.slide-control.prev {
-    left: 2%;
-}
-
-.slide-control.next {
-    right: 2%;
-}
-
-.slide-control:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #aaaaaa;
-}
-
-#slide-1:checked ~ .control-1,
-#slide-2:checked ~ .control-2,
-#slide-3:checked ~ .control-3 {
-    display: block;
-}
-.slide-indicador {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    list-style: none;
-    position: absolute;
-    bottom: 0%;
-    text-align: center;
-    z-index: 10;
-}
-.slide-indicador li {
-    display: inline-block;
-    margin: 0 5px;
-}
-.slide-circulo {
-    color: #828282;
-    cursor: pointer;
-    display: block;
-    font-size: 35px;
-}
-.slide-circulo:hover {
-    color: #aaaaaa;
-}
-
-#slide-1:checked ~ .control-1 ~ .slide-indicador 
-     li:nth-child(1) .slide-circulo,
-#slide-2:checked ~ .control-2 ~ .slide-indicador 
-      li:nth-child(2) .slide-circulo,
-#slide-3:checked ~ .control-3 ~ .slide-indicador 
-      li:nth-child(3) .slide-circulo {
-    color: #428bca;
-}
-#titulo {
-    width: 100%;
-    position: absolute;
-    padding: 0px;
-    margin: 0px auto;
-    text-align: center;
-    font-size: 27px;
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Open Sans', sans-serif;
-    z-index: 9999;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
-         -1px 0px 2px rgba(255, 255, 255, 0);
-}
-.bannerCel{
-    margin-top: 15%;
-}
-.imgCel{
-    width: 100%;
-}
-/* BANNER FIN */
-
 /* MAIN PRINCIPIO */
-
 main{
     width: 90%;
     margin: 0 auto;
@@ -257,14 +138,9 @@ main{
 h3{
     font-size: 15px;
     color: #666;
-    margin: 20px 0px;
+    margin: 27% 0 7% 0px;
     text-align: center;
     font-weight: 400;
-}
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
 }
 div.article{
     background-color: white;   
@@ -281,27 +157,25 @@ main section article img{
 }
 .name{
     display: flex;
-    width: 100%;
-    padding: 8px 10px 10px 10px;
+    width: 120%;
     position: absolute;
-    left: 140px;
+    left: 103%;
+    top: 15%;
     color: #666;
-    font-size: 15px;
     font-weight: 400;
 }
 div.box-description{
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 100%;
-    padding: 0 10px;
-    right: -130px;
-    top: 40px;
+    width: 140%;
+    right: -135%;
+    top: 30%;
 }
 p.price {
     font-size: 20px;
     display: inline-block;
-    margin: 17px 0 7px 10px;
+    margin: 0px 0 7px 10px;
     color: #302e2e;
 }
 p.discount {
@@ -314,6 +188,15 @@ p.description{
     margin: 0px 0 7px 10px;
     color: #302e2e;
     font-size: 12px;
+}
+a.btn-detail{
+    font-size: 12px;
+    margin: 5% 20%;
+    padding: 8px 10px;
+    text-align: center;
+    background-color: #1868d9;
+    color: white;
+    border-radius: 25px;
 }
 /* MAIN FIN */
 
@@ -473,89 +356,82 @@ footer{
     .bannerCel{
         display: none;
     }
-    /*BOTTOM var inicio*/
-    .bottom-var{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        background-color: rgb(161, 161, 161);
-        padding: 25px 15px;
-        margin: auto;
-        text-align: center;
-    }
-    .var li{
-        width: 30%;
-    }
-    .var a{
-        color: black;
-        font-size: 12px;
-    }
-    .var{
-        display: flex;
-        justify-content: center;
-        list-style: none;
-    }
-    /*BOTTOM var fin*/
 
-    /* Main inicio */
-    div.article{
-        background-color:#dcdcdc; 
-        margin-bottom: 0px;
-        width: 50%;
-    }
-    main section article:hover{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    main section article{
-        background-color: white;
-        border-radius: 10px;
-        margin: 20px auto;
-        width: 80%;
-    }
-    main section article img{
-        width: 100%;
-    }
-    .name{
-        display: block;
-        padding: 0px;
-        margin-top: 10px;
-        position: relative;
-        left: 0px;
-        margin-bottom: 15px;
-        text-align: center;
-        color: #666;
-        font-size: 20px;
-        font-weight: 400;
-    }
-    div.box-description{
-        display: block;
-        position: relative;
-        border-top: 1px solid #ebebeb;
-        padding: 20px 25px;
-        right: 0px;
-        top: 0px;
-    }
-    p{
-        margin: 0;
-    }
-    p.price {
-        font-size: 18px;
-    }
-    p.discount {
-        font-size: 13px;
-    }
-    p.description{
-        margin-left: 0px;
-        text-align: center;
-        font-size: 14px;
+    /* MAIN PRINCIPIO */
+    main{
+        width: 95%;
     }
     h3{
         font-size: 20px;
-        color: #666;
+        margin: 12% 0 2% 0px;
+    }
+    .h3-2{
+        margin-top: 8%;
+    }
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    div.article{
+        background-color: white;
+        margin: 15px 10px;
+        border-radius: 10px;
+        width: 30%;
+    }
+    main section article{
+        position: relative;
+        width: 100%;
+        margin: auto;
+    }
+    main section article img{
+        width: 100%;
+        margin: auto;
+    }
+    .name{
+        display: block;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        left: 0%;
+        font-size: 18px;
+        margin: 5px 0 10px 0;
+    }
+    div.box-description{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        right: 0%;
+        margin: 10px 0;
+    }
+    p.price {
+        font-size: 20px;
+        display: inline-block;
+        margin: 5px;
+        color: #302e2e;
+    }
+    p.discount {
+        display: inline-block;
+        margin: 5px;
+        color: #ff4621;
+        font-size: 12px;
+    }
+    p.description{
+        margin: 5px;
+        width: 100%;
+        font-size: 14px;
         text-align: center;
     }
-    /* main fin */
+    a.btn-detail{
+        font-size: 14px;
+        margin: 5% 0%;
+        padding: 8px 25px;
+    }
+    /* MAIN FIN */
 
     /* FOOTER PRINCIPIO */
 .footer-title{
@@ -622,51 +498,35 @@ footer{
         margin-left: -12%;
         margin-right: 8%;
     }
-    .slide {
-        margin-top: 79px;
-    }
-    .var a{
-        font-size: 14px;
-        margin: 0 60px;
-    }
 
+    /* MAIN PRINCIPIO */
     h3{
-        font-size: 20px;
-        padding: 10px;
-    }
-
-    .products{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 20px 0;
+        font-size: 28px;
+        margin: 10% 0 2% 0px;
     }
     div.article{
-        display: contents;
-        background-color:#dcdcdc; 
-        margin-bottom: 0px;
-        width: 100%;
+        width: 23%;
     }
-    /* main section article {
-        margin: 20px auto;
-        width: 30%;
-    } */
-    main section article {
-        margin: 10px 10px 10px 10px;
-        width: 22%;
+    div.article:hover{
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     }
-    a.href{
-        width: 80%;
+    .name{
+        font-size: 22px;
     }
-    p.price{
-        font-size: 25px
+    p.price {
+        font-size: 23px;
     }
-    p.discount{
+    p.discount {
+        font-size: 15px;
+    }
+    .description{    
         font-size: 16px;
     }
-    p.description{
-        font-size: 18px;
+    a.btn-detail{
+        font-size: 16px;
+        padding: 8px 30px;
     }
+    /* MAIN FIN */
 
     /* FOOTER PRINCIPIO */
     .footer-img{
