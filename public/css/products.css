@@ -135,10 +135,36 @@ main{
     width: 90%;
     margin: 0 auto;
 }
+
+
+
+.logos-cel{
+    margin-top: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.logos-cel div{
+    width: 14%;
+    text-align: center;
+}
+.logos-cel img{
+    width: 100%;
+    border-radius: 50%;
+    border: solid 4px white;
+}
+.logos-cel div a{
+    font-size: 8px;
+    color: #302e2e;
+}
+
+
+
+
 h3{
     font-size: 15px;
     color: #666;
-    margin: 27% 0 7% 0px;
+    margin: 10% 0 7% 0px;
     text-align: center;
     font-weight: 400;
 }
@@ -361,9 +387,23 @@ footer{
     main{
         width: 95%;
     }
+
+
+    .logos-cel{
+        margin-top: 12%;
+    }
+    .logos-cel div{
+        width: 10%;
+    }
+    .logos-cel div a{
+        padding-top: 6px;
+        font-size: 10px;
+    }
+
+
     h3{
         font-size: 20px;
-        margin: 12% 0 2% 0px;
+        margin: 6% 0 2% 0px;
     }
     .h3-2{
         margin-top: 8%;
@@ -469,6 +509,7 @@ footer{
 }
 /* FOOTER FIN */
 }
+
 @media(min-width: 1200px){
     .logo {
         width: 20%;
@@ -500,9 +541,21 @@ footer{
     }
 
     /* MAIN PRINCIPIO */
+
+    .logos-cel{
+        margin-top: 12%;
+    }
+    .logos-cel div{
+        width: 8%;
+    }
+    .logos-cel div a{
+        font-size: 14px;
+    }
+
+
     h3{
         font-size: 28px;
-        margin: 10% 0 2% 0px;
+        margin: 5% 0 2% 0px;
     }
     div.article{
         width: 23%;
