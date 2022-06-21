@@ -138,12 +138,15 @@ main{
     margin: 25% auto;
     position: relative;
 }
+.detail-2{
+    display: none;
+}
 h1{
     font-size: 30px;
     text-align: start;
     margin-bottom: 20px;
     font-weight: 400;
-    color: #424242;
+    color: #666;
     padding: 0 10px;
 }
 .add-box{
@@ -151,14 +154,15 @@ h1{
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 20px;
-    background-color: #1868d98e;
+    background-color: #B6B6B6;
     padding: 10px 10px;
 }
 .fa-solid.fa-circle-check{
-    color: #302e2e;
+    color: #1868d9;
     padding-right: 10px;
 }
 h4.add{
+    color:#1868d9;
     font-size: 12px;
 }
 .items{
@@ -377,6 +381,75 @@ footer{
     }
     /*fin header*/
 
+    /*MAIN CARRITO*/
+main{
+    margin: 10% auto;
+}
+.main-car{
+    width: 90%;
+    margin: auto;
+}
+.add-box{
+    margin: 15px auto;
+}
+h1{
+    font-size: 25px;
+    margin-left: 25px;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 5%;
+}
+.items p{
+    font-size: 14px;
+    padding: 0 15px;
+    color: #666;
+}
+.items p.article{
+    padding-right: 43%;
+}
+.cart-detail{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+}
+img{
+    width: 15%;
+}
+.name{
+    width: 30%;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.detail{
+    display: none;
+}
+.detail-2{
+    display: block;
+    width: 50%;
+    text-align: center;
+}
+.detail-2 i{
+    font-style: normal;
+    padding: 0 27px;
+}
+.detail-2 i.cant-2{
+    border: solid 1px #666;
+    padding: 7px 18px;
+    margin: 0 5px
+}
+.btn{
+    width: 25%;
+    margin: 20px auto;
+}
+/*FIN MAIN CARRITO*/
+
     /*BOTTOM var inicio*/
     .bottom-var{
         display: flex;
@@ -452,31 +525,74 @@ footer{
         margin-left: -12%;
         margin-right: 8%;
     }
-    .slide {
-        margin-top: 79px;
-    }
-    /*bottom var inicio*/
-    
-    .var a{
-        font-size: 14px;
-        margin: 0 60px;
-    }
-    h3{
-        font-size: 20px;
-        padding: 10px;
-    }
-    /*bottom var fin*/
-    div.article{
-        display: contents;
-        background-color:#dcdcdc; 
-        margin-bottom: 0px;
-        width: 100%;
-    }
-    main section article {
-        display: flex;
-        margin: 10px 10px 10px 10px;
-        width: 25%;
-    }
+
+    /*MAIN CARRITO*/
+h1{
+    font-size: 30px;
+    margin-left: 40px;
+}
+.add-box{
+    width: 90%;
+}
+.items{
+    width: 70%;
+    padding-right: 3%;
+    margin: 30px 0 10px 0;
+}
+.items p{
+    font-size: 16px;
+    padding: 0 20px;
+}
+.items p.article{
+    padding-right: 41%;
+}
+.cart-detail{
+    margin: 0px;
+    width: 70%;
+}
+img{
+    width: 12%;
+}
+.name{
+    margin-left: 30px;
+    font-size: 20px;
+}
+.detail-2{
+    width: 60%;
+}
+.detail-2 i{
+    padding: 0 50px;
+}
+.cart-sumary{
+    margin: 0px;
+    width: 25%;
+    position: absolute;
+    top: 37%;
+    left: 70%;
+}
+/* .sumary-title{
+    color:  #ff4621;
+    padding: 10px;
+    border-bottom: 1px solid #B6B6B6;
+} */
+/* .subtotal{
+    padding: 10px;
+} */
+/* .tax{
+    padding: 10px;
+} */
+/* .total{
+    padding: 10px 10px 0px 10px;
+    border-top: 1px solid #B6B6B6;
+} */
+.btn{
+    width: 50%;
+    margin: 15px auto;
+}
+/*FIN MAIN CARRITO*/
+
+  
+   
 }
 
 /* MEDIA QUERIES FIN */

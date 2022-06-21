@@ -135,13 +135,21 @@ body{
     main{
         margin: 0 auto;
     }
+    .title-detail {
+        margin-top: 23%;
+        margin-left: 20px;
+        border-left: solid 1px #666;
+        padding-left: 5px;
+        color: #666;
+        font-size: 15px;
+    }
     .producto{
         width: 90%;
         display: block;
         position: relative;
         justify-content: center;
         margin: auto;
-        margin-top: 23%;
+        margin-top: 5%;
         background-color: white;
         border-radius: 15px;
         align-items: center;
@@ -196,11 +204,13 @@ body{
     }
     .boton-comprar-producto{
        text-align: center;
-       color: white;
        background-color: #f84525;
        padding: 8px 0px;
        margin: 6%;
        border-radius: 20px;
+    }
+    .boton-comprar-producto a{
+        color: white;
     }
     .specs{
         width: 100%;
@@ -409,12 +419,16 @@ footer{
     main{
         margin: 0 auto;
     }
+    .title-detail {
+        margin-top: 11%;
+        margin-left: 30px;
+        font-size: 14px;
+    }
     .producto{
         width: 90%;
         display: flex;
         justify-content: center;
-
-        margin-top: 10%;
+        margin-top: 3%;
         background-color: white;
         border-radius: 15px;
         align-items: center;
@@ -529,11 +543,7 @@ footer{
         width: 80%;
         margin: 20px;
     }
-
 /* MAIN FIN */
-
-     /* FOOTER PRINCIPIO */
-      /* FOOTER FIN */
 }
 
 @media(min-width: 1200px){
@@ -567,8 +577,12 @@ footer{
     }
 
     /* main inicio */
+    .title-detail {
+        margin-top: 9%;
+        margin-left: 40px;
+    }
     .producto{
-        margin-top: 8%;
+        margin-top: 3%;
         background-color: white;
         border-radius: 15px;
         align-items: center;

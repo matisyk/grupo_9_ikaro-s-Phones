@@ -9,7 +9,7 @@ const productController ={
         res.render('products', {products})
     },
     productCart : (req, res) => {
-        res.render('productCart');
+        res.render('productCart', {products});
     },
     detail : (req, res) => {
         let id = req.params.id
