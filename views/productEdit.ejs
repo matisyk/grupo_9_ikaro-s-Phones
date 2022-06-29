@@ -14,7 +14,7 @@
     <main>
 
         <div class="title">
-            <h2 class="product-title">Estás editando <i><%= product.name %></i> </h2>
+            <h2 class="product-title">Estás editando <i> <%= product.name %> </i> </h2>
         </div>
 
         <div class="form-edit">
@@ -38,7 +38,7 @@
 						<select name="category" id="category" class="form-input">
 							<option value="" disabled> Selecionar categoría </option>
 							<option value="in-sale" <%= product.category === 'in-sale' ? 'selected' : '' %> >En oferta</option>
-							<option value="samrtphones" <%= product.category === 'samrtphones' ? 'selected' : '' %> >Ultimos visitados</option>
+							<option value="smartphone" <%= product.category === 'smartphone' ? 'selected' : '' %> >Ultimos visitados</option>
 						</select>
 					</div>
 					<div>
@@ -65,9 +65,10 @@
 						<label for="description" class="form-label">Descipción:</label>
 						<textarea name="description" id="description" class="form-input"> <%= product.description %> </textarea>
 					</div>	
+
+					<button type="submit" class="btn-save">GUARDAR CAMBIOS</button>
 			</form>
 
-			<button type="submit" class="btn-save">GUARDAR CAMBIOS</button>
 
 			<form action="/delete/<%= product.id %>?_method=DELETE" method="POST" class="form-btn-delete">
 				<button type="submit" class="btn-delete">ELIMINAR</button>

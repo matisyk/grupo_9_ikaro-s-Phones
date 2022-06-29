@@ -19,33 +19,27 @@
 }, {
     "id": 2,
     "name": "Xiaomi Redmi 9A",
-    "price": "32.000",
-    "discount": "15",
-    "category": "in-sale",
+    "price": "100.000",
+    "discount": "0",
+    "category": "smartphone",
     "screen": "9.5",
     "resolution": "1080x2400",
     "rom": "128GB",
     "ram": "6GB",
-    "description": "  asdfghjkllkjhgfdssjxnijnlwak.ljshvgfjsj  ",
+    "description": " Telefono super veloz y con gran capacidad ",
     "image": "XiaomiRedmi9A.png"
 }, {
     "id": 3,
     "name": "Xiaomi 11 lite",
     "price": "100.000",
     "discount": "0",
-    "image": "Xiaomi11Lite.png",
-    "description": "Telefono super veloz y con gran capacidad",
-    "category": "smartphone",
+    "category": "in-sale",
     "screen": "9.5",
     "resolution": "1080x2400",
-    "system": "Android",
     "rom": "128GB",
     "ram": "6GB",
-    "externalMemory": "trajeta microSD ejem 1TB",
-    "camera": "12 MP + 8 MP + 12 MP",
-    "frontalCamera": "32MP",
-    "recorder": "1080",
-    "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
+    "description": " Telefono super veloz y con gran capacidad ",
+    "image": "Xiaomi11Lite.png"
 }, {
     "id": 4,
     "name": "iPhone X",
@@ -188,12 +182,16 @@
     "image": "default-image.png"
 }, {
     "id": 13,
-    "name": "",
+    "name": "Huawei Nova y60",
     "price": "500",
-    "discount": "20",
-    "category": "in-sale",
-    "description": "Descripcion del producto 13",
-    "image": "default-image.png"
+    "discount": "0",
+    "category": "smartphone",
+    "screen": "",
+    "resolution": "",
+    "rom": "",
+    "ram": "",
+    "description": "  Descripcion del producto 13 HUAWEI NOVA Y60  ",
+    "image": "1655851366957.png"
 }, {
     "id": 14,
     "name": "",
