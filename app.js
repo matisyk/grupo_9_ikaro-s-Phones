@@ -17,7 +17,7 @@ app.use(cookieParser())
 app.use(express.static(path.resolve ('public')));
 app.use(methodOverride("_method"));
 app.use(express.static(path.resolve ('views')));
-app.use(session({secret:"ikaro's secret"}))
+app.use(session({secret:"secret"}))
 
 app.set('view engine', 'ejs')//configuracion EJS
 

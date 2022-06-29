@@ -5,19 +5,4 @@
     "tel": "11 65037923",
     "password": "gatitos07",
     "avatar": "gatito.jpg"
-}, {
-    "id": 2,
-    "fullName": "Fabian Silva",
-    "email": "fabisilva@gmail.com",
-    "tel": "11 34567892",
-    "password": "123456789",
-    "avatar": "default-image.png"
-}, {
-    "id": 3,
-    "fullName": "pepito Cordova",
-    "email": "pepitoCordova@gmail.com",
-    "tel": "11 12345678",
-    "password": "pepito1234",
-    "confirm": "pepito1234",
-    "avatar": "1655169173571.png"
 }]

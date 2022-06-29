@@ -1,10 +1,12 @@
+const bcryp = require('bcryptjs')
 const fs = require('fs');
 const path = require("path");
 
 const usersFilePath = path.join(__dirname, '../data/usersDataBase.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
-const { validationResult } = require('express-validator')
+const { validationResult } = require('express-validator');
+const { text } = require('express');
 
 const usersController ={
     register:(req, res) => {
@@ -33,6 +35,7 @@ const usersController ={
         let newUser = {
             id:users[users.length - 1].id + 1,
             ...req.body,
+            password: bcryp.hashSync(req.body.password, 10),
             avatar:avatar,
         }
         users.push(newUser)
@@ -43,6 +46,9 @@ const usersController ={
     login: (req, res) => {
         res.render('login');
     },
+    // logged: (req, res) => {
+
+    //     }
 }
 
 module.exports= usersController;
