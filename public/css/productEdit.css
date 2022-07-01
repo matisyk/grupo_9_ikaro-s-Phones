@@ -72,7 +72,6 @@ body{
     color: white;
 }
 .btn-bars-icon{
-    position: relative;
     --size: 25px;
     width: var(--size);
     height: var(--size);
@@ -102,19 +101,14 @@ body{
 .btn-nav-main{
     position: relative;
 }
-.btn-bars:checked ~ .btn-bars-icon  {
-    right: -350%;
-    top: -20%;
-    z-index: 10;
-}
 .nav-main-menu{
     position: absolute;
-    left: -87%;
-    top: -15%;
-    padding: 20px 110px 80px 10px;
+    left: -105%;
+    top: 100%;
+    padding: 40px 110px 0px 50px;
     display: flex;
     flex-direction: column;
-    background-color: #ff4621be;
+    background-color: gray;
     transform: scaleY(0);
     transition: transform 0.5s;
     transform-origin: top;
@@ -123,7 +117,7 @@ body{
     transform: scaleY(1);
 }
 .nav-main-menu a{
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     color: white;
     font-size: 20px;
 }
@@ -134,13 +128,11 @@ body{
 main{
     width: 90%;
     margin: 0 auto;
-    position: relative;
-    color: #302e2e;
 }
 div.title{
     margin-top: 30%;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 5%;
+    text-align: center;
 }
 h2.product-title{
     font-size: 18px;
@@ -152,30 +144,54 @@ h2.product-title{
 }
 .form-edit{
     background-color:white;
+    padding: 15px;
+}
+.group{
+    border-top: solid 1px #666;
+    padding: 15px 0;
+}
+.group.category,.description, .image{
+    border-top: none;
+}
+.group div, .category, .image, .description{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    margin-top: 10%;
-    padding: 20px;
+    color: #666;
 }
-.form-edit div{
+.group div label {
+    padding-bottom: 7px;
+}
+.group div input, select{
+    padding: 7px;
+}
+
+.group.generals,.screen,.camera,.system{
     display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: auto;
-    color: #302e2e;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
-textarea#description{
-    padding-bottom: 40px;
-}
-.form-container div label{
-    margin-bottom: 7px;
-    color:#666;
-}
-.form-container div input, select{
-    padding: 10px;
+
+.group.generals div{
+    width: 50%;
+    padding: 8px 5px;}
+.group.generals div.name{
+    width: 100%;}
+
+.group.screen div{
+    width: 50%;
+    padding: 8px 5px;}
+
+.group.camera div{
+    width: 50%;
+    padding: 8px 5px;}
+.group.camera div.recorder{
+    width: 100%;}
+
+.group.system div{
+    width: 50%;
+    padding: 8px 5px;}
+
+.group.description textarea{
+    padding: 5px 5px 40px ;
 }
 .btn-save, .btn-delete{
     background-color: #ff4621;
@@ -183,7 +199,7 @@ textarea#description{
     color: white;
     padding: 12px;
     border-radius: 20px;
-    margin: 10px;
+    margin: 10px 0;
 }
 .btn-delete{
     background-color: #666;
@@ -341,46 +357,35 @@ footer{
     }
     /*fin header*/
     
-    /* MAIN PRINCIPIO */
+    /* MAIN PRINCIPIO */ 
 div.title{
-    margin-top: 15%;
+    margin-top: 13%;
 }
 h2.product-title{
     font-size: 20px;
 }
-.form-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-bottom: 110px;
-}
-.form-edit div{
-    width: 40%;
-    margin: auto;
-}
-.description{
-    position: absolute;
-    bottom: 15%;
-    left: 7%;
-    padding-bottom: 35px;
-}
-textarea#description{
-    width: 90%;
-}
-.form-container div input, select{
-    margin-bottom: 15px;
-}
-.btn-save, .btn-delete{
-    background-color: #ff4621;
-    border: #ff4621;
-    color: white;
-    padding: 12px;
-    border-radius: 20px;
-    margin: 10px;
-}
-    /* MAIN FIN */
+
+.group.generals div{
+    width: 30%;}
+.group.generals div.name{
+    width: 30%;}
+
+.group.screen div{
+    width: 40%;}
+
+.group.camera div{
+    width: 30%;}
+.group.camera div.recorder{
+    width: 30%;}
+
+.group.system div{
+    width: 25%;}
+
+div.group select{
+    width: 50%;}
+/* MAIN FIN */
     
-    /* FOOTER PRINCIPIO */
+/* FOOTER PRINCIPIO */
 .footer-title{
     font-size: 25px;
 } 
@@ -446,15 +451,46 @@ textarea#description{
         margin-left: -12%;
         margin-right: 8%;
     }
-    .slide {
-        margin-top: 79px;
-    }
     .var a{
         font-size: 14px;
         margin: 0 60px;
     }
-      
         
+     /* MAIN PRINCIPIO */ 
+     div.form-edit{
+        width: 70%;
+        margin: auto;
+        padding: 30px;
+    }
+    div.title{
+        margin-top: 10%;
+        margin-bottom: 2%;}
+    h2.product-title{
+        font-size: 22px;}
+
+    .group.generals div{
+        width: 25%;}
+    .group.generals div.name{
+        width: 25%;}
+
+    .group.screen div{
+        width: 35%;}
+
+    .group.camera div{
+        width: 25%;}
+    .group.camera div.recorder{
+        width: 25%;}
+
+    .group.system div{
+        width: 25%;}
+
+    div.group select{
+        width: 45%;}
+    div.group textarea{
+        width: 65%;
+    }
+    /* MAIN FIN */
+
      /* FOOTER PRINCIPIO */
      .footer-img{
         height: 40%;

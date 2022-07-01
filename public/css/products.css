@@ -72,7 +72,6 @@ body{
     color: white;
 }
 .btn-bars-icon{
-    position: relative;
     --size: 25px;
     width: var(--size);
     height: var(--size);
@@ -102,19 +101,14 @@ body{
 .btn-nav-main{
     position: relative;
 }
-.btn-bars:checked ~ .btn-bars-icon  {
-    right: -350%;
-    top: -20%;
-    z-index: 10;
-}
 .nav-main-menu{
     position: absolute;
-    left: -87%;
-    top: -15%;
-    padding: 20px 110px 80px 10px;
+    left: -105%;
+    top: 100%;
+    padding: 40px 110px 0px 50px;
     display: flex;
     flex-direction: column;
-    background-color: #ff4621be;
+    background-color: gray;
     transform: scaleY(0);
     transition: transform 0.5s;
     transform-origin: top;
@@ -123,11 +117,10 @@ body{
     transform: scaleY(1);
 }
 .nav-main-menu a{
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     color: white;
     font-size: 20px;
 }
-/* fin barra desplegable movile */
 /* HEADER FIN */
 
 /* MAIN PRINCIPIO */

@@ -27,7 +27,9 @@
     "rom": "128GB",
     "ram": "6GB",
     "description": " Telefono super veloz y con gran capacidad ",
-    "image": "XiaomiRedmi9A.png"
+    "image": "XiaomiRedmi9A.png",
+    "recorder": "1080",
+    "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
 }, {
     "id": 3,
     "name": "Xiaomi 11 lite",
@@ -39,7 +41,9 @@
     "rom": "128GB",
     "ram": "6GB",
     "description": " Telefono super veloz y con gran capacidad ",
-    "image": "Xiaomi11Lite.png"
+    "image": "Xiaomi11Lite.png",
+    "recorder": "1080",
+    "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
 }, {
     "id": 4,
     "name": "iPhone X",
@@ -117,7 +121,9 @@
     "rom": "128GB",
     "ram": "6GB",
     "description": " Descripcion del equipo iPhone12  ",
-    "image": "iPhone12.png"
+    "image": "iPhone12.png",
+    "recorder": "1080",
+    "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
 }, {
     "id": 9,
     "name": "Samsung Galaxy Z Fold3",
@@ -179,7 +185,9 @@
     "discount": "20",
     "category": "in-sale",
     "description": "buhuhhuuhoo",
-    "image": "default-image.png"
+    "image": "default-image.png",
+    "recorder": "1080",
+    "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
 }, {
     "id": 13,
     "name": "Huawei Nova y60",
@@ -191,7 +199,9 @@
     "rom": "",
     "ram": "",
     "description": "  Descripcion del producto 13 HUAWEI NOVA Y60  ",
-    "image": "1655851366957.png"
+    "image": "1655851366957.png",
+    "recorder": "1080",
+    "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
 }, {
     "id": 14,
     "name": "",
@@ -199,5 +209,7 @@
     "discount": "",
     "category": "in-sale",
     "description": "",
-    "image": "1654650889137.jpg"
+    "image": "1654650889137.jpg",
+    "recorder": "1080",
+    "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
 }]

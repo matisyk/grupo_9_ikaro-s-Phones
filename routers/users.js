@@ -12,6 +12,6 @@ router.post('/register', fileUpload.any(), registerValidate, usersController.sav
 
 //formulario de login
 router.get('/login', usersController.login)
-router.post('/login', loginValidate, usersController.logged)
+// router.post('/login', loginValidate, usersController.logged)
 
 module.exports = router
