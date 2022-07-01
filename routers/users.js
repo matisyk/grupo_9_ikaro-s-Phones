@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const usersController = require("../controllers/usersController")
 const registerValidate = require('../middlewares/validateUsers')//validaciones
+const loginValidate = require('../middlewares/validateLogin')
 const fileUpload = require('../middlewares/multerUsers')
 
 
@@ -11,6 +12,6 @@ router.post('/register', fileUpload.any(), registerValidate, usersController.sav
 
 //formulario de login
 router.get('/login', usersController.login)
-// router.post('/login', usersController.logged)
+router.post('/login', loginValidate, usersController.logged)
 
 module.exports = router
