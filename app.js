@@ -8,16 +8,21 @@ const methodOverride = require('method-override')
 
 const app = express();
 
-
-app.use(express.urlencoded({extended:false}));//Para capturar lo que llegue del form en un obj lit.
-app.use(express.json());
-
+const userLoggedMiddleware = require('./middlewares/userLogged')
 
 app.use(cookieParser())
 app.use(express.static(path.resolve ('public')));
 app.use(methodOverride("_method"));
 app.use(express.static(path.resolve ('views')));
-app.use(session({secret:"secret"}))
+
+app.use(session({secret:"secret", 
+                 resave: false, 
+                 saveUninitialized: false}))
+
+app.use(userLoggedMiddleware);
+
+app.use(express.urlencoded({extended:false}));//Para capturar lo que llegue del form en un obj lit.
+app.use(express.json());
 
 app.set('view engine', 'ejs')//configuracion EJS
 

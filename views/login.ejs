@@ -22,7 +22,12 @@
 
                 <div class="container">
                     <label for="email"></label>
-                    <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                    <% if (locals.errors && errors.email) { %>
+                    <div class="danger"> 
+                        <%= errors.email.msg %>
+                    </div>
+                    <% } %>
                 </div>
 
                 <div class="container">

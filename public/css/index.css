@@ -439,6 +439,7 @@ footer{
         justify-content: space-around;
     }
     .icons-right{
+        position: relative;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -446,6 +447,38 @@ footer{
         font-size: 12px;
         width: 50%;
     }
+    .icons-right i:hover{
+        border-bottom: solid 1px #fbfbfb;
+        padding-bottom: 5px;
+    }
+    .user-nav-bar li{
+        text-align: center;
+        font-size: 13px;
+        padding: 10px 0;
+    }
+    .user-nav-bar{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 30%;
+        background-color: #302e2e;
+        padding: 5px;
+        transition: 0.5ms;
+    }
+    .user-icon:hover .user-nav-bar{
+        display: block;
+    }
+
+  
+
+
+
+
+
+
+
+
+
     .icons-left, .icons-right{
         width: 25%;
     }

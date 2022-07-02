@@ -1,8 +1,8 @@
-let { body } = require('express-validator');
+const { body } = require('express-validator');
 
 const validateLogin = [
-    body('email').isEmail().withMessage('El email debe ser un email válido'), 
-    body('password').isLength({ min: 6, max: 20 }).withMessage('El password debe tener entre 6 y 20 caracteres')
+    body('email').isEmail().withMessage('Ingrese una direccón de correo valida'), 
+    body('password').isLength({ min: 6}).withMessage('La contraseña debe tener como mínimo 6 caracteres')
 ]
 
 module.exports = validateLogin;
