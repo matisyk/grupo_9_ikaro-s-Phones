@@ -17,4 +17,7 @@ router.post('/register',fileUpload.any(), registerValidate, usersController.save
 router.get('/login',usersController.login)
 router.post('/login', loginValidate, usersController.logged)
 
+//cerrar sesion
+router.get('/finish', usersController.finish)
+
 module.exports = router

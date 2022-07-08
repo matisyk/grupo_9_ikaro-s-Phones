@@ -3,7 +3,6 @@
   "id": 1,
   "fullName": "Fabian Silva",
   "email": "fabi@gmail.com",
-  "tel": "11 12345678",
   "password": "$2a$10$QVCJ/eG3cvqfyw.88NipWOFtSE.vJKE.l3BQQons1uiXHmQdqDBwu",
   "avatar": "default-image.png",
   "admin": true
@@ -12,7 +11,6 @@
   "id": 2,
   "fullName": "Gael Vallejo",
   "email": "gaelvallej0@gmail.com",
-  "tel": "11 12345777",
   "password": "$2a$10$dFVEXhfL.nDRVrS5aQiTmOKHkGN23eSzcegpkbKSMreKodN9x4fbK",
   "avatar": "default-image.png",
   "admin": true
@@ -21,7 +19,6 @@
   "id": 3,
   "fullName": "Andres Ramos",
   "email": "andres@gmail.com",
-  "tel": "11 12345678",
   "password": "$2a$10$msiGnS4g6OZI8TCAa.XcJ.Oi3AavJwdeqWNJPUpG4uUzIZLmfaOl.",
   "avatar": "default-image.png",
   "admin": false
@@ -30,9 +27,8 @@
   "id": 4,
   "fullName": "Vania Caballero",
   "email": "vaniacaballero5@gmail.com",
-  "tel": "11 65037923",
-  "password": "$2a$10$3z8p2L3YJtKGEspoLQfcDO3JKijyi9aowoUYWLKkNTF.RJ1pXViCK",
-  "avatar": "1657139675737.jpg",
+  "password": "$2a$10$ZkbI3Jr16ngOWjI9CZikRO.gvhLpGN777akmPzsjhF9IaGK2r.5a.",
+  "avatar": "1657303398738.jpg",
   "admin": true
  }
 ]

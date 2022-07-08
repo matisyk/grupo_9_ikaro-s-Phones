@@ -38,7 +38,7 @@
                         <a href="./productCart/<%= product.id %>"><p>Añadir al carrito</p></a>
                     </div>
                     <% if (locals.userLogged && locals.userLogged.admin) { %>
-                        <%- include("partials/admin-btn") %> 
+                        <%- include('./partials/admin-btn') %> 
                     <% } %>
                 </div>
             </section>
