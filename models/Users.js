@@ -39,7 +39,6 @@ const Users = {
  		let newUser = {
  			id: this.generateId(), 
  			...userData,
-            // password: bcryp.hashSync(req.body.password, 10)
  		}
  		allUsers.push(newUser);
         fs.writeFileSync(this.usersFilePath, JSON.stringify(allUsers, null,  ' '));

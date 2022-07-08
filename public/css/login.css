@@ -43,25 +43,6 @@ body{
 .bottom-var{
     display: none;
 }
-.searcher{
-    padding: 5px;
-}
-.searcher input{
-    font-family: 'Poppins', sans-serif;
-    width: 0px;
-    height: 20px;
-    text-align: center;
-    border-radius: 20px;
-    outline: none;
-    border: 0px;
-    transition: all 0.6s ease;
-}
-.searcher:hover input{
-    width: 240px;
-}
-.searcher input:focus{
-    width: 240px;
-}
 
 /* barra desplegable movile */
 .nav-main{
@@ -121,6 +102,7 @@ body{
     color: white;
     font-size: 20px;
 }
+/* fin barra desplegable movile */
 /* HEADER FIN */
 
 /* MAIN INICIO */
@@ -274,6 +256,7 @@ footer{
         justify-content: space-around;
     }
     .icons-right{
+        position: relative;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -281,6 +264,25 @@ footer{
         font-size: 12px;
         width: 50%;
     }
+    .user-nav-bar li{
+        font-size: 13px;
+        padding: 10px 0;
+    }
+    .user-nav-bar{
+        position: absolute;
+        border-radius: 10px;
+        top: 68%;
+        right: 0%;
+        background-color: #302e2ed6;
+        padding: 20px 8px 8px 8px;
+        transform: scaleY(0);
+        transition: all 0.5s ease;
+        transform-origin: top
+    }
+    .user-icon:hover .user-nav-bar{
+        transform: scaleY(1);
+    }
+
     .icons-left, .icons-right{
         width: 25%;
     }
@@ -290,7 +292,27 @@ footer{
     .bars-icon{
         display: none;
     }
+
+    .searcher{
+        padding: 5px;
+    }
+    .searcher input{
+        width: 0px;
+        height: 20px;
+        text-align: center;
+        border-radius: 20px;
+        outline: none;
+        border: 0px;
+        transition: all 0.6s ease;
+    }
+    .searcher:hover input{
+        width: 150px;
+    }
+    .searcher input:focus{
+        width: 150px;
+    }
     /*fin header*/
+
     /*INICIO FORMULARIO DE REGISTRO*/
 .form-login{
     margin: 12% 25% 8% 25%;
@@ -356,6 +378,24 @@ footer{
     .slide {
         margin-top: 79px;
     }
+
+    .user-nav-bar li{
+        font-size: 15px;
+    }
+    .user-nav-bar{
+        position: absolute;
+        top: 60%;
+        right: 10%;
+        padding: 30px 15px 15px 15px;
+    }
+    
+    .searcher:hover input{
+        width: 240px;
+    }
+    .searcher input:focus{
+        width: 240px;
+    }
+
     .var a{
         font-size: 14px;
         margin: 0 60px;

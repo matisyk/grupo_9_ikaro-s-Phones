@@ -78,7 +78,7 @@ const productController ={
 	    
 		fs.writeFileSync(productsFilePath,JSON.stringify(productToDeleted));
         console.log('delete')
-         res.redirect("/products")
+        res.redirect("/products")
 	
 	
     },

@@ -1,28 +1,25 @@
-
 // require
+const cookieParser = require('cookie-parser');
 const express = require('express');
 const path = require('path');
-const cookieParser = require('cookie-parser');
-const session = require('express-session');
 const methodOverride = require('method-override')
+const session = require('express-session');
+const auth = require('./middlewares/auth')
 
 const app = express();
 
-const userLoggedMiddleware = require('./middlewares/userLogged')
-
-app.use(cookieParser())
 app.use(express.static(path.resolve ('public')));
-app.use(methodOverride("_method"));
 app.use(express.static(path.resolve ('views')));
-
-app.use(session({secret:"secret", 
-                 resave: false, 
-                 saveUninitialized: false}))
-
-app.use(userLoggedMiddleware);
-
 app.use(express.urlencoded({extended:false}));//Para capturar lo que llegue del form en un obj lit.
 app.use(express.json());
+app.use(cookieParser())
+app.use(methodOverride("_method"));
+app.use(session({
+    secret:"secret", 
+    resave: false, 
+    saveUninitialized: false }));
+app.use(auth)
+
 
 app.set('view engine', 'ejs')//configuracion EJS
 

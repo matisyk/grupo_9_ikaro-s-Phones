@@ -6,16 +6,15 @@ const registerValidate = require('../middlewares/validateRegister')//validacione
 const fileUpload = require('../middlewares/multerUsers')
 
 const loginValidate = require('../middlewares/validateLogin')//validaciones form login
-const guestMiddleware = require('../middlewares/guest')
+
 
 
 //formulario de registro
-router.get('/register', guestMiddleware, usersController.register)
+router.get('/register', usersController.register)
 router.post('/register',fileUpload.any(), registerValidate, usersController.saveUser)
 
 //formulario de login
-router.get('/login', guestMiddleware, usersController.login)
+router.get('/login',usersController.login)
 router.post('/login', loginValidate, usersController.logged)
-
 
 module.exports = router

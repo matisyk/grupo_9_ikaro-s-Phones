@@ -26,15 +26,20 @@
                         <div class="detalle-producto">
                             Principales especificaciones
                         </div>
+
                         <div class="detalle">
                             <p><i class="fa-solid fa-gear"></i>Sistema operativo</p>
                             <p><i class="fa-solid fa-sd-card"></i>Memoria interna<%= product.rom %></p>
                             <p><i class="fa-solid fa-mobile-screen"></i>Resolucion</p>
                         </div>
                     </div>
+
                     <div class="boton-comprar-producto">
                         <a href="./productCart/<%= product.id %>"><p>Añadir al carrito</p></a>
                     </div>
+                    <% if (locals.userLogged && locals.userLogged.admin) { %>
+                        <%- include("partials/admin-btn") %> 
+                    <% } %>
                 </div>
             </section>
             <section class="specs">

@@ -1,34 +1,38 @@
 [
  {
   "id": 1,
-  "fullName": "Vania Caballero",
-  "email": "vaniacaballero5@gmail.com",
-  "tel": "11 65037923",
-  "password": "gatitos07",
-  "avatar": "gatito.jpg"
- },
- {
-  "id": 2,
   "fullName": "Fabian Silva",
   "email": "fabi@gmail.com",
   "tel": "11 12345678",
   "password": "$2a$10$QVCJ/eG3cvqfyw.88NipWOFtSE.vJKE.l3BQQons1uiXHmQdqDBwu",
-  "avatar": "default-image.png"
+  "avatar": "default-image.png",
+  "admin": true
  },
  {
-  "id": 3,
+  "id": 2,
   "fullName": "Gael Vallejo",
   "email": "gaelvallej0@gmail.com",
   "tel": "11 12345777",
   "password": "$2a$10$dFVEXhfL.nDRVrS5aQiTmOKHkGN23eSzcegpkbKSMreKodN9x4fbK",
-  "avatar": "default-image.png"
+  "avatar": "default-image.png",
+  "admin": true
  },
  {
-  "id": 4,
+  "id": 3,
   "fullName": "Andres Ramos",
   "email": "andres@gmail.com",
   "tel": "11 12345678",
   "password": "$2a$10$msiGnS4g6OZI8TCAa.XcJ.Oi3AavJwdeqWNJPUpG4uUzIZLmfaOl.",
-  "avatar": "default-image.png"
+  "avatar": "default-image.png",
+  "admin": false
+ },
+ {
+  "id": 4,
+  "fullName": "Vania Caballero",
+  "email": "vaniacaballero5@gmail.com",
+  "tel": "11 65037923",
+  "password": "$2a$10$3z8p2L3YJtKGEspoLQfcDO3JKijyi9aowoUYWLKkNTF.RJ1pXViCK",
+  "avatar": "1657139675737.jpg",
+  "admin": true
  }
 ]

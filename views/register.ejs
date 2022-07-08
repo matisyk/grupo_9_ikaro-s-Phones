@@ -26,7 +26,7 @@
                         class="form-control <%= locals.errors && errors.fullName ? 'is-invalid' : null %>"   
                         value="<%= locals.oldData ? oldData.fullName : null %>"
                         >
-                        <div style="color:#ff3c00"> <%= (locals.errors && errors.fullName ? errors.fullName.msg : null) %> </div>
+                        <p style="color:#ff3c00"> <%= (locals.errors && errors.fullName ? errors.fullName.msg : null) %> </p>
                     </div>
                    
                     <div class="container">
@@ -35,7 +35,7 @@
                         class="form-control <%= locals.errors && errors.email ? 'is-invalid' : null %>"
                         value="<%= locals.oldData ? oldData.email : null %>"
                         >
-                        <div style="color:#ff3c00"> <%= (locals.errors && errors.email ? errors.email.msg : null) %> </div>
+                        <p style="color:#ff3c00"> <%= (locals.errors && errors.email ? errors.email.msg : null) %> </p>
                     </div>
 
                     <div class="container">
@@ -44,16 +44,7 @@
                         class="form-control <%= locals.errors && errors.avatar? 'is-invalid' : null %>"
                         value="<%= locals.oldData ? oldData.avatar : null %>"
                         >
-                        <div style="color:#ff3c00"> <%= (locals.errors && errors.email ? errors.email.msg : null) %> </div>
-                    </div>
-                    
-                    <div class="container">
-                        <label for="tel"> Telefono </label>
-                        <input type="tel" placeholder="ejem.: 11 12345678" name="tel"
-                        class="form-control <%= locals.errors && errors.tel ? 'is-invalid' : null %>"
-                        value="<%= locals.oldData ? oldData.tel : null %>"
-                        >
-                        <div style="color:#ff3c00"> <%= (locals.errors && errors.email ? errors.email.msg : null) %> </div>
+                        <p style="color:#ff3c00"> <%= (locals.errors && errors.email ? errors.email.msg : null) %> </p>
                     </div>
 
                     <div class="container">
@@ -62,16 +53,12 @@
                         class="form-control <%= locals.errors && errors.password ? 'is-invalid' : null %>"
                         >
                         <i class="fa-solid fa-eye"></i>
-                        <div style="color:#ff3c00"> <%= (locals.errors && errors.password ? errors.password.msg : null) %> </div>
-                    </div>
-
-                    <% if (typeof data != 'undefined') { %>
-                        <p>Bienvenido <%= data.fullName %> a Ikaro's Phones </p>
-                    <% } %>  
+                        <p style="color:#ff3c00"> <%= (locals.errors && errors.password ? errors.password.msg : null) %> </p>
+                    </div> 
 
                 </div>
             
-                <button type="submit" class="btn-register" >REGISTRAR</button>
+                <button type="submit" class="btn-register" >REGISTRARME</button>
 
                 <div class="login">
                     <a href="./login">¿Ya tiene cuenta? Inicie Sesion</a>
