@@ -18,6 +18,6 @@ router.get('/login',usersController.login)
 router.post('/login', loginValidate, usersController.logged)
 
 //cerrar sesion
-router.get('/finish', usersController.finish)
+router.get('/logout', usersController.logout)
 
 module.exports = router

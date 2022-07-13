@@ -44,12 +44,12 @@ const Users = {
         fs.writeFileSync(this.usersFilePath, JSON.stringify(allUsers, null,  ' '));
  		return newUser;
 	},
-    delete: function (id) {
-     	let allUsers = this.findAll();
- 	 	let finalUsers = allUsers.filter(user => user.id !== id);
- 	 	fs.writeFileSync(this.usersFilePath, JSON.stringify(finalUsers, null, ' '));
- 	 	return true;
-    }
+    // delete: function (id) {
+    //  	let allUsers = this.findAll();
+ 	//  	let finalUsers = allUsers.filter(user => user.id !== id);
+ 	//  	fs.writeFileSync(this.usersFilePath, JSON.stringify(finalUsers, null, ' '));
+ 	//  	return true;
+    // }
 }
 
 module.exports = Users;
