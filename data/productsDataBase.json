@@ -1,6 +1,7 @@
 [{
     "id": 1,
-    "name": "ZTE blade A51",
+    "name": "ZTE",
+    "model":" blade A51",
     "price": "27.000",
     "discount": "0",
     "image": "ZTE-BladeA51.png",

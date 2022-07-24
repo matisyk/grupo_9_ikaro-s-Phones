@@ -30,5 +30,12 @@
   "password": "$2a$10$ZkbI3Jr16ngOWjI9CZikRO.gvhLpGN777akmPzsjhF9IaGK2r.5a.",
   "avatar": "1657303398738.jpg",
   "admin": true
+ },
+ {
+  "id": 5,
+  "fullName": "Andres Castillo",
+  "email": "andresCastillo@gmail.com",
+  "password": "$2a$10$QLOKpwJLmGOK/0EQ.cLsz.oWswQGWj.jcc6xhZ2DlHZBXvas8RIpO",
+  "avatar": "default-image.png"
  }
 ]
