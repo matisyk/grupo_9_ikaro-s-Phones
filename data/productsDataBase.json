@@ -2,7 +2,7 @@
     "id": 1,
     "name": "ZTE",
     "model":" blade A51",
-    "price": "27.000",
+    "price": "",
     "discount": "0",
     "image": "ZTE-BladeA51.png",
     "description": "Pantalla 6.52” Full Display HD+ con waterdrop y resolución 720x1600 para una visual más amplia y clara. Elegante diseño geométrico en la contratapa, con textura en forma de arco, que brinda mayor confort en tus manos.",
@@ -13,14 +13,14 @@
     "rom": "128GB",
     "ram": "6GB",
     "externalMemory": "trajeta microSD ejem 1TB",
-    "camera": "12 MP + 8 MP + 12 MP",
-    "frontalCamera": "32MP",
-    "recorder": "1080",
+    "camera": "",
+    "frontalCamera": "",
+    "recorder": "",
     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
 }, {
     "id": 2,
     "name": "Xiaomi Redmi 9A",
-    "price": "100.000",
+    "price": "",
     "discount": "0",
     "category": "smartphone",
     "screen": "9.5",
@@ -101,7 +101,7 @@
     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
 }, {
     "id": 7,
-    "name": "iPhone 13 Pro",
+    "name": "iPhone 13",
     "price": "100003",
     "discount": "0",
     "category": "smartphone",
@@ -179,17 +179,7 @@
     "frontalCamera": "32MP",
     "recorder": "1080",
     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
-}, {
-    "id": 12,
-    "name": "",
-    "price": "500",
-    "discount": "20",
-    "category": "in-sale",
-    "description": "buhuhhuuhoo",
-    "image": "default-image.png",
-    "recorder": "1080",
-    "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
-}, {
+},{
     "id": 13,
     "name": "Huawei Nova y60",
     "price": "500",
@@ -203,7 +193,7 @@
     "image": "1655851366957.png",
     "recorder": "1080",
     "url": "https://www.youtube.com/embed/JfnOi-PFlTA"
-}, {
+},{
     "id": 14,
     "name": "",
     "price": "",
