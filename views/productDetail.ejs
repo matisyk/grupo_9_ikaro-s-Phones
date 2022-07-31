@@ -17,7 +17,8 @@
                 <img src="/images/products/<%= product.image %> " class="product-img">
                 <div class="detalles-producto">
                     <div class="nombre-producto">
-                        <p class="telefono-producto"><strong><%= product.name %> </strong></p>
+                        <p class="telefono-producto"><strong><%= product.brand %> </strong></p>
+                        <p class="telefono-producto"><strong><%= product.model %> </strong></p>
                         <p class="price">$ <%= product.price %> </p>
                         <p class="texto">Hasta <strong>12 cuotas sin interés</strong> CON TARJETAS SELECCIONADAS</p>
                     </div>
@@ -28,9 +29,9 @@
                         </div>
 
                         <div class="detalle">
-                            <p><i class="fa-solid fa-gear"></i>Sistema operativo</p>
-                            <p><i class="fa-solid fa-sd-card"></i>Memoria interna<%= product.rom %></p>
-                            <p><i class="fa-solid fa-mobile-screen"></i>Resolucion</p>
+                            <p><i class="fa-solid fa-gear"></i>Sistema operativo <%= product.systemO %></p>
+                            <p><i class="fa-solid fa-sd-card"></i>Memoria interna <%= product.internal_memory %></p>
+                            <p><i class="fa-solid fa-mobile-screen"></i>Resolucion <%= product.internal_memory %></p>
                         </div>
                     </div>
 
@@ -47,22 +48,23 @@
                 <h3 >Especificaciones</h3>
                 <div class="specs-product">
                         <div class="pantalla">
-                            <p>Tamaño de pantalla <%= product.screen %> </p>
+                            <p>Tamaño de pantalla <%= product.inches %> </p>
                             <p>Resolución de pantalla <%= product.resolution %> </p>
                         </div>                  
                         <div class="camara">
                             <p>Cámara <%= product.camera %> </p>
-                            <p>Cámara frontal <%= product.frontalCamera %> </p>
+                            <p>Cámara frontal <%= product.frontal_camera %> </p>
                             <p>Grabacion de video <%= product.recorder %> </p>
                         </div>
                         <div class="almacenamiento">
                             <p>Memoria Ram <%= product.ram %> </p>
-                            <p>Memoria externa <%= product.externalMemory %> </p>
+                            <p>Memoria externa <%= product.external_memory %> </p>
+                            <p>Memoria Ram <%= product.internal_memory %> </p>
                         </div>                  
                 </div>
                 <h4>Video referencial</h4>
                 <div class="video">
-                     <iframe width="560" height="315" src="<%= product.url %> " 
+                     <iframe width="560" height="315" src="<%= product.video %> " 
                         title="YouTube video player" 
                         rameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
