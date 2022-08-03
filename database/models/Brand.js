@@ -2,7 +2,10 @@
 module.exports = function(sequelize, dataTypes){
     let alias = 'Brand'
     let cols = {
-        id : { type: dataTypes.INTEGER(11) },
+        id : { 
+            type: dataTypes.INTEGER(11),
+            autoIncrement: true 
+        },
         brand : { type: dataTypes.STRING(100)},
     }
     let config = {

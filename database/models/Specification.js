@@ -1,7 +1,10 @@
 module.exports = function(sequelize, dataTypes){
     let alias = 'Specifications'
     let cols = {
-        id : { type: dataTypes.INTEGER },
+        id : { 
+            type: dataTypes.INTEGER,
+            autoIncrement: true
+        },
         internalMemory : { type: dataTypes.STRING(100)},
         externalMemory : { type: dataTypes.INTEGER},
         ram : { type: dataTypes.INTEGER}
