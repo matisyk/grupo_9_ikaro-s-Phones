@@ -1,15 +1,33 @@
 module.exports = function(sequelize, dataTypes){
     let alias = 'Users'
     let cols = {
-        id : { type: dataTypes.INTEGER },
-        fullName : { type: dataTypes.STRING},
-        email : { type: dataTypes.STRING},
-        password : { type: dataTypes.STRING},
-        avatar : { type: dataTypes.STRING},
-        admin : { type: dataTypes.BOOLEAN}
+        id : { 
+            type: dataTypes.INTEGER,
+            allowNull: false,
+            primaryKey: true,
+            autoIncrement: true
+        },
+        fullName : { 
+            type: dataTypes.STRING(45),
+            allowNull: false,
+        },
+        email : { 
+            type: dataTypes.STRING(45),
+            allowNull: false,
+        },
+        password : { 
+            type: dataTypes.STRING(100),
+            allowNull: false,
+        },
+        avatar : { 
+            type: dataTypes.STRING(100),
+        },
+        admin : { 
+            type: dataTypes.BOOLEAN
+        }
     }
     let config = {
-        tableName : "Users",
+        tableName : "users",
         timesTamps: false
     }
 

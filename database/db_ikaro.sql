@@ -49,12 +49,12 @@ DROP TABLE IF EXISTS `camera`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `camera` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `camera` varchar(45) DEFAULT NULL,
   `frontalCamera` int(11) DEFAULT NULL,
   `recorder` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -77,7 +77,7 @@ DROP TABLE IF EXISTS `phones`;
 CREATE TABLE `phones` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `idBrand` int(11) DEFAULT NULL,
-  `model` varchar(45) DEFAULT NULL,
+  `model` varchar(45) NOT NULL,
   `category` varchar(45) NOT NULL,
   `idSystem` int(11) DEFAULT NULL,
   `description` text NOT NULL,
@@ -92,8 +92,8 @@ CREATE TABLE `phones` (
   KEY `idSpecification_idx` (`idSpecification`),
   CONSTRAINT `idBrand` FOREIGN KEY (`idBrand`) REFERENCES `brands` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `idSpecification` FOREIGN KEY (`idSpecification`) REFERENCES `specifications` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `idSystem` FOREIGN KEY (`idSystem`) REFERENCES `system` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+  CONSTRAINT `idSystem` FOREIGN KEY (`idSystem`) REFERENCES `systems` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -102,7 +102,7 @@ CREATE TABLE `phones` (
 
 LOCK TABLES `phones` WRITE;
 /*!40000 ALTER TABLE `phones` DISABLE KEYS */;
-INSERT INTO `phones` VALUES (1,5,'Blade A51','smartphone',NULL,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','ZTE-BladeA51.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,0,NULL),(2,3,'Redmi 9A','smartphone',NULL,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','XiaomiRedmi9A.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,10,NULL),(3,3,'11 lite','in-sale',NULL,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','Xiaomi11Lite.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,NULL,NULL),(4,2,'X','in-sale',NULL,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','iPhoneX.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,15,NULL),(5,6,'Moto G22','in-sale',NULL,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','MotoG22.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,15,NULL),(6,6,'G200','smartphone',NULL,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','MotorolaG200.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,NULL,NULL),(7,2,'13','smartphone',NULL,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','iPhone13Pro.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,NULL,NULL),(8,2,'12','in-sale',NULL,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','iPhone12.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,10,NULL),(9,1,'Galaxy Z Fold3','smartphone',NULL,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','SamsungGalaxyZ-Fold3.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,NULL,NULL),(10,1,'Galaxy A33','in-sale',NULL,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','SamsungGalaxyA33.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,15,NULL),(11,1,'Galaxy S22+','smartphone',NULL,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','SamsungGalaxyS22+.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,NULL,NULL),(12,4,'Nova y60','smartphone',NULL,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','1655851366957.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,10,NULL);
+INSERT INTO `phones` VALUES (1,5,'Blade A51','smartphone',2,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','ZTE-BladeA51.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,0,1),(2,3,'Redmi 9A','smartphone',2,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','XiaomiRedmi9A.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,10,2),(3,3,'11 lite','in-sale',2,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','Xiaomi11Lite.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,NULL,3),(4,2,'X','in-sale',4,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','iPhoneX.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,15,4),(5,6,'Moto G22','in-sale',3,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','MotoG22.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,15,5),(6,6,'G200','smartphone',2,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','MotorolaG200.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,NULL,6),(7,2,'13','smartphone',7,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','iPhone13Pro.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,NULL,7),(8,2,'12','in-sale',6,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','iPhone12.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,10,8),(9,1,'Galaxy Z Fold3','smartphone',2,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','SamsungGalaxyZ-Fold3.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,NULL,9),(10,1,'Galaxy A33','in-sale',3,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','SamsungGalaxyA33.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,15,10),(11,1,'Galaxy S22+','smartphone',3,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','SamsungGalaxyS22+.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,NULL,11),(12,4,'Nova y60','smartphone',1,'Preparate para abrir un mundo nuevo. Esto es todo lo que querías en un smartphone 5G duradero y de primera calidad.1 Lo creamos plegable para revelar una enorme pantalla en la que puedas ver, trabajar y divertirte como nunca antes.','1655851366957.png','https://www.youtube.com/embed/JfnOi-PFlTA',120.00,10,12);
 /*!40000 ALTER TABLE `phones` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -114,11 +114,11 @@ DROP TABLE IF EXISTS `screen`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `screen` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `resolution` varchar(45) DEFAULT NULL,
   `size` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -146,8 +146,8 @@ CREATE TABLE `specifications` (
   `idCamera` int(11) DEFAULT NULL,
   `idScreen` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `id_camera_idx` (`idCamera`),
-  KEY `id_screen_idx` (`idScreen`),
+  KEY `idCamera_idx` (`idCamera`),
+  KEY `idScreen_idx` (`idScreen`),
   CONSTRAINT `idCamera` FOREIGN KEY (`idCamera`) REFERENCES `camera` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `idScreen` FOREIGN KEY (`idScreen`) REFERENCES `screen` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
@@ -164,13 +164,13 @@ INSERT INTO `specifications` VALUES (1,32,512,2,1,1),(2,32,512,2,2,2),(3,128,256
 UNLOCK TABLES;
 
 --
--- Table structure for table `system`
+-- Table structure for table `systems`
 --
 
-DROP TABLE IF EXISTS `system`;
+DROP TABLE IF EXISTS `systems`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `system` (
+CREATE TABLE `systems` (
   `id` int(11) NOT NULL,
   `system` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
@@ -178,13 +178,13 @@ CREATE TABLE `system` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `system`
+-- Dumping data for table `systems`
 --
 
-LOCK TABLES `system` WRITE;
-/*!40000 ALTER TABLE `system` DISABLE KEYS */;
-INSERT INTO `system` VALUES (1,'Android 10'),(2,'Android 11'),(3,'Android 12'),(4,'iOS 11'),(5,'iOS 12'),(6,'iOS 15');
-/*!40000 ALTER TABLE `system` ENABLE KEYS */;
+LOCK TABLES `systems` WRITE;
+/*!40000 ALTER TABLE `systems` DISABLE KEYS */;
+INSERT INTO `systems` VALUES (1,'Android 10'),(2,'Android 11'),(3,'Android 12'),(4,'iOS 11'),(5,'iOS 12'),(6,'iOS 14'),(7,'iOs 15');
+/*!40000 ALTER TABLE `systems` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -200,7 +200,7 @@ CREATE TABLE `users` (
   `email` varchar(45) NOT NULL,
   `password` varchar(100) NOT NULL,
   `avatar` varchar(100) DEFAULT NULL,
-  `admin` tinyint(4) DEFAULT NULL,
+  `admin` tinyint(10) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email_UNIQUE` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -224,4 +224,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-08-02 21:38:16
+-- Dump completed on 2022-08-04  1:50:47

@@ -1,24 +1,46 @@
 
 module.exports = function(sequelize, dataTypes){
-    let alias = 'Phones'
+    let alias = 'Phones';
     let cols = {
-        id : { 
-            type: dataTypes.INTEGER,
+        id: { 
+            type: dataTypes.INTEGER(11),
+            allowNull: false,
             primaryKey: true,
             autoIncrement: true
         },
-        model : { type: dataTypes.STRING(100) },
-        category : { type: dataTypes.STRING(100)},
-        description : { type: dataTypes.STRING(100)},
-        image : { type: dataTypes.STRING(100)},
-        video : { type: dataTypes.STRING(100)},
-        price : { type: dataTypes.DECIMAL(8,2)},
-        discount : { type: dataTypes.INTEGER(11)},
+        model: { 
+            type: dataTypes.STRING(45),
+            allowNull: false,
+        },
+        category: { 
+            type: dataTypes.STRING(45),
+            allowNull: false,
+        },
+        description: { 
+            type: dataTypes.TEXT,
+            allowNull: false,
+        },
+        image: { 
+            type: dataTypes.STRING(100),
+            allowNull: true,
+        },
+        video: { 
+            type: dataTypes.STRING(100),
+            allowNull: true,
+        },
+        price: { 
+            type: dataTypes.DECIMAL(8,2),
+            allowNull: false,
+        },
+        discount: { 
+            type: dataTypes.INTEGER(11),
+            allowNull: false,
+        },
         
     }
     let config = {
-        tableName : "Phones",
-        timesTamps: false
+        tableName : "phones",
+        timesTamps: false 
     }
 
     let Phones = sequelize.define(alias, cols, config);
@@ -30,7 +52,7 @@ module.exports = function(sequelize, dataTypes){
             foreignKey : "idBrand"
         })
 
-        Phones.belongsTo(models.System, {
+        Phones.belongsTo(models.Systems, {
             as: "system",
             foreignKey : "idSystem"
         })

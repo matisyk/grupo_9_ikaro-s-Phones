@@ -69,10 +69,10 @@
 
             <h3>Descubre todas las ofertas que tenemos para voz</h3>
             <section>
-                    <% inSale.forEach(product => { %>
+                    <% products.forEach(product => { %>
                         <div class="article">
                             <article>
-                                    <h4 class="name"><%= product.name %> </h4>
+                                    <h4 class="name"><%= product.brand %> <%= product.model %> </h4>
                                     <img src="/images/products/<%= product.image %>" class="product_img">
                                     <div class="box-description">
                                         <p class="price">$ <%= product.price %> </p>
@@ -87,7 +87,7 @@
 
             <h3 class="h3-2">Smartphones</h3>
             <section>
-                    <% smartphones.forEach( product => { %>
+                    <% products.forEach( product => { %>
                         <div class="article">
                             <article>
                                     <h4 class="name"><%= product.name %></h4>

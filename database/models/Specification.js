@@ -3,14 +3,25 @@ module.exports = function(sequelize, dataTypes){
     let cols = {
         id : { 
             type: dataTypes.INTEGER,
+            allowNull: false,
+            primaryKey: true,
             autoIncrement: true
         },
-        internalMemory : { type: dataTypes.STRING(100)},
-        externalMemory : { type: dataTypes.INTEGER},
-        ram : { type: dataTypes.INTEGER}
+        internalMemory : { 
+            type: dataTypes.INTEGER,
+            allowNull: true,
+        },
+        externalMemory : { 
+            type: dataTypes.INTEGER,
+            allowNull: true,
+        },
+        ram : { 
+            type: dataTypes.INTEGER,
+            allowNull: true,
+        }
     }
     let config = {
-        tableName : "Specifications",
+        tableName : "specifications",
         timesTamps: false
     }
 

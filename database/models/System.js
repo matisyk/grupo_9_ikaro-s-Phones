@@ -1,22 +1,29 @@
 module.exports = function(sequelize, dataTypes){
-    let alias = 'System'
+    let alias = 'Systems'
     let cols = {
-        id : { type: dataTypes.INTEGER },
-        system : { type: dataTypes.STRING}
+        id : { 
+            type: dataTypes.INTEGER(11),
+            allowNull: false,
+            primaryKey: true, 
+        },
+        system : { 
+            type: dataTypes.STRING(45),
+            allowNull: false,
+        }
     }
     let config = {
-        tableName : "System",
+        tableName : "systems",
         timesTamps: false
     }
 
-    let System = sequelize.define(alias, cols, config);
+    let Systems = sequelize.define(alias, cols, config);
 
-    System.associate = function(models){
-        System.hasMany(models.Phones, {
+    Systems.associate = function(models){
+        Systems.hasMany(models.Phones, {
             as: "phones",
             foreignKey : "idSystem"
         })
     }
 
-    return System;
+    return Systems;
 }

@@ -1,21 +1,29 @@
-const path = require("path");
-const fs = require('fs');
+const db = require('../database/models/index')
 
-const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+// const smartphones = products.filter(product => product.category == "smartphone")
+// const inSale = products.filter(product => product.category == "in-sale")
 
-const smartphones = products.filter(product => product.category == "smartphone")
-const inSale = products.filter(product => product.category == "in-sale")
+module.exports = {
 
-const indexController={
-    index : (req, res) => {
-        res.render('index', {smartphones,inSale});
+    index: (req, res) => {
+
+        // let brands = db.Brands.findAll();
+        // let phones = db.Phones.findAll();
+
+        // Promise.All([brands, phones])
+
+        db.Phones.findAll()
+        .then(products => {
+            res.render('index',{products})
+        })
     },
-    inSale : (req, res) => {
-        let product=products
-        if(product.category == "inSale"){
-            res.send(inSale)
-        }
-    },
+
+    // inSale : (req, res) => {
+    //     let product=products
+    //         if(product.category == "inSale"){
+    //             res.send(inSale)
+    //         }
+    //     },
+
 }
-module.exports = indexController;
+

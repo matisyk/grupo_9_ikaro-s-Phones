@@ -1,12 +1,23 @@
 module.exports = function(sequelize, dataTypes){
     let alias = 'Screen'
     let cols = {
-        id : { type: dataTypes.INTEGER },
-        resolution : { type: dataTypes.INTEGER},
-        size : { type: dataTypes.INTEGER}
+        id : { 
+            type: dataTypes.INTEGER(11),
+            primaryKey: true,
+            allowNull: false,
+            autoIncrement: true
+        },
+        resolution : { 
+            type: dataTypes.STRING(45),
+            allowNull: true,
+        },
+        size : { 
+            type: dataTypes.STRING(45),
+            allowNull: true,
+        }
     }
     let config = {
-        tableName : "Screen",
+        tableName : "screen",
         timesTamps: false
     }
 

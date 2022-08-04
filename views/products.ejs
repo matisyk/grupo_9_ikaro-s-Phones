@@ -28,20 +28,39 @@
     
             <h3>Descubre las mejores promociones</h3>
             <section>
-                    <% products.forEach(product => { %>
+                    <!--  products.forEach(product => { %>
                         <div class="article">
                             <article>
-                                    <h4 class="name"><%= product.name %> </h4>
-                                    <img src="/images/products/<%= product.image %>" class="product_img">
+                                    <h4 class="name"> product.brand  </h4>
+                                    <img src="/images/products/ product.image %>" class="product_img">
                                     <div class="box-description">
-                                        <p class="price">$ <%= product.price %> </p>
-                                        <p class="discount"><%= product.discount %> % OFF</p>
+                                        <p class="price">$  product.price %> </p>
+                                        <p class="discount"> product.discount %> % OFF</p>
                                         <p class="description">en 10 cuotas de </p>
-                                        <a href="/detail/<%= product.id %> " class="btn-detail">Comprar</a>
+                                        <a href="/detail/ product.id %> " class="btn-detail">Comprar</a>
                                     </div>
                             </article>
                         </div>
-                    <% }) %>
+                     }) %> -->
+
+
+
+                    <% for (let i = 0; i < phones.length; i++) { %>
+
+                        <div class="article">
+                            <article>
+                                    <h4 class="name"><%= brands[i].brand %> <%= phones[i].model %> </h4>
+                                    <img src="/images/products/<%= phones[i].image %>" class="product_img">
+                                    <div class="box-description">
+                                        <p class="price">$ <%= phones[i].price %> </p>
+                                        <p class="discount"><%= phones[i].discount %> % OFF</p>
+                                        <p class="description">en 10 cuotas de </p>
+                                        <a href="/detail/<%= phones[i].id %> " class="btn-detail">Comprar</a>
+                                    </div>
+                            </article>
+                        </div>
+                        
+                    <% } %>
             </section> 
 
         </main>

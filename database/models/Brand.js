@@ -1,28 +1,33 @@
 
 module.exports = function(sequelize, dataTypes){
-    let alias = 'Brand'
+    let alias = 'Brands'
     let cols = {
         id : { 
             type: dataTypes.INTEGER(11),
+            allowNull: false,
+            primaryKey: true,
             autoIncrement: true 
         },
-        brand : { type: dataTypes.STRING(100)},
+        brand : { 
+            type: dataTypes.STRING(100),
+            allowNull: false,
+        },
     }
     let config = {
-        tableName : "Brand",
+        tableName : "brands",
         timesTamps: false
     }
 
-    let Brand = sequelize.define(alias, cols, config);
+    let Brands = sequelize.define(alias, cols, config);
 
-    Brand.associate = function(models){
+    Brands.associate = function(models){
 
-        Brand.hasMany(models.Phones, {
+        Brands.hasMany(models.Phones, {
             as: "phones",
             foreignKey : "idBrand"
         })
         
     }
 
-    return Brand;
+    return Brands;
 }

@@ -2,13 +2,27 @@
 module.exports = function(sequelize, dataTypes){
     let alias = 'Camera'
     let cols = {
-        id : { type: dataTypes.INTEGER },
-        camera : { type: dataTypes.STRING(100)},
-        frontalCamera : { type: dataTypes.INTEGER},
-        recorder : { type: dataTypes.INTEGER},
+        id: { 
+            type: dataTypes.INTEGER,
+            allowNull: false,
+            primaryKey: true,
+            autoIncrement: true
+        },
+        camera: { 
+            type: dataTypes.STRING(100),
+            allowNull: true,
+        },
+        frontalCamera : { 
+            type: dataTypes.INTEGER,
+            allowNull: true,
+        },
+        recorder: { 
+            type: dataTypes.INTEGER,
+            allowNull: true,
+        },
     }
     let config = {
-        tableName : "Camera",
+        tableName : "camera",
         timesTamps: false
     }
 
