@@ -1,34 +1,34 @@
-const db = require('../database/models/index')
+// const db = require('../database/models/index')
 
-module.exports = {
+// module.exports = {
 
-    store: (req, res) => {
+//     store: (req, res) => {
 
-        let brands = db.Brands.findAll();
-        let phones = db.Phones.findAll();
+//         let brands = db.Brands.findAll();
+//         let phones = db.Phones.findAll();
 
-        Promise.All([brands, phones])
-        .then(function([brands, phones]) {
-            res.render('products', {brands,phones})
-        })
+//         Promise.All([brands, phones])
+//         .then(function([brands, phones]) {
+//             res.render('products', {brands,phones})
+//         })
 
-    },
+//     },
 
-    // detail: (req, res) => {
+//     // detail: (req, res) => {
 
-    //     db.Phones.findByPK(req.params.id)
-    //     include: [
-    //         {association:'brand'}, 
-    //         {association:'system'},
-    //         {association:'specification'}
-    //     ]
-    //     .then(products => {
-    //         res.render('productDetail', {products})
-    //     })
+//     //     db.Phones.findByPK(req.params.id)
+//     //     include: [
+//     //         {association:'brand'}, 
+//     //         {association:'system'},
+//     //         {association:'specification'}
+//     //     ]
+//     //     .then(products => {
+//     //         res.render('productDetail', {products})
+//     //     })
 
-    // },
+//     // },
 
-}
+// }
 
 // const productController ={
 //     // store: (req, res) => {

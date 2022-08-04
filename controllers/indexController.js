@@ -1,29 +1,39 @@
 const db = require('../database/models/index')
 
-// const smartphones = products.filter(product => product.category == "smartphone")
+// const smartphones = products.filter(phone => product.category == "smartphone")
 // const inSale = products.filter(product => product.category == "in-sale")
 
 module.exports = {
 
-    index: (req, res) => {
+index: (req, res) => {
 
-        // let brands = db.Brands.findAll();
-        // let phones = db.Phones.findAll();
+    let smartphone = db.Phones.findAll({
+        where: {
+            category: 'smartphone'
+        }
+    });
+    
+    let inSale = db.Phones.findAll({
+        where: {
+            category: 'inSale'
+        }
+    });
 
-        // Promise.All([brands, phones])
+    // let brand = db.Brands.findAll();
 
-        db.Phones.findAll()
-        .then(products => {
-            res.render('index',{products})
-        })
-    },
+    Promise.all([smartphone, inSale, ])
+    .then(function([smartphone, inSale, ]) {
+        res.render('index', {smartphone,inSale,})
+    })
+
+},
 
     // inSale : (req, res) => {
     //     let product=products
     //         if(product.category == "inSale"){
     //             res.send(inSale)
     //         }
-    //     },
+//     //     },
 
 }
 
