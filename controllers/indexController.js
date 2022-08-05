@@ -10,20 +10,22 @@ index: (req, res) => {
     let smartphone = db.Phones.findAll({
         where: {
             category: 'smartphone'
-        }
+        },
+        include: ['brand']
     });
     
     let inSale = db.Phones.findAll({
         where: {
             category: 'inSale'
-        }
+        },
+        include: ['brand']
     });
 
     // let brand = db.Brands.findAll();
 
-    Promise.all([smartphone, inSale, ])
-    .then(function([smartphone, inSale, ]) {
-        res.render('index', {smartphone,inSale,})
+    Promise.all([smartphone, inSale])
+    .then(function([smartphone, inSale]) {
+        res.render('index', {smartphone,inSale})
     })
 
 },

@@ -72,6 +72,7 @@
                     <% smartphone.forEach( product => { %>
                         <div class="article">
                             <article>
+                                    <h4><%= product.brand.brand %> </h4>
                                     <h4 class="name"> <%= product.model %> </h4>
                                     <img src="/images/products/<%= product.image %>" class="product_img">
                                     <div class="box-description">

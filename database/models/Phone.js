@@ -8,12 +8,20 @@ module.exports = function(sequelize, dataTypes){
             primaryKey: true,
             autoIncrement: true
         },
+        idBrand:{
+            type: dataTypes.INTEGER(11),
+            allowNull: false,
+        },
         model: { 
             type: dataTypes.STRING(45),
             allowNull: false,
         },
         category: { 
             type: dataTypes.STRING(45),
+            allowNull: false,
+        },
+        idSystem:{
+            type: dataTypes.INTEGER(11),
             allowNull: false,
         },
         description: { 
@@ -36,12 +44,15 @@ module.exports = function(sequelize, dataTypes){
             type: dataTypes.INTEGER(11),
             allowNull: false,
         },
+        idSpecification:{
+            type: dataTypes.INTEGER(11),
+            allowNull: false,
+        }
         
     }
     
     let config = {
-        tableName : "phones",
-        timesTamps: false 
+        timestamps: false 
     }
 
     let Phones = sequelize.define(alias, cols, config);
@@ -60,7 +71,7 @@ module.exports = function(sequelize, dataTypes){
 
         Phones.belongsTo(models.Specifications,{
             as:"specification",
-            foreignKey: "idSpecifications"
+            foreignKey: "idSpecification"
         })
         
     }
