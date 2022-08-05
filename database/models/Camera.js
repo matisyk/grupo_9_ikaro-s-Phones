@@ -23,7 +23,7 @@ module.exports = function(sequelize, dataTypes){
     }
     let config = {
         tableName : "camera",
-        timesTamps: false
+        timestamps: false
     }
 
     let Camera = sequelize.define(alias, cols, config);

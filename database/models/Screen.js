@@ -18,7 +18,7 @@ module.exports = function(sequelize, dataTypes){
     }
     let config = {
         tableName : "screen",
-        timesTamps: false
+        timestamps: false
     }
 
     let Screen = sequelize.define(alias, cols, config);

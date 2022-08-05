@@ -18,11 +18,19 @@ module.exports = function(sequelize, dataTypes){
         ram : { 
             type: dataTypes.INTEGER,
             allowNull: true,
+        },
+        idCamera:{
+            type: dataTypes.INTEGER,
+            allowNull: false,
+        },
+        idScreen:{
+            type: dataTypes.INTEGER,
+            allowNull: false,
         }
     }
     let config = {
         tableName : "specifications",
-        timesTamps: false
+        timestamps: false
     }
 
     let Specifications = sequelize.define(alias, cols, config);
