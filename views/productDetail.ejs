@@ -17,7 +17,7 @@
                 <img src="/images/products/<%= product.image %> " class="product-img">
                 <div class="detalles-producto">
                     <div class="nombre-producto">
-                        <p class="telefono-producto"><strong><%= product.brand %> </strong></p>
+                        <p class="telefono-producto"><strong><%= product.brand.brand %> </strong></p>
                         <p class="telefono-producto"><strong><%= product.model %> </strong></p>
                         <p class="price">$ <%= product.price %> </p>
                         <p class="texto">Hasta <strong>12 cuotas sin interés</strong> CON TARJETAS SELECCIONADAS</p>
@@ -29,37 +29,42 @@
                         </div>
 
                         <div class="detalle">
-                            <p><i class="fa-solid fa-gear"></i>Sistema operativo <%= product.system %></p>
-                            <p><i class="fa-solid fa-sd-card"></i>Memoria interna <%= product.internalMemory %></p>
-                            <p><i class="fa-solid fa-mobile-screen"></i>Resolucion <%= product.internalMemory %></p>
+                            <p><i class="fa-solid fa-gear"></i>Sistema operativo <%= product.specification.system %></p>
+                            <p><i class="fa-solid fa-sd-card"></i>Memoria interna <%= product.specification.internalMemory %></p>
+                            <p><i class="fa-solid fa-mobile-screen"></i>Resolucion <%= product.specification.internalMemory %></p>
                         </div>
                     </div>
 
                     <div class="boton-comprar-producto">
                         <a href="./productCart/<%= product.id %>"><p>Añadir al carrito</p></a>
                     </div>
+
                     <% if (locals.userLogged && locals.userLogged.admin) { %>
                         <%- include('./partials/admin-btn') %> 
                     <% } %>
+
                 </div>
+
             </section>
+
             <section class="specs">
+
                 <p class="text-detail"><%= products.description %> </p>
                 <h3 >Especificaciones</h3>
                 <div class="specs-product">
                         <div class="pantalla">
-                            <p>Tamaño de pantalla <%= products.size %> </p>
-                            <p>Resolución de pantalla <%= products.resolution %> </p>
+                            <p>Tamaño de pantalla <%= specification.screen.size %> </p>
+                            <p>Resolución de pantalla <%= specification.screen.resolution %> </p>
                         </div>                  
                         <div class="camara">
-                            <p>Cámara <%= product.camera %> </p>
-                            <p>Cámara frontal <%= products.frontalCamera %> </p>
-                            <p>Grabacion de video <%= products.recorder %> </p>
+                            <p>Cámara <%= specification.camera.camera %> </p>
+                            <p>Cámara frontal <%= specification.camera.frontalCamera %> </p>
+                            <p>Grabacion de video <%= specification.camera.recorder %> </p>
                         </div>
                         <div class="almacenamiento">
-                            <p>Ram <%= product.ram %> </p>
-                            <p>Memoria externa <%= products.externalMemory %> </p>
-                            <p>Memoria interna <%= products.internalMemory %> </p>
+                            <p>Ram <%= product.specification.ram %> </p>
+                            <p>Memoria externa <%= products.specification.externalMemory %> </p>
+                            <p>Memoria interna <%= products.specification.internalMemory %> </p>
                         </div>                  
                 </div>
                 <h4>Video referencial</h4>
@@ -69,7 +74,9 @@
                         rameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
+
             </section>
+
         </main>
 
         <footer>

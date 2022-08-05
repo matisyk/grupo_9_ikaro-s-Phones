@@ -1,34 +1,60 @@
-// const db = require('../database/models/index')
+const db = require('../database/models/index')
 
-// module.exports = {
+module.exports = {
 
-//     store: (req, res) => {
+    store: (req, res) => {
 
-//         let brands = db.Brands.findAll();
-//         let phones = db.Phones.findAll();
+    db.Phones.findAll({
+        include:['brand']
+    })
+    .then(product => {
+        res.render('products', {product})
+    })
 
-//         Promise.All([brands, phones])
-//         .then(function([brands, phones]) {
-//             res.render('products', {brands,phones})
-//         })
+   },
 
-//     },
+   detail: (req, res) => {
+
+    let phones = db.Phones.findByPk(req.params.id, {
+        include: [
+            'brand',
+            'system',
+            'specification'
+        ]
+    })
+
+    let specifications = db.Specifications.findAll({
+        include: [
+            'camera',
+            'screen'
+        ]
+    })
+    
+    Promise.all([phones,specifications])
+    .then( function ([product, specification]) {
+        res.render('productDetail', {product,specification})
+    })
+
+   },
+
+}
 
 //     // detail: (req, res) => {
 
-//     //     db.Phones.findByPK(req.params.id)
-//     //     include: [
-//     //         {association:'brand'}, 
-//     //         {association:'system'},
-//     //         {association:'specification'}
-//     //     ]
+//     // db.Phones.findByPK(req.params.id,{
+//        include: [
+//         {association:'brand'}, 
+//         {association:'system'},
+//         {association:'specification'}
+//         ]
+//        })
+//      
 //     //     .then(products => {
 //     //         res.render('productDetail', {products})
 //     //     })
 
 //     // },
 
-// }
 
 // const productController ={
 //     // store: (req, res) => {

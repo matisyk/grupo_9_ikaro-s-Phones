@@ -1,28 +1,28 @@
-// const express = require("express");
-// const router = express.Router();
-// const productsControllers = require("../controllers/productsController")
+const express = require("express");
+const router = express.Router();
+const productsControllers = require("../controllers/productsController")
 // const fileUpload = require('../middlewares/multerProducts')
 // const admin = require('../middlewares/admin')
 
 
-// //todos los productos
-// router.get('/products', productsControllers.store)
+//todos los productos
+router.get('/products', productsControllers.store)
 
-// // //carrito
+//carrito
 // // router.get('/productCart', productsControllers.productCart);
 
-// //detalle de product
-// // router.get('/Detail/:id/', productsControllers.detail);
+//detalle de product
+router.get('/detail/:id/', productsControllers.detail);
 
-// //Creacion de producto
+//Creacion de producto
 // // router.get('/create', admin, productsControllers.create);
 // // router.post('/create', fileUpload.any() , productsControllers.created);
 
-// //editar un producto
+//editar un producto
 // // router.get('/edit/:id/', admin, productsControllers.edit);
 // // router.patch('/edit/:id/', fileUpload.any(), productsControllers.edited);
 
-// //borrar un producto
+//borrar un producto
 // // router.delete('/delete/:id/', admin, productsControllers.delete);
 
 

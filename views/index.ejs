@@ -67,7 +67,7 @@
 
         <main>
 
-            <h3>Descubre todas las ofertas que tenemos para voz</h3>
+            <h3>Descubre todas las ofertas que tenemos para vos</h3>
             <section>
                     <% smartphone.forEach( product => { %>
                         <div class="article">
@@ -91,7 +91,8 @@
                     <% inSale.forEach( product => { %>
                         <div class="article">
                             <article>
-                                    <h4 class="name"><%= product.model %></h4>
+                                    <h4><%= product.brand.brand %> </h4>
+                                    <h4 class="name"> <%= product.model %></h4>
                                     <img src="/images/products/<%= product.image %>" class="product_img">
                                     <div class="box-description">
                                         <p class="price">$ <%= product.price %></p>
