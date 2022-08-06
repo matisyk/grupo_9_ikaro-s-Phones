@@ -27,11 +27,11 @@ app.set('view engine', 'ejs')//configuracion EJS
 //routers require and use
 const rutaIndex = require('./routers/index');
 const rutaProducts = require('./routers/products');
-// const rutaUsers = require('./routers/users');
+const rutaUsers = require('./routers/users');
 
 app.use('/',rutaIndex);
 app.use('/',rutaProducts);
-// app.use('/',rutaUsers);
+app.use('/',rutaUsers);
 
 app.listen(3000,()=> console.log('servidor corriendo'));
 

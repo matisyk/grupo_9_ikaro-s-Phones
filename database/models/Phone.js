@@ -52,7 +52,7 @@ module.exports = function(sequelize, dataTypes){
     }
     
     let config = {
-        timestamps: false 
+        timestamps: false,
     }
 
     let Phones = sequelize.define(alias, cols, config);

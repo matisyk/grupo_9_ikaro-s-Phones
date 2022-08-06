@@ -3,18 +3,19 @@ const db = require('../database/models/index')
 module.exports = {
 
     store: (req, res) => {
-
     db.Phones.findAll({
         include:['brand']
     })
     .then(product => {
         res.render('products', {product})
     })
+   },
 
+   productCart: (req, res) => {
+    res.render('productCart', {products});
    },
 
    detail: (req, res) => {
-
     let phones = db.Phones.findByPk(req.params.id, {
         include: [
             'brand',
@@ -23,52 +24,52 @@ module.exports = {
         ]
     })
 
+    //revisar
     let specifications = db.Specifications.findAll({
         include: [
             'camera',
             'screen'
         ]
-    })
+    })//revisar
     
     Promise.all([phones,specifications])
     .then( function ([product, specification]) {
-        res.render('productDetail', {product,specification})
+        res.render('productDetail', {product, specification})
     })
-
    },
 
+   create: (req, res) => {
+    db.Phones.findAll({
+        include: [
+            'brand',
+            'system',
+            'specification'
+        ]
+    })
+    .then(product => {
+        res.render('productCreate', {product})
+    })
+   },
+
+   created: (req, res) => {
+   },
+
+   edit: (req, res) => {
+   },
+
+   edited: (req, res) => {
+   },
+
+   delete: (req, res) => {
+   },
+ 
 }
 
-//     // detail: (req, res) => {
-
-//     // db.Phones.findByPK(req.params.id,{
-//        include: [
-//         {association:'brand'}, 
-//         {association:'system'},
-//         {association:'specification'}
-//         ]
-//        })
-//      
-//     //     .then(products => {
-//     //         res.render('productDetail', {products})
-//     //     })
-
-//     // },
-
-
 // const productController ={
-//     // store: (req, res) => {
-//     //     res.render('products', {products})
-//     // },
+//     
 //     productCart : (req, res) => {
 //         res.render('productCart', {products});
 //     },
-//     detail : (req, res) => {
-//         let id = req.params.id
-// 		let product = products.find(product => product.id == id)
-
-// 		res.render('productDetail',{product})
-// 	},
 //     create: (req, res) => {  //ruta GET crear producto
 //         res.render('productCreate', {products})
 //     },

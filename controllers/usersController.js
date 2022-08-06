@@ -1,12 +1,82 @@
+const db = require('../database/models/User')
 
-// const bcryptjs = require('bcryptjs')
-// const { validationResult } = require('express-validator');
-// const ModelUsers = require('../models/Users');
+const bcryptjs = require('bcryptjs')
+const { validationResult } = require('express-validator');
+const ModelUsers = require('../models/Users');
+
+module.exports = {
+
+    register: (req, res) => {
+        res.render('register')
+    },
+
+    saveUser: (req, res) => {
+        const valiResult = validationResult(req);
+
+        if(valiResult.errors.length > 0){
+            return res.render('register', {
+                errors: valiResult.mapped(), //mapped convierte en un obj lit 
+                oldData: req.body
+            });
+        }
+
+        db.User.findOne()
+        .then(user => {
+            
+        })
+
+        // let userInDB = ModelUsers.findField('email', req.body.email);
+
+        //  if(userInDB){
+        //      return res.render('register', {
+        //          errors:{
+        //              email:{
+        //                  msg: 'Este email ya se ecuentra registrado'
+        //              }
+        //          },
+        //          oldData: req.body
+        //      });
+        //  }
+        
+        //  let avatar 
+        //  if(req.files[0] != undefined){
+        //      avatar = req.files[0].filename
+        //  }
+        //  else{
+        //      avatar = "default-image.png" 
+        //  }
+
+        //  let userToCreate = {
+        //      ...req.body,
+        //      password: bcryptjs.hashSync(req.body.password, 10),
+        //      avatar: avatar
+        // }      
+
+        //  ModelUsers.create(userToCreate)
+
+        //  return res.redirect("/products",);
+    },
+    login: (req, res) => {
+        res.render('login');
+    },
+    logged: (req, res) => {
+
+    },
+    logout: (req, res) => {
+        res.clearCookie('userEmail');
+        req.session.destroy();
+        return res.redirect('/');
+    }
+}
+
+
 
 // const usersController ={
 //     register:(req, res) => {
 //         res.render('register')
 //     },
+
+
 //     saveUser: (req, res) =>{
 //         const valiResult = validationResult(req);
 

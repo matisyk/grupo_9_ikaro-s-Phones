@@ -9,15 +9,15 @@ module.exports = function(sequelize, dataTypes){
             autoIncrement: true
         },
         camera: { 
-            type: dataTypes.STRING(100),
+            type: dataTypes.STRING(45),
             allowNull: true,
         },
         frontalCamera : { 
-            type: dataTypes.INTEGER,
+            type: dataTypes.INTEGER(11),
             allowNull: true,
         },
         recorder: { 
-            type: dataTypes.INTEGER,
+            type: dataTypes.INTEGER(11),
             allowNull: true,
         },
     }
