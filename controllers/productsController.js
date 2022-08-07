@@ -23,14 +23,12 @@ module.exports = {
             'specification'
         ]
     })
-
-    //revisar
     let specifications = db.Specifications.findAll({
         include: [
             'camera',
             'screen'
         ]
-    })//revisar
+    })
     
     Promise.all([phones,specifications])
     .then( function ([product, specification]) {
