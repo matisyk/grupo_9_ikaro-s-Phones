@@ -1,8 +1,8 @@
-const db = require('../database/models/User')
+const db = require('../database/models/index')
 
 const bcryptjs = require('bcryptjs')
 const { validationResult } = require('express-validator');
-const ModelUsers = require('../models/Users');
+// const ModelUsers = require('../models/Users');
 
 module.exports = {
 
@@ -11,7 +11,15 @@ module.exports = {
     },
 
     saveUser: (req, res) => {
-        const valiResult = validationResult(req);
+
+        //todos los usuarios
+        db.Users.findAll()
+        .then(users => {
+            console.log(users)
+        })
+
+        //validaciones
+        let valiResult = validationResult(req);
 
         if(valiResult.errors.length > 0){
             return res.render('register', {
@@ -20,41 +28,48 @@ module.exports = {
             });
         }
 
-        db.User.findOne()
-        .then(user => {
-            
+        //si el email del usuario existe
+        db.Users.findOne({
+            where: {
+                email: req.body.email
+            }
         })
+        .then(user => {
+            if(user){
+                return res.render('register', {
+                    errors:{
+                        email:{
+                            msg: 'Este email ya se ecuentra registrado'
+                        }
+                    },
+                    oldData: req.body
+                });
+            }
+        });
 
-        // let userInDB = ModelUsers.findField('email', req.body.email);
+        let avatar; 
+        if(req.files[0] != undefined){
+            avatar = req.files[0].filename
+        }else{
+            avatar = "default-image.png" 
+        }
 
-        //  if(userInDB){
-        //      return res.render('register', {
-        //          errors:{
-        //              email:{
-        //                  msg: 'Este email ya se ecuentra registrado'
-        //              }
-        //          },
-        //          oldData: req.body
-        //      });
-        //  }
-        
-        //  let avatar 
-        //  if(req.files[0] != undefined){
-        //      avatar = req.files[0].filename
-        //  }
-        //  else{
-        //      avatar = "default-image.png" 
-        //  }
-
-        //  let userToCreate = {
-        //      ...req.body,
-        //      password: bcryptjs.hashSync(req.body.password, 10),
-        //      avatar: avatar
-        // }      
-
-        //  ModelUsers.create(userToCreate)
-
-        //  return res.redirect("/products",);
+        //encryptar contraseña
+        db.Users.create({
+            fullName: req.body.fullName,
+            email: req.body.email,
+            password: req.body.password,
+            avatar: req.body.avatar
+        },
+        {
+            where: {
+                password: bcryptjs.hashSync(req.body.password, 10),
+                avatar: avatar
+            }
+        })
+        .then(function(){
+            res.redirect('/products')
+        })
     },
     login: (req, res) => {
         res.render('login');
@@ -169,5 +184,3 @@ module.exports = {
 // 	 	return res.redirect('/');
 // 	}
 // }
-        
-// module.exports= usersController;
