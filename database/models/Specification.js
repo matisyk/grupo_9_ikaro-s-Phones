@@ -19,17 +19,28 @@ module.exports = function(sequelize, dataTypes){
             type: dataTypes.INTEGER,
             allowNull: true,
         },
-        idCamera:{
-            type: dataTypes.INTEGER,
-            allowNull: false,
+        camera: {
+            type: dataTypes.STRING(45),
+            allowNull: true,
         },
-        idScreen:{
+        frontalCamera : { 
             type: dataTypes.INTEGER,
-            allowNull: false,
+            allowNull: true,
+        },
+        recorder: { 
+            type: dataTypes.INTEGER,
+            allowNull: true,
+        },
+        size : { 
+            type: dataTypes.STRING(45),
+            allowNull: true,
+        },
+        resolution : { 
+            type: dataTypes.STRING(45),
+            allowNull: true,
         }
     }
     let config = {
-        tableName : "specifications",
         timestamps: false
     }
 
@@ -40,16 +51,6 @@ module.exports = function(sequelize, dataTypes){
         Specifications.hasOne(models.Phones,{
             as:"phone",
             foreignKey: "idSpecification"
-        })
-
-        Specifications.belongsTo(models.Camera,{
-            as:"camera",
-            foreignKey: "idCamera"
-        })
-
-        Specifications.belongsTo(models.Screen,{
-            as:"screen",
-            foreignKey: "idScreen"
         })
         
     }

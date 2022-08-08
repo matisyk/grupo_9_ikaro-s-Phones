@@ -14,7 +14,10 @@
     <main>
 
         <div class="title">
-            <h2 class="product-title">Estás editando <i> <%= product.name %> </i> </h2>
+            <h2 class="product-title">Estás editando 
+				<i> <%= product.brand %> </i> 
+				<i> <%= product.model %> </i>
+			</h2>
         </div>
 
         <div class="form-edit">
@@ -24,8 +27,12 @@
 
 				<div class="group generals">
 					<div class="name">
-						<label for="name">Nombre:</label>
-						<input type="text" id="name" name="name" value="<%= product.name %>" class="form-input">
+						<label for="name">Marca:</label>
+						<input type="text" id="name" name="name" value="<%= product.brand.brand %>" class="form-input">
+					</div>
+					<div class="name">
+						<label for="name">Modelo:</label>
+						<input type="text" id="name" name="name" value="<%= product.model %>" class="form-input">
 					</div>
 					<div>
 						<label for="price">Precio:</label>
@@ -40,45 +47,45 @@
 				<div class="group screen">
 					<div>
 						<label for="resolution">Resolución:</label>
-						<input type="text" id="resolution" name="resolution" value="<%= product.resolution %>" class="form-input">
+						<input type="text" id="resolution" name="resolution" value="<%= product.specification.resolution %>" class="form-input">
 					</div>
 					<div>
 						<label for="screen">Tamaño:</label>
-						<input type="text" id="screen" name="screen" value="<%= product.screen %>" class="form-input">
+						<input type="text" id="screen" name="screen" value="<%= product.specification.screen %>" class="form-input">
 					</div>		
 				</div>
 
 				<div class="group camera">
 					<div>
 						<label for="camera">Cámara:</label>
-						<input type="text" id="camera" name="camera" value="<%= product.camera %>" class="form-input">
+						<input type="text" id="camera" name="camera" value="<%= product.specification.camera %>" class="form-input">
 					</div>
 					<div>
 						<label for="frontalCamera">Cámara frontal:</label>
-						<input type="text" id="frontalCamera" name="frontalCamera" value="<%= product.frontalCamera %>" class="form-input">
+						<input type="text" id="frontalCamera" name="frontalCamera" value="<%= product.specification.frontalCamera %>" class="form-input">
 					</div>
 					<div class="recorder">
 						<label for="recorder">Resolución de video:</label>
-						<input type="text" id="recorder" name="recorder" value="<%= product.recorder %>" class="form-input">
+						<input type="text" id="recorder" name="recorder" value="<%= product.specification.recorder %>" class="form-input">
 					</div>					
 				</div>
 
 				<div class="group system">
 					<div>
 						<label for="rom" >ROM:</label>
-						<input type="text" id="rom" name="rom" value="<%= product.rom %>" >
+						<input type="text" id="rom" name="rom" value="<%= product.specification.internalMemory %>" >
 					</div>
 					<div>
 						<label for="ram" >RAM:</label>
-						<input type="text" id="ram" name="ram" value="<%= product.ram %>" >
+						<input type="text" id="ram" name="ram" value="<%= product.specification.ram %>" >
 					</div>
 					<div>
 						<label for="externalMemory">memoria SD:</label>
-						<input type="text" id="externalMemory" name="externalMemory" value="<%= product.externalMemory %>" class="form-input">
+						<input type="text" id="externalMemory" name="externalMemory" value="<%= product.specification.externalMemory %>" class="form-input">
 					</div>
 					<div>
 						<label for="system">Sistema operativo:</label>
-						<input type="text" id="system" name="system" value="<%= product.system %>" >
+						<input type="text" id="system" name="system" value="<%= product.system.system %>" >
 					</div>
 				</div>
 					

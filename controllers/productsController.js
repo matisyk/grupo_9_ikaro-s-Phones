@@ -3,7 +3,8 @@ const db = require('../database/models/index')
 module.exports = {
 
     store: (req, res) => {
-    db.Phones.findAll({
+    db.Phones
+    .findAll({
         include:['brand']
     })
     .then(product => {
@@ -12,32 +13,26 @@ module.exports = {
    },
 
    productCart: (req, res) => {
-    res.render('productCart', {products});
+    res.render('productCart');
    },
 
    detail: (req, res) => {
-    let phones = db.Phones.findByPk(req.params.id, {
+    let phones = db.Phones
+    .findByPk(req.params.id, {
         include: [
             'brand',
             'system',
             'specification'
         ]
     })
-    let specifications = db.Specifications.findAll({
-        include: [
-            'camera',
-            'screen'
-        ]
-    })
-    
-    Promise.all([phones,specifications])
-    .then( function ([product, specification]) {
-        res.render('productDetail', {product, specification})
+    .then(product => {
+        res.render('productDetail', {product})
     })
    },
 
    create: (req, res) => {
-    db.Phones.findAll({
+    db.Phones
+    .findAll({
         include: [
             'brand',
             'system',
@@ -50,9 +45,29 @@ module.exports = {
    },
 
    created: (req, res) => {
+
+    let image 
+    if(req.files[0] != undefined){
+        image = req.files[0].filename
+    }
+    else{
+        image = "default-image.png" 
+    }
    },
 
    edit: (req, res) => {
+    db.Phones
+    .findByPk(req.params.id,{
+        include:[
+            'brand',
+            'system',
+            'specification'
+        ]
+    })
+    .then(product => {
+        res.render('productEdit', {product})
+    })
+
    },
 
    edited: (req, res) => {
@@ -64,10 +79,6 @@ module.exports = {
 }
 
 // const productController ={
-//     
-//     productCart : (req, res) => {
-//         res.render('productCart', {products});
-//     },
 //     create: (req, res) => {  //ruta GET crear producto
 //         res.render('productCreate', {products})
 //     },

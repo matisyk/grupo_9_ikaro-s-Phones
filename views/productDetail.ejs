@@ -30,13 +30,13 @@
 
                         <div class="detalle">
                             <p><i class="fa-solid fa-gear"></i>Sistema operativo <%= product.system.system %></p>
-                            <p><i class="fa-solid fa-sd-card"></i>Memoria interna <%= specification.internalMemory %></p>
-                            <p><i class="fa-solid fa-mobile-screen"></i>Resolucion <%= specification.internalMemory %></p>
+                            <p><i class="fa-solid fa-sd-card"></i>Memoria interna <%= product.specification.internalMemory %></p>
+                            <p><i class="fa-solid fa-mobile-screen"></i>Resolucion <%= product.specification.internalMemory %></p>
                         </div>
                     </div>
 
                     <div class="boton-comprar-producto">
-                        <a href="./productCart/<%= product.id %>"><p>Añadir al carrito</p></a>
+                        <a href="./productCart"><p>Añadir al carrito</p></a>
                     </div>
 
                     <% if (locals.userLogged && locals.userLogged.admin) { %>
@@ -53,16 +53,16 @@
                 <h3 >Especificaciones</h3>
 
                    <div class="specs-product">
-                   <!-- <div class="pantalla">
-                            <p>Tamaño de pantalla <= specification.screen.size %> </p>
-                            <p>Resolución de pantalla <= specification.screen.resolution %> </p>
+                         <div class="pantalla">
+                            <p>Tamaño de pantalla <%= product.specification.size %> </p>
+                            <p>Resolución de pantalla <%= product.specification.resolution %> </p>
                         </div>    
 
                        <div class="camara">
-                            <p>Cámara <= specification.camera.camera %> </p>
-                            <p>Cámara frontal <= specification.camera.frontalCamera %> </p>
-                            <p>Grabacion de video <= specification.camera.recorder %> </p>
-                        </div> --> 
+                            <p>Cámara <%= product.specification.camera %> </p>
+                            <p>Cámara frontal <%= product.specification.frontalCamera %> </p>
+                            <p>Grabacion de video <%= product.specification.recorder %> </p>
+                        </div>
                         
                         <div class="almacenamiento">
                             <p>Ram <%= product.specification.ram %> </p>
