@@ -4,76 +4,112 @@ module.exports = {
 
     store: (req, res) => {
     db.Phones
-    .findAll({
-        include:['brand']
-    })
-    .then(product => {
-        res.render('products', {product})
-    })
+        .findAll({
+            include:['brand']
+        })
+            .then(product => {
+                res.render('products', {product})
+            })
    },
-
+      
    productCart: (req, res) => {
     res.render('productCart');
    },
 
    detail: (req, res) => {
-    let phones = db.Phones
-    .findByPk(req.params.id, {
-        include: [
-            'brand',
-            'system',
-            'specification'
-        ]
-    })
-    .then(product => {
-        res.render('productDetail', {product})
-    })
+    db.Phones
+        .findByPk(req.params.id, {
+            include: [
+                'brand',
+                'system',
+                'specification'
+            ]
+        })
+            .then(product => {
+                res.render('productDetail', {product})
+            })
+
    },
 
    create: (req, res) => {
     db.Phones
-    .findAll({
-        include: [
-            'brand',
-            'system',
-            'specification'
-        ]
-    })
-    .then(product => {
-        res.render('productCreate', {product})
-    })
+        .findAll({
+            include: [
+                'brand',
+                'system',
+                'specification'
+            ]
+        })
+            .then(product => {
+                res.render('productCreate', {product})
+            })
+
    },
 
    created: (req, res) => {
+    let image; 
+        if(req.files[0] != undefined){
+            image = req.files[0].filename
+        }else{
+            image = "default-image.png" 
+        }
+            db.Phones.create({
+                ...req.body,
+                image: image
+            })
+                .then(phone => {
+                    res.redirect('/products')
+                })
 
-    let image 
-    if(req.files[0] != undefined){
-        image = req.files[0].filename
-    }
-    else{
-        image = "default-image.png" 
-    }
    },
 
    edit: (req, res) => {
     db.Phones
-    .findByPk(req.params.id,{
-        include:[
-            'brand',
-            'system',
-            'specification'
-        ]
-    })
-    .then(product => {
-        res.render('productEdit', {product})
-    })
+        .findByPk(req.params.id,{
+            include:[
+                'brand',
+                'system',
+                'specification'
+            ]
+        })
+            .then(product => {
+                res.render('productEdit', {product})
+            })
 
    },
 
    edited: (req, res) => {
-   },
+    let image
+        if(req.files[0] != undefined){
+            image = req.files[0].filename
+        }
+            else{
+                image = productToEdit.image
+            }
+                db.Phones
+                .update({
+                    ...req.body,
+                    image: image
+                },{
+                    where: {id: req.params.id}
+                })
+                .then(phone => {
+                    res.redirect('/products')
+                })
+
+    },
 
    delete: (req, res) => {
+    db.Phones
+        .destroy({
+            where: {
+                id: req.params.id
+            }
+        })
+            .then(phone => {
+                res.redirect('/products')
+            })
+
    },
  
 }

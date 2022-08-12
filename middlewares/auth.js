@@ -1,4 +1,5 @@
 const locals = (req, res, next) => {
+    
     res.locals.isAuthenticated = false;
     if (req.session.userLogged) {
         res.locals.isAuthenticated = true;

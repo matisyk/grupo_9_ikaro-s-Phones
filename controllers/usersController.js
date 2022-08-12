@@ -87,12 +87,12 @@ module.exports = {
                             res.cookie('userEmail', req.body.email, {maxAge: (1000 * 1000)*90})
                         }
     
-                        return res.redirect('/products');
+                        return res.redirect('/');
                     }
     
                     return res.render ('login',{
                         errors: {
-                            email:{
+                            password:{
                                 msg: 'los datos ingresados son incorrectos'
                             }
                         }

@@ -2,21 +2,21 @@ module.exports = function(sequelize, dataTypes){
     let alias = 'Specifications'
     let cols = {
         id : { 
-            type: dataTypes.INTEGER,
+            type: dataTypes.INTEGER(11),
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
         },
         internalMemory : { 
-            type: dataTypes.INTEGER,
+            type: dataTypes.INTEGER(11),
             allowNull: true,
         },
         externalMemory : { 
-            type: dataTypes.INTEGER,
+            type: dataTypes.INTEGER(11),
             allowNull: true,
         },
         ram : { 
-            type: dataTypes.INTEGER,
+            type: dataTypes.INTEGER(11),
             allowNull: true,
         },
         camera: {
@@ -24,18 +24,18 @@ module.exports = function(sequelize, dataTypes){
             allowNull: true,
         },
         frontalCamera : { 
-            type: dataTypes.INTEGER,
+            type: dataTypes.INTEGER(11),
             allowNull: true,
         },
         recorder: { 
-            type: dataTypes.INTEGER,
-            allowNull: true,
-        },
-        size : { 
-            type: dataTypes.STRING(45),
+            type: dataTypes.INTEGER(11),
             allowNull: true,
         },
         resolution : { 
+            type: dataTypes.STRING(45),
+            allowNull: true,
+        },
+        size : { 
             type: dataTypes.STRING(45),
             allowNull: true,
         }
