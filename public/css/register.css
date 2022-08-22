@@ -13,94 +13,20 @@ body{
 .top-header{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     position: fixed;
-    z-index: 1000;
+    z-index: 100;
     top: 0;
     background-color: #302e2e;
 }
 .logo {
-    width: 35%;
+    width: 17%;
     height: auto;
     position: relative;
-    right: -40%;
-}
-.icons-left{
-    display: flex;
-    justify-content: center;
-    width: 50%;
-}
-.icons-left-text{
-    display: none;
-}
-.nav-top{
-    display: none;
-}
-.icons-right{
-    display: none;
-}
-.bottom-var{
-    display: none;
+    margin: 0 30px;
 }
 
-/* barra desplegable movile */
-.nav-main{
-    display: block;
-    position: relative;
-}
-.nav-main a{
-    color: white;
-}
-.btn-bars-icon{
-    --size: 25px;
-    width: var(--size);
-    height: var(--size);
-    padding: 0px 40px;
-    transition: transform 5s;
-}
-.icon{
-    display: block;
-    width: 60%;
-    height: 2px;
-    background-color: white;
-    margin: 6px;
-    transition: transform 0.5s;
-}
-.btn-bars:checked + .btn-bars-icon .icon.one{
-    transform: translateY(0.5em) rotate(45deg);
-}
-.btn-bars:checked + .btn-bars-icon .icon.two{
-    transform: scale(0);
-}
-.btn-bars:checked + .btn-bars-icon .icon.three{
-    transform: translateY(-0.5em) rotate(-45deg);
-}
-.btn-bars{
+#btn-nav-main{
     display: none;
-}
-.btn-nav-main{
-    position: relative;
-}
-.nav-main-menu{
-    position: absolute;
-    left: -105%;
-    top: 100%;
-    padding: 40px 110px 0px 50px;
-    display: flex;
-    flex-direction: column;
-    background-color: gray;
-    transform: scaleY(0);
-    transition: transform 0.5s;
-    transform-origin: top;
-}
-.btn-bars:checked:checked ~ .nav-main-menu{
-    transform: scaleY(1);
-}
-.nav-main-menu a{
-    padding-bottom: 50px;
-    color: white;
-    font-size: 20px;
 }
 /* HEADER FIN */
 
@@ -115,27 +41,32 @@ body{
     padding: 10px;
 }
 .form-title{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
-    padding: 10px 12px 20px;
+    padding: 10px 12px;
 }
 .container{
     display: flex;
     flex-direction: column;
     margin: 10px 20px 10px 20px;
-    position: relative;
 }
 .form-register input{
+    position: relative;
     padding: 10px;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    border: #9d9c9c solid 1px;
 }
 .form-register label{
-    margin: 8px 0;
+    font-size: 14px;
+    margin: 10px 4px 5px;
 }
 .fa-solid.fa-eye{
     position: absolute;
-    top: 65%;
-    right: 8%;
     font-size: 13px;
+    bottom: 14%;
+    right: 20%;
     color: #302e2e;
 }
 .btn-register{
@@ -152,18 +83,14 @@ body{
 .login a{
     color: #302e2e;
 }
-.legales{
-    margin: 40px;
-    border-top: 1px solid #302e2e;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
+p{
+    color: #ff3c00;
+    font-size: 12px;
 }
-.legales a{
-    padding: 10px;
-    font-size: 14px;
-    color: #302e2e;
+.fa-solid.fa-circle-exclamation{ 
+    color: #ff3c00;
+    font-size: 12px;
+    margin: 8px 2px 2px;
 }
 /*FIN FORMULARIO DE REGISTRO*/
 
