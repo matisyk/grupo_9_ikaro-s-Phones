@@ -1,33 +1,50 @@
+// const { render } = require("ejs");
+
 window.addEventListener('load', function(){
 
     let form = document.querySelector('.form-register');
 
-    form.addEventListener('submit', (e) =>{
+    const btnRegister = document.querySelector('btn-register');
+    btnRegister.disabled = true;
 
-        let errors = [];
+    form.fullName.focus();
 
-        let fullName = document.querySelector('#fullName')
-        let email = document.querySelector('#email')
-        let avatar = document.querySelector('#avatar')
-        let password = document.querySelector('#password')
+    const inputs = [...document.querySelectorAll('input')];
 
-        if(fullName.value == ""){
-            fullName.classList.add('is-invalid')
-            errors.push('El campo no puede estar vacío')
-        }else{
-            fullName.classList.remove('is-invalid')
-            fullName.classList.add('is-valid')
-        }
+    let errors = inputs.length;
 
-        if(errors.length > 0){
-
-            e.preventDefault();
-
-        }else{
-            form.submit();
-        }
-
+    inputs.forEach((input) => {
+        input.addEventListener('blur', (e) => {
+            if(
+                e.target.value.length == 0 && !e.target.classList.add('invalid')
+            ){
+                e.target.classList.add('invalid');
+                e.target.insertAdjacentHTML(
+                    "afterend", "<p style='color:render; margin:5px'>Campo obligatorio</p>"
+                );
+            }
+            if(
+                e.target.value.length == 0 && e.target.classList.contains('valid')
+            ){
+                errors++;
+            }
+            if(e.target.value.length > 0){
+                if(e.target.classList.contains('invalid')){
+                    e.target.classList.remove('invalid');
+                    e.target.nextElementSibling.remove();
+                }
+                e.target.classList.add('valid');
+                errors--;
+            }
+            if(!errors){
+                btnRegister.disabled = false;
+            }else{
+                btnRegister.disabled = true;
+            }
+        })
     })
+
+
 
 
 })

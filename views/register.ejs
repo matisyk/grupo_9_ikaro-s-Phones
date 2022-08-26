@@ -26,11 +26,11 @@
                     <div class="container">
                         <label for="full-name">Nombre y Apellido</label>
                         <input type="text" placeholder="ejem.: Juan Ramirez" name="fullName"
-                        id="fullName" class="form-control <%= locals.errors && errors.fullName ? 'is-invalid' : null %>"   
+                        class="valid <%= locals.errors && errors.fullName ? 'is-invalid' : null %>"   
                         value="<%= locals.oldData ? oldData.fullName : null %>"
                         >
                         <% if (locals.errors && errors.fullName) { %>
-                            <p> <i class="fa-solid fa-circle-exclamation"></i> <%= errors.fullName.msg %> </p>
+                            <p class="invalid"> <i class="fa-solid fa-circle-exclamation"></i> <%= errors.fullName.msg %> </p>
                         <% } %>
                          
                         
@@ -39,18 +39,18 @@
                     <div class="container">
                         <label for="email"> Ingresa tu email</label>
                         <input type="text" placeholder="ejem.: example@gmail.com" name="email"
-                        id="email" class="form-control <%= locals.errors && errors.email ? 'is-invalid' : null %>"
+                        class="valid <%= locals.errors && errors.email ? 'is-invalid' : null %>"
                         value="<%= locals.oldData ? oldData.email : null %>"
                         >
-                        <% if (locals.errors && errors.emil) { %>
-                            <p> <i class="fa-solid fa-circle-exclamation"></i> <%= errors.email.msg %> </p>
+                        <% if (locals.errors && errors.email) { %>
+                            <p class="invalid"> <i class="fa-solid fa-circle-exclamation"></i> <%= errors.email.msg %> </p>
                         <% } %>
                     </div>
 
                     <div class="container">
                         <label for="avatar"> Selecciona una imagen de perfil </label>
                         <input type="file" name="avatar"
-                        id="avatar" class="form-control <%= locals.errors && errors.avatar? 'is-invalid' : null %>"
+                        class="valid  <%= locals.errors && errors.avatar? 'is-invalid' : null %>"
                         value="<%= locals.oldData ? oldData.avatar : null %>"
                         >
                     </div>
@@ -58,10 +58,10 @@
                     <div class="container">
                         <label for="password"> Ingresa tu contraseña </label>
                         <input type="password" placeholder="Escribir contraseña" name="password"
-                        id="password" class="form-control <%= locals.errors && errors.password ? 'is-invalid' : null %>"
+                        class="valid <%= locals.errors && errors.password ? 'is-invalid' : null %>"
                         > <i class="fa-solid fa-eye"></i>
                         <% if (locals.errors && errors.password) { %>
-                            <p> <i class="fa-solid fa-circle-exclamation"></i> <%= errors.password.msg %> </p>
+                            <p class="invalid"> <i class="fa-solid fa-circle-exclamation"></i> <%= errors.password.msg %> </p>
                         <% } %>
                     </div> 
 
@@ -76,5 +76,6 @@
             </form>
             
         </main>
+        <script src="/js/validator.js"></script>
     </body>
 </html>

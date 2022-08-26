@@ -58,6 +58,7 @@ body{
     border-radius: 5px;
     border: #9d9c9c solid 1px;
 }
+
 .form-register label{
     font-size: 14px;
     margin: 10px 4px 5px;
@@ -83,7 +84,10 @@ body{
 .login a{
     color: #302e2e;
 }
-p{
+.valid {
+    border: rgb(48, 213, 7) solid 1px;
+}
+.invalid{
     color: #ff3c00;
     font-size: 12px;
 }
