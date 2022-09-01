@@ -30,8 +30,8 @@
 
                         <div class="detalle">
                             <p><i class="fa-solid fa-gear"></i>Sistema operativo <%= product.system.system %></p>
-                            <p><i class="fa-solid fa-sd-card"></i>Memoria interna <%= product.specification.internalMemory %></p>
-                            <p><i class="fa-solid fa-mobile-screen"></i>Resolucion <%= product.specification.internalMemory %></p>
+                            <p><i class="fa-solid fa-sd-card"></i>Memoria interna <%= product.specification.internalMemory %>GB</p>
+                            <p><i class="fa-solid fa-mobile-screen"></i>Resolucion <%= product.specification.resolution %>P</p>
                         </div>
                     </div>
 
@@ -55,20 +55,20 @@
 
                    <div class="specs-product">
                          <div class="pantalla">
-                            <p>Tamaño de pantalla <%= product.specification.size %> </p>
-                            <p>Resolución de pantalla <%= product.specification.resolution %> </p>
+                            <p>Tamaño de pantalla <%= product.specification.size %> inch</p>
+                            <p>Resolución de pantalla <%= product.specification.resolution %> p</p>
                         </div>    
 
                        <div class="camara">
-                            <p>Cámara <%= product.specification.camera %> </p>
-                            <p>Cámara frontal <%= product.specification.frontalCamera %> </p>
-                            <p>Grabacion de video <%= product.specification.recorder %> </p>
+                            <p>Cámara <%= product.specification.camera %> MP</p>
+                            <p>Cámara frontal <%= product.specification.frontalCamera %> MP</p>
+                            <p>Grabacion de video <%= product.specification.recorder %>MP</p>
                         </div>
                         
                         <div class="almacenamiento">
-                            <p>Ram <%= product.specification.ram %> </p>
-                            <p>Memoria externa <%= product.specification.externalMemory %> </p>
-                            <p>Memoria interna <%= product.specification.internalMemory %> </p>
+                            <p>Ram <%= product.specification.ram %>GB </p>
+                            <p>Memoria externa <%= product.specification.externalMemory %>GB </p>
+                            <p>Memoria interna <%= product.specification.internalMemory %>GB </p>
                         </div>                  
                    </div>
 
