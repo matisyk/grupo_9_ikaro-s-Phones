@@ -50,7 +50,7 @@ body{
     flex-direction: column;
     margin: 10px 20px 10px 20px;
 }
-.form-register input{
+input{
     position: relative;
     padding: 10px;
     width: 100%;
@@ -84,17 +84,26 @@ body{
 .login a{
     color: #302e2e;
 }
-.valid {
-    border: rgb(48, 213, 7) solid 1px;
-}
-.invalid{
+
+.error{
     color: #ff3c00;
     font-size: 12px;
 }
 .fa-solid.fa-circle-exclamation{ 
     color: #ff3c00;
     font-size: 12px;
-    margin: 8px 2px 2px;
+    position: absolute;
+    bottom: 59%;
+    left: 77%;
+    display: none;
+}
+.fa-solid.fa-circle-check{
+    color: rgb(34, 147, 6);
+    font-size: 12px;
+    position: absolute;
+    bottom: 59%;
+    left: 77%;
+    display: none;
 }
 /*FIN FORMULARIO DE REGISTRO*/
 

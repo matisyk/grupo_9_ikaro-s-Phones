@@ -1,11 +1,9 @@
-// const { render } = require("ejs");
 
 window.addEventListener('load', function(){
 
     let form = document.querySelector('.form-register');
 
     const btnRegister = document.querySelector('btn-register');
-    btnRegister.disabled = true;
 
     form.fullName.focus();
 
@@ -20,7 +18,7 @@ window.addEventListener('load', function(){
             ){
                 e.target.classList.add('invalid');
                 e.target.insertAdjacentHTML(
-                    "afterend", "<p style='color:render; margin:5px'>Campo obligatorio</p>"
+                    "afterend", "<p style='color:red; margin:5px'>Campo obligatorio</p>"
                 );
             }
             if(

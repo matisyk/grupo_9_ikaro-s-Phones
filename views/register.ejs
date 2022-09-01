@@ -23,14 +23,18 @@
                 <h4 class="form-title"> Crear una cuenta </h4>
                 
                 <div class="form-container">
+
                     <div class="container">
                         <label for="full-name">Nombre y Apellido</label>
-                        <input type="text" placeholder="ejem.: Juan Ramirez" name="fullName"
-                        class="valid <%= locals.errors && errors.fullName ? 'is-invalid' : null %>"   
+                        <input type="text" placeholder="ejem.: Juan Ramirez" name="fullName" class="fullName
+                        <%= locals.errors && errors.fullName ? 'is-invalid' : null %>"   
                         value="<%= locals.oldData ? oldData.fullName : null %>"
                         >
+                        <i class="fa-solid fa-circle-check"></i>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+
                         <% if (locals.errors && errors.fullName) { %>
-                            <p class="invalid"> <i class="fa-solid fa-circle-exclamation"></i> <%= errors.fullName.msg %> </p>
+                            <p class="error"> <%= errors.fullName.msg %> </p>
                         <% } %>
                          
                         
@@ -38,12 +42,13 @@
                    
                     <div class="container">
                         <label for="email"> Ingresa tu email</label>
-                        <input type="text" placeholder="ejem.: example@gmail.com" name="email"
-                        class="valid <%= locals.errors && errors.email ? 'is-invalid' : null %>"
+                        <input type="text" placeholder="ejem.: example@gmail.com" name="email" class="email
+                        <%= locals.errors && errors.email ? 'is-invalid' : null %>"
                         value="<%= locals.oldData ? oldData.email : null %>"
                         >
+                        
                         <% if (locals.errors && errors.email) { %>
-                            <p class="invalid"> <i class="fa-solid fa-circle-exclamation"></i> <%= errors.email.msg %> </p>
+                            <p class="error"> <i class="fa-solid fa-circle-exclamation"></i> <%= errors.email.msg %> </p>
                         <% } %>
                     </div>
 
@@ -57,11 +62,12 @@
 
                     <div class="container">
                         <label for="password"> Ingresa tu contraseña </label>
-                        <input type="password" placeholder="Escribir contraseña" name="password"
-                        class="valid <%= locals.errors && errors.password ? 'is-invalid' : null %>"
+                        <input type="password" placeholder="Escribir contraseña" name="password" class="password
+                        <%= locals.errors && errors.password ? 'is-invalid' : null %>"
                         > <i class="fa-solid fa-eye"></i>
+
                         <% if (locals.errors && errors.password) { %>
-                            <p class="invalid"> <i class="fa-solid fa-circle-exclamation"></i> <%= errors.password.msg %> </p>
+                            <p class="error"> <i class="fa-solid fa-circle-exclamation"></i> <%= errors.password.msg %> </p>
                         <% } %>
                     </div> 
 
@@ -76,6 +82,6 @@
             </form>
             
         </main>
-        <script src="/js/validator.js"></script>
+        <script src="/js/validations.js"></script>
     </body>
 </html>
