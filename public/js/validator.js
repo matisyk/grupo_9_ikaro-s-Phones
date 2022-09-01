@@ -2,10 +2,11 @@
 
 window.addEventListener('load', function(){
 
+    console.log("xdxdxd")
+
     let form = document.querySelector('.form-register');
 
     const btnRegister = document.querySelector('btn-register');
-    btnRegister.disabled = true;
 
     form.fullName.focus();
 
