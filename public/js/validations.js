@@ -17,27 +17,31 @@ window.addEventListener('load', function(){
     const validator = (e)=>{
         switch(e.target.name){
             case "fullName":
-                if(validations.fullName.test(e.target.value)){
-                    document.querySelector('.fullName').style.border = 'rgb(34, 147, 6) solid 2px'
-                    document.querySelector('i.fa-solid.fa-circle-exclamation').style.display = 'none'
-                    document.querySelector('i.fa-solid.fa-circle-check').style.display = 'block'
-                }else{
-                    document.querySelector('.fullName').style.border = '#ff4621 solid 2px'
-                    document.querySelector('i.fa-solid.fa-circle-check').style.display = 'none'
-                    document.querySelector('i.fa-solid.fa-circle-exclamation').style.display = 'block'
-                    
-
-                }
-
+                validarCampo(validations.fullName ,e.target, '.fullName');
             break;
 
             case "email":
-
+                validarCampo(validations.email ,e.target, '.email');
             break;
 
             case "password":
-
+                validarCampo(validations.password ,e.target, '.password');
             break;
+
+        }
+    }
+
+    const validarCampo = (validation, input, campo) => {
+        if(validation.test(input.value)){
+            document.querySelector(`${campo}`).style.border = 'rgb(34, 147, 6) solid 2px'
+            document.querySelector('i.fa-solid.fa-circle-exclamation').style.display = 'none'
+            document.querySelector('i.fa-solid.fa-circle-check').style.display = 'block'
+            document.querySelector('p.error').style.display = 'none'
+        }else{
+            document.querySelector(`${campo}`).style.border = '#ff4621 solid 2px'
+            document.querySelector('i.fa-solid.fa-circle-check').style.display = 'none'
+            document.querySelector('i.fa-solid.fa-circle-exclamation').style.display = 'block'
+            document.querySelector('p.error').style.display = 'block'
 
         }
     }
@@ -51,42 +55,6 @@ window.addEventListener('load', function(){
     form.addEventListener('submit', (e)=>{
         e.preventDefault()
     })
-
-    
-
-    // let errors = inputs.length;
-
-    // inputs.forEach((input) => {
-    //     input.addEventListener('blur', (e) => {
-    //         if(
-    //             e.target.value.length == 0 && !e.target.classList.add('invalid')
-    //         ){
-    //             e.target.classList.add('invalid');
-    //             e.target.insertAdjacentHTML(
-    //                 "afterend", "<p style='color:red; margin:5px'>Campo obligatorio</p>"
-    //             );
-    //         }
-    //         if(
-    //             e.target.value.length == 0 && e.target.classList.contains('valid')
-    //         ){
-    //             errors++;
-    //         }
-    //         if(e.target.value.length > 0){
-    //             if(e.target.classList.contains('invalid')){
-    //                 e.target.classList.remove('invalid');
-    //                 e.target.nextElementSibling.remove();
-    //             }
-    //             e.target.classList.add('valid');
-    //             errors--;
-    //         }
-    //         if(!errors){
-    //             btnRegister.disabled = false;
-    //         }else{
-    //             btnRegister.disabled = true;
-    //         }
-    //     })
-    // })
-
 
 
 

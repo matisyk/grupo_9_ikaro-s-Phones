@@ -88,6 +88,10 @@ input{
 .error{
     color: #ff3c00;
     font-size: 12px;
+    width: 300px;
+    display: none;
+    line-height: 15px;
+    padding: 5px;
 }
 .fa-solid.fa-circle-exclamation{ 
     color: #ff3c00;

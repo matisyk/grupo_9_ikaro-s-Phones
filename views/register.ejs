@@ -30,11 +30,13 @@
                         <%= locals.errors && errors.fullName ? 'is-invalid' : null %>"   
                         value="<%= locals.oldData ? oldData.fullName : null %>"
                         >
-                        <i class="fa-solid fa-circle-check"></i>
                         <i class="fa-solid fa-circle-exclamation"></i>
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <p class="error"> El nombre de usuario debe tener de 4 a 16 dígitos y no puede estar vacío</p>
 
                         <% if (locals.errors && errors.fullName) { %>
-                            <p class="error"> <%= errors.fullName.msg %> </p>
+                            <p class="error">  <%= errors.fullName.msg %> </p>
                         <% } %>
                          
                         
@@ -46,9 +48,15 @@
                         <%= locals.errors && errors.email ? 'is-invalid' : null %>"
                         value="<%= locals.oldData ? oldData.email : null %>"
                         >
+
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <p class="error"> Email no puede estar vacio </p>
+
                         
                         <% if (locals.errors && errors.email) { %>
-                            <p class="error"> <i class="fa-solid fa-circle-exclamation"></i> <%= errors.email.msg %> </p>
+                            <p class="error"><%= errors.email.msg %> </p>
                         <% } %>
                     </div>
 
@@ -62,12 +70,18 @@
 
                     <div class="container">
                         <label for="password"> Ingresa tu contraseña </label>
-                        <input type="password" placeholder="Escribir contraseña" name="password" class="password
+                        <input type="password" placeholder="Escribir contraseña" name="password" class=" password
                         <%= locals.errors && errors.password ? 'is-invalid' : null %>"
                         > <i class="fa-solid fa-eye"></i>
 
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <p class="error"> La contraseña debe tener al menos 8 caracteres </p>
+
+
                         <% if (locals.errors && errors.password) { %>
-                            <p class="error"> <i class="fa-solid fa-circle-exclamation"></i> <%= errors.password.msg %> </p>
+                            <p class="error"> <%= errors.password.msg %> </p>
                         <% } %>
                     </div> 
 
